@@ -1,0 +1,17 @@
+{
+  "name": "tasks",
+  "version": "1.0.0",
+  "description": "## 架构总览",
+  "type": "module",
+  "main": "dist/tasks-mcp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "typescript": "^6.0.3"
+  }
+}

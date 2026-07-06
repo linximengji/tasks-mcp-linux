@@ -1,0 +1,427 @@
+{
+  "2026-06-22/001-发送飞书卡片待办---重启-ops-daemon": {
+    "status": "completed",
+    "summary": "发送飞书卡片待办：**重启 ops-daemon**",
+    "created_at": "2026-06-22T02:02:39.666Z",
+    "updated_at": "2026-06-23T08:00:00.000Z"
+  },
+  "2026-06-22/002-phone-tasks-tasks-解耦完成-Step1目录": {
+    "status": "completed",
+    "summary": "phone-tasks→tasks 解耦完成：Step1目录改名+schema扩展+CLI增强，Step2 tasks-mcp.ts MCP Server+ .mcp.json注册",
+    "created_at": "2026-06-22T13:17:00.000Z",
+    "updated_at": "2026-06-23T15:56:00.000Z"
+  },
+  "2026-06-22/003-加入手机待办": {
+    "status": "completed",
+    "summary": "加入手机待办",
+    "created_at": "2026-06-22T08:40:00.816Z",
+    "updated_at": "2026-06-23T15:48:00.000Z"
+  },
+  "2026-06-23/004-phone-tasks-测试用例-classifier--2": {
+    "status": "completed",
+    "summary": "phone-tasks 测试用例：classifier (21条) + phone-archive (7条) = 28条全部通过",
+    "created_at": "2026-06-23T00:20:00.000Z",
+    "updated_at": "2026-06-23T15:48:00.000Z"
+  },
+  "2026-06-22/005-你是指要把什么东西加入手机待办-比如刚才提到的-approv": {
+    "status": "completed",
+    "summary": "你是指要把什么东西加入手机待办？比如刚才提到的 approval-handler.ts 的 TS28",
+    "created_at": "2026-06-22T16:56:49.492Z",
+    "updated_at": "2026-06-23T15:48:00.000Z"
+  },
+  "2026-06-23/006-早上半导体日报的内容是空的-调查一下有什么问题": {
+    "status": "completed",
+    "summary": "早上半导体日报的内容是空的，调查一下有什么问题",
+    "created_at": "2026-06-23T06:40:23.113Z",
+    "updated_at": "2026-06-23T06:40:23.113Z"
+  },
+  "2026-06-23/007-test-task-from-CLI": {
+    "status": "completed",
+    "summary": "test task from CLI",
+    "created_at": "2026-06-23T15:47:26.579612+00:00",
+    "updated_at": "2026-06-23T15:47:32.538809+00:00",
+    "type": "chore",
+    "source": "ops-daemon"
+  },
+  "2026-06-23/008-测试进度追踪功能-修复登录页闪退": {
+    "status": "completed",
+    "summary": "测试进度追踪功能：修复登录页闪退",
+    "created_at": "2026-06-23T16:07:43.659872+00:00",
+    "updated_at": "2026-06-23T16:08:10.911531+00:00",
+    "type": "bug",
+    "source": "manual",
+    "priority": "critical",
+    "progress": "功能已修改，正在测试验证中"
+  },
+  "2026-06-24/009-每日运行报告-显示proxy-unreachable-调查一": {
+    "status": "completed",
+    "summary": "每日运行报告，显示proxy unreachable，调查一下原因，不要处理",
+    "created_at": "2026-06-24T01:05:43.039Z",
+    "updated_at": "2026-06-24T01:05:43.039Z"
+  },
+  "2026-06-24/010-CC运行环境迁移到腾讯云轻量服务器-24h在线-远程可用": {
+    "status": "completed",
+    "summary": "CC运行环境迁移到腾讯云轻量服务器（24h在线，远程可用）",
+    "created_at": "2026-06-24T17:39:25.642Z",
+    "updated_at": "2026-07-06T00:00:00",
+    "type": "research",
+    "source": "cc",
+    "progress": "开始制定迁移计划。从 DeepSeek 分享链接获取到腾讯云轻量服务器 99元/年 2核2G 方案，对比火山引擎。正在探测项目组件依赖关系。"
+  },
+  "2026-06-25/011-都搞定了吗": {
+    "status": "completed",
+    "summary": "都搞定了吗？",
+    "created_at": "2026-06-25T08:20:17.487Z",
+    "updated_at": "2026-06-25T08:20:17.487Z"
+  },
+  "2026-06-25/012-sdd-engine-替代旧-workflow-script": {
+    "status": "completed",
+    "summary": "sdd-engine 替代旧 workflow scripts 收尾",
+    "created_at": "2026-06-25T18:20:13.327Z",
+    "updated_at": "2026-07-01T15:47:59.828Z",
+    "type": "chore",
+    "source": "cc",
+    "progress": "已完成: 删除旧 workflow scripts, 更新 CLAUDE.md 引用, 更新 tool-audit 高频列表, 更新 memory。阻塞: 无"
+  },
+  "2026-06-26/013-记忆体待处理--待审核-9-条---removed-task": {
+    "status": "completed",
+    "summary": "记忆体待处理 (待审核 9 条): removed-task-creator-from-daily-report, stop-marker-path-mismatch, ci-test-failures-session-ttl, getla",
+    "created_at": "2026-06-26T00:00:00.000Z",
+    "updated_at": "2026-06-26T13:46:23.614Z",
+    "type": "task",
+    "source": "ops-daemon",
+    "priority": "medium",
+    "progress": "=== 待审核（需运行 memory_review action=apply）===\n- [removed-task-creator-from-daily-report] 描述与日志矛盾：描述说移除task_creator.py，日志却说重写该文件；日期2026-06-26是未来日期，不可信；名称和描述不匹配常见搜索模式\n- [stop-marker-path-mismatch] fact_correct: 'D:\\ClaudeProjects\\ops-daemon\\.stop' is a generic absolute path that may not exist; al\n- [ci-test-failures-session-ttl] 描述中提及的测试文件路径使用了反斜杠，不符合Unix风格路径，且未指定具体文件名或行号，事实正确性存疑\n- [getlaststats-returns-default-object] fact_correct: file paths use generic 'D:/ClaudeProjects/' which is not a standard path and may be in\n- [multi-model-allocator] fact_correct: 2026-06-26 is a future date; should be pinned to approximate date or removed\n- [feishu-card-callback-3s-timeout] 描述中文件路径 'D:/ClaudeProjects/claudetalk/src/index.ts' 包含绝对路径和盘符，应改为相对路径或通用路径以避免环境依赖\n- [arch-segment-not-found-false-positive] 描述中提及的路径 D:/ClaudeProjects/.claude/memory/ 是绝对路径，可能不通用，建议改为相对路径或环境变量\n- [session-command-handler] 路径使用Windows风格反斜杠，但项目名claudetalk暗示类Unix环境，应使用正斜杠；且描述中未明确说明子命令的精确参数格式，可能影响检索准确性\n- [status-singleton-fix-26] Description contains garbled characters (likely encoding corruption), name/description not recall-fr"
+  },
+  "2026-06-27/014-记忆审核--4-条待审核--1-新增---3-更新": {
+    "status": "completed",
+    "summary": "记忆审核: 4 条待审核 (1 新增 + 3 更新)",
+    "created_at": "2026-06-27T13:30:02.116730",
+    "updated_at": "2026-06-27T19:30:13.355Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "medium",
+    "progress": "会话: 6b22f0a0-c8d0-4b2b-b384-\n\n== 待新增 (1 条) ==\n  [model-proxy/pitfalls] deepseek-thinking-block-mixed-history-fix\n    描述: 排查 DeepSeek 400 错误 'content[].thinking must be passed back' 根因，统一 thought block 消毒逻辑\n    置信度: 0.95\n    召回关键词: deepseek thinking block mixed history 400 error sanitize strip_thinking_blocks\n    内容预览: **Why:** 当对话历史中部分 assistant 消息包含 thinking 块，部分不包含（例如因中途切换模型），且请求启用了 thinking（`thinking.type=enabled`），DeepSeek 要求所有 assistant 消息必须回传 thinking 块，否则返回 400 错误。原有 `_disable_thinking_if_mixed_history` 可检测混\n\n== 待更新 (3 条) ==\n  [model-proxy/pitfalls] token-plan-credit-recalibration (target: token-plan-credit-recalibration)\n    描述: 校准 EFFECTIVE_TOKENS_PER_CREDIT 和 plan_start_ts 解决新套餐后 token plan 用量显示为 0 的问题\n    更新内容预览: **Why:** 旧套餐过期后，之前基于旧起始时间戳累积的 token 用量不再有效，需要重置计算基线。每次手动更新 `routing_policy.json` 的 `credits_total` 和 `credits_remaining` 时，必须同步回写新的 `plan_start_ts`，让 `get_real_credits()` 重新统计已用 token，避免剩余额度被旧数据污染。\n\n*\n  [memory-mcp/pitfalls] memory-mcp-pitfalls (target: memory-mcp-pitfalls)\n    描述: 排查 memory_get 找不到记忆文件时参考：BOM 导致 frontmatter 解析失败、_store_file 重复写入 frontmatter、复合名称查找失败\n    更新内容预览: **Why:** 记忆系统全面审计发现三个独立但共存的查找失败根因，解释了近期记忆调用准确率下降：\n\n1. **UTF-8 BOM 污染**：58 个 .md 记忆文件头部包含 `\\ufeff` BOM 字符。Python `read_text()` 在含 BOM 时不会自动剥离，导致 YAML frontmatter 正则匹配或 `yaml.safe_load` 失败，`_resolve_pat\n  [memory-mcp/changelog] memory-mcp-changelog (target: memory-mcp-changelog)\n    描述: _resolve_path 增加复合名称回退匹配，修复 namespace-prefixed 文件名查找失败 bug\n    更新内容预览: **Why:** `_resolve_path` 无法查找 `code-review-index`、`blender-mcp-architecture` 等带 namespace 前缀的复合文件名。原逻辑三步（传 namespace 直查 → 遍历所有 ns 目录查 `{name}.md` → name 匹配目录名时 fallback 到 `_index.md`）均无法命中。第二步在 code-r\n\n审核方式: 用 memory_get 查看原文，确认后用 memory_store/memory_update 写入"
+  },
+  "2026-06-27/015-记忆审核--3-条待审核--1-新增---2-更新": {
+    "status": "completed",
+    "summary": "记忆审核: 3 条待审核 (1 新增 + 2 更新)",
+    "created_at": "2026-06-27T14:03:30.214726",
+    "updated_at": "2026-06-27T19:30:13.682Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "medium",
+    "progress": "会话: d4aa9814-d59a-4b1b-a245-\n\n== 待新增 (1 条) ==\n  [ops-daemon/pitfalls] mobile-remote-stop-failure\n    描述: 排查手机端远程服务关闭失败根因时参考\n    置信度: 0.8\n    召回关键词: 手机端远程服务关闭失败 taskkill 没有匹配标准\n    内容预览: **Why:** 手机端远程服务关闭失败通常是由于 taskkill 命令无法匹配到运行中的进程，可能因为进程映像名称不正确或 PID 已失效，导致脚本报告“没有运行的任务匹配指定标准”。此外，powershell 脚本 remote-stop.ps1 可能因执行权限或环境变量问题未正确执行。\n**How to apply:** 检查停止脚本中使用的映像名称（如 cloudflared.exe）是\n\n== 待更新 (2 条) ==\n  [claudetalk/pitfalls] remote-stop-stops-proxy (target: remote-stop-stops-proxy)\n    描述: 手机端远程关闭超时，PreToolUse 钩子保护受保护进程导致 taskkill 被阻止\n    更新内容预览: **Why:** 远程终端关闭指令（如 `/exit`）会调用 `remote-stop.ps1`，该脚本通过 `tunnel_manager.py` 根据 `connections.yaml` 停止所有绑定的服务。由于 `model-proxy` 也在服务列表中，关闭隧道后会连带停止 proxy 进程，导致 LLM API 代理不可用。此外，在手机端执行关闭远程时，可能因为 PreToolUse\n  [phone-tasks/architecture] remote-lifecycle (target: remote-lifecycle)\n    描述: 诊断手机端远程关闭失败：cloudflared 可终止但多 node.exe 进程残留、QUIC 会话僵死及飞书反馈时序共同导致关闭不完全\n    更新内容预览: **Why:**\n1. 手机端切换 Cloudflare WARP 后 cloudflared QUIC session 死而不僵（degraded），重新开启远程连不上。手机端关闭远程 = 整套远程组件生命周期边界。\n2. 飞书反馈过早：原逻辑在 ops-dashboard 停止后即回复\"远程服务已关闭\"，实际 cloudflared tunnel 仍在关闭中，用户误以为关闭完成而立即重新开启，\n\n审核方式: 用 memory_get 查看原文，确认后用 memory_store/memory_update 写入"
+  },
+  "2026-06-27/016-记忆审核--4-条待审核--4-新增": {
+    "status": "completed",
+    "summary": "记忆审核: 4 条待审核 (4 新增)",
+    "created_at": "2026-06-27T14:13:54.192944",
+    "updated_at": "2026-06-27T19:30:14.080Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "medium",
+    "progress": "会话: d4aa9814-d59a-4b1b-a245-\n\n== 待新增 (4 条) ==\n  [ops-daemon/architecture] cloudflared-auto-stop-no-restart\n    描述: 排查 ops-daemon 自动管理 Cloudflare 隧道时发现只有自动停止降级隧道，没有自动重启恢复逻辑\n    置信度: 0.9\n    召回关键词: ops-daemon cloudflared auto stop restart missing recovery\n    内容预览: **Why:** ops-daemon 中的 `_cloudflared_auto_stop` 回调在每次检查完成后运行，当 cloudflared 状态为 “degraded” 且降级持续时间超过 `idle_timeout`（默认 600 秒）时，会调用 `tunnel_manager.stop` 停止隧道，并记录事件。这提供了一种自动停止长期无连接隧道的机制，但缺少自动重启逻辑，可能导致隧道\n  [ops-daemon/changelog] tunnel-manager-module\n    描述: 创建统一 tunnel + services 启停管理的 tunnel_manager.py 模块，修复 SDD 工作流问题\n    置信度: 0.95\n    召回关键词: tunnel manager unified start stop services\n    内容预览: **Why:** 按照 SDD 工作流修复问题时，需要一个统一的模块来管理 tunnels 和 services 的启动、停止与状态检查，因此创建 tunnel_manager.py 提供集中管理。\n**How to apply:** 模块从 connections.yaml 读取配置，提供 start/stop/status 接口，支持 process 和 docker 两种服务类型，并可按服务\n  [ops-daemon/pitfalls] killed-pids-dead-code\n    描述: 在 tunnel_manager.py 的 stop() 中发现 killed_pids 列表只写不读，提示死代码清理\n    置信度: 0.95\n    召回关键词: tunnel_manager stop killed_pids 死代码\n    内容预览: **Why:** 在 `stop()` 方法中声明了 `killed_pids = []` 并通过 `killed_pids.append(old_pid)` 写入，但后续从未读取或使用该列表，造成代码误导和维护负担。\n**How to apply:** 删除 `killed_pids` 声明和第222行的 `append()` 调用（或保留但添加解释注释以备将来使用）。建议在 PR 审查时直接移\n  [claudetalk/pitfalls] exec-no-timeout-blocking\n    描述: claudetalk remote-stop 调用 exec 缺少 timeout 选项，PowerShell 脚本卡死可能导致消息处理器永久阻塞\n    置信度: 0.9\n    召回关键词: claudetalk exec timeout PowerShell 卡死 阻塞\n    内容预览: **Why:** `src/index.ts` 第983行新增的 `remote-stop.ps1` 执行仅传了 `{ windowsHide: true }`，未设置 `timeout`。若 PowerShell 脚本挂起（管道阻塞、等待用户输入等），外层 `await new Promise<void>` 将永远不 resolve，导致消息处理器永久卡住，影响用户交互。\n**How to ap\n\n审核方式: 用 memory_get 查看原文，确认后用 memory_store/memory_update 写入"
+  },
+  "2026-06-27/017-记忆审核--2-条待审核--2-更新": {
+    "status": "completed",
+    "summary": "记忆审核: 2 条待审核 (2 更新)",
+    "created_at": "2026-06-27T14:28:55.761555",
+    "updated_at": "2026-06-27T19:30:14.388Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "medium",
+    "progress": "会话: d4aa9814-d59a-4b1b-a245-\n\n== 待更新 (2 条) ==\n  [ops-daemon/pitfalls] ops-daemon-architecture (target: ops-daemon-architecture)\n    描述: 在执行safekill重启ops-daemon时，safekill.ps1频繁报Get-Content读取.pid文件的IOException，但重启成功\n    更新内容预览: **Why:** 在safekill.ps1脚本等待旧守护进程退出和等待新守护进程启动的过程中，会反复尝试读取daemon.pid文件。由于文件可能在另一个进程中被使用（例如守护进程自己更新pid文件），或文件在瞬态被删除/重写，导致Get-Content出现ReadError。这些错误是瞬时的，不影响重启流程。\n**How to apply:** 在监控重启日志时，可以忽略这些Get-Conte\n  [ops-daemon/pitfalls] ops-daemon-architecture (target: ops-daemon-architecture)\n    描述: ops-daemon PID 锁与 OTLP 挂起导致重启受阻的修复策略\n    更新内容预览: ## 重启架构\n\n### 核心原则：单一权威守护进程\n**Task Scheduler** 是唯一有权重启 daemon 的实体。只有一个 Task（`\\ClaudeProjects\\ops-daemon`），两个触发器：\n- AtLogOn → 开机登录时启动 daemon\n- 每 10 分钟 → `check-daemon.ps1` 检测 heartbeat，过期则重启\n\nDaemon 自身不\n\n审核方式: 用 memory_get 查看原文，确认后用 memory_store/memory_update 写入"
+  },
+  "2026-06-27/018-记忆审核--1-条待审核--1-新增": {
+    "status": "completed",
+    "summary": "记忆审核: 1 条待审核 (1 新增)",
+    "created_at": "2026-06-27T14:28:57.807579",
+    "updated_at": "2026-06-27T19:30:14.726Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "medium",
+    "progress": "会话: d4aa9814-d59a-4b1b-a245-\n\n== 待新增 (1 条) ==\n  [ops-daemon/pitfalls] otlp-jaeger-unavailable-stuck\n    描述: 排查 ops-daemon 因 Jaeger 不可用而卡住、服务重启失败时参考\n    置信度: 0.9\n    召回关键词: ops-daemon stuck at OTLP Jaeger unavailable restart failed\n    内容预览: **Why:** ops-daemon 启动时集成了 OpenTelemetry，并通过 OTLP 导出器将追踪数据发送到 localhost:4317（Jaeger）。当 Jaeger 不可达时，导出器会不断重试，导致 `BatchSpanProcessor` 和整个程序主循环阻塞，进程挂起但仍持有 PID 锁，拒绝新的 daemon 实例启动，使得通过 safekill 重启 daemon 或\n\n审核方式: 用 memory_get 查看原文，确认后用 memory_store/memory_update 写入"
+  },
+  "2026-06-27/019-继续": {
+    "status": "completed",
+    "summary": "继续",
+    "created_at": "2026-06-27T06:47:31.752Z",
+    "updated_at": "2026-06-27T06:47:31.752Z"
+  },
+  "2026-06-27/020-分析手机端飞书收到claudetalk异常退出的原因异常": {
+    "status": "completed",
+    "summary": "分析手机端飞书收到claudetalk异常退出的原因异常",
+    "created_at": "2026-06-27T06:55:46.730Z",
+    "updated_at": "2026-06-27T06:55:46.730Z"
+  },
+  "2026-06-27/021-先确认jaeger的问题代码还在不在-如果还在改完不要重启d": {
+    "status": "completed",
+    "summary": "先确认jaeger的问题代码还在不在，如果还在改完不要重启daemon？",
+    "created_at": "2026-06-27T07:09:27.441Z",
+    "updated_at": "2026-06-27T07:09:27.441Z"
+  },
+  "2026-06-27/022-现在分析Claudetalk的问题-不要随便修改": {
+    "status": "completed",
+    "summary": "现在分析Claudetalk的问题，不要随便修改",
+    "created_at": "2026-06-27T07:14:24.017Z",
+    "updated_at": "2026-06-27T07:14:24.017Z"
+  },
+  "2026-06-27/023-daemon启动的时候-为什么spawn-claudetal": {
+    "status": "completed",
+    "summary": "daemon启动的时候，为什么spawn claudetalk，理论上不应该是，先检查claudet",
+    "created_at": "2026-06-27T07:20:25.934Z",
+    "updated_at": "2026-06-27T07:20:25.934Z"
+  },
+  "2026-06-27/024-记忆审核--14-条待审核--11-新增---3-更新": {
+    "status": "completed",
+    "summary": "记忆审核: 14 条待审核 (11 新增 + 3 更新)",
+    "created_at": "2026-06-27T23:38:51.583053",
+    "updated_at": "2026-06-27T19:30:15.101Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "medium",
+    "progress": "会话: 1ecc7535-093e-442a-af91-\n\n== 待新增 (11 条) ==\n  [ops-daemon/pitfalls] crash-marker-touctou-race\n    描述: ops-daemon 的 crash marker 存在 TOCTOU 竞争，可能误判 claudetalk 崩溃或掩盖真实崩溃\n    置信度: 0.8\n    召回关键词: crash marker TOCTOU race ops-daemon false positive\n    内容预览: **Why:** ops-daemon 使用 crash.marker 文件来标记 claudetalk 进程是否非正常退出，但存在时间检查-使用竞争（TOCTOU）：_watch_exit 线程在 spawn_claudetalk() 清除 marker 并启动健康新进程后，可能仍写入 marker，导致下一次健康检查时误将健康进程判为崩溃（若 PID 检查未介入）。虽然已添加 PID 存活优先\n  [claudetalk/pitfalls] dual-claudetalk-dirs-confusion\n    描述: 排查 claudetalk 崩溃时，因存在两个 .claudetalk 目录读到错误位置，导致误判\n    置信度: 0.7\n    召回关键词: claudetalk 两个 .claudetalk 目录 crash.marker 位置错误\n    内容预览: **Why:** 在排查 claudetalk 崩溃原因时，发现项目存在两个 .claudetalk 目录：一个位于项目根目录 `D:\\ClaudeProjects\\claudetalk\\.claudetalk`，另一个位于上级目录 `D:\\ClaudeProjects\\.claudetalk`，后者由 ops-daemon 管理。初次检查 crash.marker 时误读了项目内目录的文件，实际\n  [ops-daemon/changelog] jaeger-legacy-code-removal\n    描述: 确认并移除 ops-daemon main.py 中遗留的 Jaeger OTLP exporter 配置，修复后不重启 daemon 的流程记录\n    置信度: 0.9\n    召回关键词: jaeger 问题代码 ops-daemon 修复 不重启 daemon 语法检查\n    内容预览: **Why:** ops-daemon 的 main.py 中包含了过时的 OpenTelemetry Jaeger exporter 配置（如 OTEL_EXPORTER_OTLP_ENDPOINT 设为 localhost:4317，并初始化 TracerProvider 与 HTTPX 插桩），该配置可能因 Jaeger 后端变更而导致问题。需要确保问题代码被清除，且修改不触发 daemon\n  [claudetalk/pitfalls] claude-exit-code-3221225794\n    描述: 排查 claudetalk 子进程崩溃且退出码为 3221225794 时参考\n    置信度: 0.8\n    召回关键词: claude exit code 3221225794 crash\n    内容预览: **Why:** claude 子进程退出码 3221225794（有符号为 -1073741502）通常是 Windows 环境下进程因内存访问违规、堆栈溢出或 DLL 初始化失败等系统错误而异常终止，但 stderr 为空的常见原因是错误发生在子进程启动之初，未输出至 stderr。\n**How to apply:** 通过 `echo %ERRORLEVEL%` 或 `process.exi\n  [ops-daemon/pitfalls] daemon-log-gbk-decode-error\n    描述: 读取daemon.log时因GBK编码无法解码特殊字符导致UnicodeDecodeError\n    置信度: 0.95\n    召回关键词: daemon log UnicodeDecodeError gbk\n    内容预览: **Why:** daemon.log可能包含非GBK字符集的字节，Windows下Python默认使用GBK编码读取文件时导致UnicodeDecodeError。\n**How to apply:** 读取日志文件时显式指定encoding='utf-8'，或使用errors='ignore'/'replace'处理不可解码字节。推荐用utf-8编码写入日志以保持一致性。\n  [ops-daemon/pitfalls] daemon-pid-file-unreliable\n    描述: daemon.pid可能因权限拒绝、文件不存在或不可读导致无法获取PID\n    置信度: 0.9\n    召回关键词: daemon.pid permission denied not exists unreadable\n    内容预览: **Why:** daemon.pid可能由于权限（如非管理员写入）、文件被删除、或并发锁定导致无法读取或不存在，影响守护进程状态检测。\n**How to apply:** 在读取前检查文件存在性，捕获PermissionError/FileNotFoundError；设计上可考虑使用注册表或服务存储PID；启动脚本应确保文件有适当权限，必要时以管理员运行并清理旧PID文件。\n  [ops-daemon/pitfalls] multiple-daemon-instances-cleanup\n    描述: daemon进程因异常退出未清理导致多个实例同时运行，需脚本批量终止\n    置信度: 0.9\n    召回关键词: ops-daemon multiple PIDs kill all instances\n    内容预览: **Why:** daemon未正确退出时未清理PID文件或进程，导致多次启动后堆积多个僵尸进程，占用资源并可能冲突。\n**How to apply:** 编写PowerShell或bash脚本，根据进程名（如python -m ops_daemon.main）获取所有PID并终止；注意先杀子进程再杀父进程；启动前可检查现有进程，必要时执行清理。\n  [ops-daemon/pitfalls] bash-windows-path-escape-error\n    描述: 在bash中执行含Windows路径的Python代码时，反斜杠需转义，否则引发语法错\n    置信度: 0.95\n    召回关键词: bash eval syntax error invalid escape sequence backslash\n    内容预览: **Why:** bash将单反斜杠解释为转义字符，导致Python字符串中的反斜杠被错误解析，引发SyntaxWarning或语法错误。\n**How to apply:** 在bash中编写Python代码时，Windows路径使用正斜杠（如D:/path）或双反斜杠（D:\\\\path）；使用os.path.join动态构建路径可避免硬编码分隔符问题。\n  [ops-daemon/architecture] daemon-no-claudetalk-spawn\n    描述: 排查为什么 daemon 启动时没有自动拉起 claudetalk 进程时参考\n    置信度: 0.9\n    召回关键词: daemon 启动 不自动 spawn claudetalk\n    内容预览: **Why:** main.py:547-550 明确编写了 \"Boot-time child process spawning intentionally omitted.\" 注释，表明在 ops-daemon 启动时有意不自动 spawn claudetalk 子进程。所有服务（proxy、claudetalk、MCP server）由 init 系统或外部监控覆盖，以避免 daemon 背负\n  [claudetalk/pitfalls] claudetalk-spawn-claude-enoent\n    描述: 排查 claudetalk 在 Windows 上启动报 spawn claude ENOENT 错误时参考\n    置信度: 0.95\n    召回关键词: claudetalk ENOENT spawn claude Windows PATH\n    内容预览: **Why:** 在 Windows 上，从 ops-daemon 启动 claudetalk 时，claude 命令 spawn 失败 (code -4058, ENOENT)，因为 PATH 环境变量未包含 claude 的安装目录 (D:\\Tools) 且 claude 实际入口为 .cmd/.ps1，Node.js spawn 无法直接执行 .ps1，导致飞书消息处理连续报错并触发 unh\n  [ops-daemon/pitfalls] ops-daemon-pid-file-read-race\n    描述: ops-daemon safekill 重启时读取 daemon.pid 文件失败，导致无法检测新 daemon，排查此问题时参考\n    置信度: 0.85\n    召回关键词: ops-daemon safekill restart PID file read error Get-Content\n    内容预览: **Why:** 当 safekill.ps1 重启 ops-daemon 时，旧 daemon 退出并自动 spawn 新 daemon。新 daemon 写入 PID 文件过程中，safekill 脚本以高频率 Get-Content 读取该文件，可能读到空或不完整数据，触发 IOException，误判新 daemon 未在 30 秒内出现，导致重启流程报错。\n**How to apply:\n\n== 待更新 (3 条) ==\n  [claudetalk/changelog] approval-callback-notfound (target: approval-callback-notfound)\n    描述: 由于 Bot 重启导致飞书审批回调失败，深层原因之一是 spawn_claudetalk 未杀旧进程导致多实例并发，加剧重启丢失审批状态\n    更新内容预览: **Why:** 原：claudetalk 进程重启会导致内存中的 `pendingApprovals` Map 清空，待审批请求丢失，用户在飞书审批卡片上操作时回调无法匹配请求，从而提示“申请已过期或不存在”。180s 超时回调也与用户操作形成竞态，但重启是主要根因之一。\n新发现（2026-06-27）：进一步分析 ops-daemon 对 claudetalk 的启动/修复机制，发现 clau\n  [claudetalk/pitfalls] claudetalk-unhandled-rejection-crash (target: claudetalk-unhandled-rejection-crash)\n    描述: 排查claudetalk进程意外退出且无crash marker时，检查unhandledRejection/uncaughtException处理依赖Node.js启动标志的问题；最新代码增加了ex\n    更新内容预览: **Why:** claudetalk 主进程（index.ts）中 `unhandledRejection` 事件处理仅记录日志、写入 exit marker 并尝试发送飞书通知，但未调用 `event.preventDefault()`，导致 Node.js 15+ 默认仍会终止进程，除非启动时加上 `--unhandled-rejections=warn` 标志。此外，`uncaughtEx\n  [claudetalk/changelog] claudetalk-lifecycle-management (target: claudetalk-lifecycle-management)\n    描述: 排查 claudetalk 生命周期管理时参考：启动不再 spawn、修复流程增加 pre-kill 解决孤儿进程问题\n    更新内容预览: **Why:** 原分析发现 spawn_claudetalk() 缺少预杀旧进程步骤，导致重启/修复时旧进程不被终止，产生孤儿进程和多实例共存。PID 文件被盲目覆盖。新观察：2026-06-26 实际运行中发现旧的 mcp-standalone 进程 (PID 12916, 06-25 启动) 与新的 cli.js 进程 (PID 508, 06-26 启动) 同时存在，证实 pre-kill\n\n审核方式: 用 memory_get 查看原文，确认后用 memory_store/memory_update 写入"
+  },
+  "2026-06-28/025-记忆审核--17-条待审核--17-新增": {
+    "status": "completed",
+    "summary": "记忆审核: 17 条待审核 (17 新增)",
+    "created_at": "2026-06-28T02:30:55.551014",
+    "updated_at": "2026-06-27T19:30:15.366Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "medium",
+    "progress": "会话: 6b22f0a0-c8d0-4b2b-b384-\n\n== 待新增 (17 条) ==\n  [memory-mcp/design] memory-scope-focus-principle\n    描述: 记忆系统应聚焦于整体架构、项目间依赖、关键操作知识（Know-How），而非可从代码轻易获取的冗余细节，以提升实用性\n    召回关键词: 记忆体应该记录什么内容 记忆范围原则\n    内容预览: **Why:** 随着记忆体膨胀，大量代码细节被存储，但这些信息 LLM 可通过读取代码轻松获取。真正需要记忆的是上下文型的关键知识：项目整体架构、跨项目依赖关系、非显而易见的操作 Know-How（如重启 proxy 的正确方式），才能在实际任务中提供即时价值。\n**How to apply:** 未来记忆提取提示词和审核流程中，优先记录架构、依赖、SOP 类信息；代码细节仅在无法通过常规文件读\n  [session-knowledge/sop] session-extraction-manual-review\n    描述: 会话结束记忆提取已改为人工审核模式，不再自动写入记忆库，写操作仅由审核通过后触发\n    召回关键词: 记忆提取人工审核 自动写入关闭\n    内容预览: **Why:** 自动写入的准确性和必要性难以保证，引入大量低价值条目。改为人工审核后，所有由 LLM 提取的记忆条目需经人类确认才会写入存储，确保记忆库质量。\n**How to apply:** 当前 staging 文件的 consume 流程已暂停自动写入。审核者定期检查 staging 区或飞书通知，对候选条目进行批准、合并或拒绝操作。memory-mcp 的工具调用写入层保留供审核后的批\n  [ops-daemon/sop] proxy-restart-safe-procedure\n    描述: 重启 model-proxy 时必须通过 ops-daemon 保护机制，不可直接 kill 进程，否则引发守护进程死亡循环\n    召回关键词: 怎样安全重启 model-proxy 代理重启方式\n    内容预览: **Why:** model-proxy 受 ops-daemon 守护，直接 `taskkill` 或 `kill` 会导致守护进程检测到缺失并立即 spawn 新实例，可能引发 PID 文件损坏或重启风暴。正确方式是通过受保护的重启通道操作。\n**How to apply:** 在 Windows 环境下，使用 `D:\\ClaudeProjects\\ops-daemon\\restart-cle\n  [ops-daemon/design] maintainability-refactor-repair-coordinator\n    描述: 代码审核后封装修复状态游离 dict、替换绕过 StateStore API 的 _merge_working、统一 CRASH_MARKER 定义，提升封装性和可维护性\n    召回关键词: ops-daemon 可维护性修复 游离字典 StateStore CRASH_MARKER 封装\n    内容预览: **Why:** 代码审核发现三个可维护性问题：1) main.py 中用 6 个游离 dict 管理修复状态，隐式耦合，修改修复逻辑易漏掉同步；2) `_merge_working` 绕过 StateStore API 直接写入底层文件，破坏封装；3) CRASH_MARKER 路径与写/清函数在 process_manager.py 和 checks/claudetalk.py 重复定义。这些\n  [claudetalk/pitfalls] startup-fail-codes\n    描述: 排查 claudetalk 启动失败错误码时参考：exit code 2 可能因配置缺失，exit code 127 因 bun 未安装\n    召回关键词: claudetalk exit code 2 bun not found startup failure\n    内容预览: **Why:** 在排查 claudetalk 退出问题时，观察到 CLI 进程退出码 2 的同时配置文件 .claudetalk.json 缺失（cat 报错文件不存在），推测缺少该配置会导致启动立即失败。另外在执行某些脚本时出现 \"bun: command not found\" 导致退出码 127，表明环境缺少 bun 运行时。\n**How to apply:** 当 claudetalk 无\n  [memory-mcp/design] operations-segment-support\n    描述: 新增 operations 段到记忆系统，支持各项目 SOP 运维文档\n    召回关键词: operations segment memory-mcp valid_segments\n    内容预览: **Why:** 原有 VALID_SEGMENTS 不包含 'operations'，无法按段存储运维操作指南。现需为每个核心服务创建标准化的运行手册（启动/停止/健康检查/日志/常见故障），因此新增该段。\n**How to apply:** VALID_SEGMENTS 已更新为包含 'operations'；创建运维文档时使用 `namespace: 项目名, segment: operat\n  [(global)/sop] core-services-operations-documentation\n    描述: 已为 model-proxy、ops-daemon、claudetalk、memory-mcp、session-knowledge、daily_report、ops-dashboard、present\n    召回关键词: operations sop runbook maintenance\n    内容预览: **Why:** 核心服务缺乏统一的运维操作文档，重启、查日志、健康检查的操作散落在 pitfalls 中甚至缺失，导致 LLM 在故障排查时只能猜测命令。集中编写 operations.md 可快速提供可执行操作。\n**How to apply:** 查看各服务目录下的 operations.md，包含启动命令、停止命令、健康检查端点、日志文件位置、常见故障修复步骤及依赖检查。已覆盖项目：mod\n  [(global)/design] core-services-architecture-design-decisions\n    描述: 在 model-proxy、ops-daemon、claudetalk、memory-mcp、session-knowledge 主 architecture.md 末尾追加 ## 设计决策，解释关键\n    召回关键词: architecture design decisions why trade-offs alternative\n    内容预览: **Why:** 原有 architecture.md 侧重功能描述，缺少设计决策背景（为什么选这个架构、放弃了什么、有何权衡）。LLM 在读代码时能看到实现，但理解设计意图需额外上下文。补充说明能提升未来维护和排查效率。\n**How to apply:** 查阅各项目 architecture.md 文件末尾的 `## 设计决策` 段落，其中说明了自建路由而非 litellm、双 proxy、P\n  [memory-mcp/design] memory-segment-restructuring\n    描述: 记忆体架构重构为 per-namespace 多段文件（overview/deps/design/sop/pitfalls），替代扁平架构，提升检索效率和 LLM 理解度。\n    召回关键词: 记忆文件分段架构 design pitfalls\n    内容预览: **Why:** 旧架构 memory 文件臃肿，LLM 每次需加载大量内容，token 浪费且关键信息难定位。新分段结构按功能切分，匹配不同查询场景，减少无关信息干扰。\n**How to apply:** 每个 namespace 按需建立 _index, overview, deps, design, sop, pitfalls 六个段。已通过 sub-agent 批量迁移 claudetal\n  [session-knowledge/pitfalls] hook-break-after-memory-restructure\n    描述: 记忆架构重构后，SessionStart 索引注入和 SessionEnd 记忆提取可能因分段变化而失效，需更新 hook 解析逻辑并提高记忆写入审核门槛。\n    召回关键词: SessionStart hook 失效 memory restructuring 索引注入错误\n    内容预览: **Why:** 记忆文件从单个 architecture.md 拆分为 design/deps/sop 等多段后，SessionStart hook 中的 MEMORY.md 解析正则和 segments 列表可能不匹配，导致索引注入错误或缺失。SessionEnd 记忆提取的 staging 文件内容评判标准（如 LLM 审核门槛）也可能需调整以适应新结构。\n**How to apply:**\n  [session-knowledge/design] memory-policy-updates\n    描述: 记忆策略调整：移除置信度、审核不合格记忆加入人工待办而不删除、严格提高提取/审核prompt标准，仅保留高层概念性记忆\n    召回关键词: 记忆审核策略 置信度移除 不合格记忆待办 prompt 提高标准 高层概念记忆\n    内容预览: **Why:** 当前记忆系统主要存储概念性描述，置信度对事实性判断冗余；现有提取/审核 prompt 过于宽松，导致低质量记忆被写入；不合格记忆直接清除可能丢失潜在价值，需转为人工待办。 \n\n**How to apply:** \n1. 在 `store_mem()` 中移除 confidence 参数的写入与校验逻辑，不再存储置信度字段。 \n2. 在记忆审核流程中，对不满足规范（如缺少 why/\n  [memory-mcp/design] 6-segment-model-sync\n    描述: 记忆段模型从4段扩展至6段（_index/overview/deps/design/sop/pitfalls），涉及7个文件的同步链更新\n    召回关键词: 6 segment model sync VALID_SEGMENTS server.ts session_knowledge.py\n    内容预览: **Why:** 原4段模型无法表达项目全貌，新增 overview/deps/design/sop 段以支持更细粒度的记忆分类。同步链从 _storage.py 唯一真相源扩展到 TS 验证、提取 prompt、审核等 7 个文件。\n**How to apply:** 修改段名时需同步 _storage.py:11, server.ts:6, server.py:17, session_know\n  [memory-mcp/design] remove-confidence-field\n    描述: 概念性记忆不再使用置信度字段，删除所有读取、写入、衰减逻辑\n    召回关键词: remove confidence from memory system strip confidence\n    内容预览: **Why:** 73%的记忆是概念性的，不需要置信度梯度。保留置信度只会增加不必要的维护工作。\n**How to apply:** 批量删除所有 .md 文件的 frontmatter 中 confidence 行；修改 server.ts, _storage.py, server.py, session_knowledge.py, memory_health.py, task_creator.\n  [daily-report/design] audit-completeness-6-segments\n    描述: 记忆完整性检查从仅查 pitfalls+architecture 扩展到 6 个段，并移除置信度衰减逻辑\n    召回关键词: memory health audit completeness 6 segments keyword checks\n    内容预览: **Why:** 原审核只关注陷阱和架构，无法保证其他段的内容质量。新规范要求每个段必须含有关键词，确保所有记忆都经过验证。\n**How to apply:** 重写 memory_health.py 的 _check_completeness 方法，为 6 个段分别定义正则关键词；移除 _apply_decay_boost 和 _cleanup_stale_pitfalls 等置信度相关函数。\n  [bash-hooks/sop] dead-code-arch-review-removal\n    描述: 删除 git_sync.py 中 5 个 architecture review 函数及 build_arch_map.py，因 architecture.md 已废弃\n    召回关键词: delete architecture review dead code git_sync build_arch_map\n    内容预览: **Why:** architecture.md 全部删除，相应的自动审查、LLM 判断、文件映射等功能成为死代码，清理可减少维护负担与误触发。\n**How to apply:** 从 git_sync.py 删除 update_architecture, do_arch_review, llm_judge_arch_update, get_changed_files, get_git_diff；\n  [session-knowledge/design] extraction-prompt-segment-guidance\n    描述: 在 LLM 提取 prompt 中增加每个段的用途说明，引导模型正确分配 segment 字段\n    召回关键词: extraction prompt segment purpose guidance session_knowledge.py\n    内容预览: **Why:** 原来只提供段名列表，LLM 容易混淆段的使用场景。明确每个段的定义可提高提取准确性。\n**How to apply:** 在 session_knowledge.py 的 fmt_prompt 中增加段用途说明块，说明 _index 到 pitfalls 各段的含义，并在 VALID_SEGMENTS 中同步为 6 段。\n  [(global)/design] memory-deconfidence-segment-refactor\n    描述: 记忆系统去除置信度、段模型改为6段、审核层重写的整体设计决策与实施计划\n    召回关键词: memory confidence removal segment 6 segments audit rewrite\n    内容预览: **Why:** 概念性记忆（占73%）不需要置信度梯度，置信度衰减逻辑（L2）冗长且不符合记忆本质；段模型需同步实际使用场景，去除无用的 architecture 和 changelog 段，保留 _index/overview/deps/design/sop/pitfalls 六段；审核应从置信度建议转为统一的内容合理性与时效性判断，发现问题直接创建待办任务，避免机器学习层面的过度设计。\n**\n\n审核方式: 用 memory_get 查看原文，确认后用 memory_store/memory_update 写入"
+  },
+  "2026-06-28/026-proxy--model-归属信息注入": {
+    "status": "completed",
+    "summary": "proxy @model 归属信息注入",
+    "created_at": "2026-06-28T04:12:23.230Z",
+    "updated_at": "2026-06-28T14:08:09.771Z",
+    "type": "feature",
+    "source": "claudetalk",
+    "progress": "开始实施。当前状态分析：\n1. _resolve_prompt_model 已返回 (route, model_name, \"prompt-bypass\") — OK\n2. proxy_anthropic/proxy_openai 端点已捕获 _reason 但未传给 handler — 需要改\n3. handlers.py 4个handler均无 _reason 参数 — 需要加\n4. 注入点设计已确认：\n   - Anthropic non-stream: 在 content 数组追加 text block\n   - Anthropic stream: 在 message_delta 前追加 content_block_start/delta/stop\n   - OpenAI non-stream: 在 choices[0].message.content 后追加\n   - OpenAI stream: 在流最后 chunk 注入\n5. 旁路测试：改完后先在新端口启动测试"
+  },
+  "2026-06-28/027-记忆体待处理--待审核-1-条--问题-214-条---gl": {
+    "status": "completed",
+    "summary": "记忆体待处理 (待审核 1 条, 问题 214 条): global-overview, (global)-index, claude-projects-c-d-migration, global-deps ...(共215项)",
+    "created_at": "2026-06-28T00:00:00.000Z",
+    "updated_at": "2026-06-28T13:14:24.680Z",
+    "type": "task",
+    "source": "ops-daemon",
+    "priority": "medium",
+    "progress": "=== 待审核（需运行 memory_review action=apply）===\n- [global-overview] 明文提及 API keys 和飞书凭据路径，存在敏感内容风险\n\n=== 质量检查 ===\n- [(global)-index] completeness: 缺少 功能/用途\n- [claude-projects-c-d-migration] completeness: 缺少 功能/用途\n- [global-deps] completeness: 缺少 影响范围\n- [glm-52-vs-qwen-37-comparison] completeness: 缺少 项目描述, 功能/用途\n- [global-mcp-index] completeness: 缺少 项目描述, 功能/用途\n- [jianyingpro-cache-cleanup] completeness: 缺少 功能/用途\n- [my-test] completeness: 缺少 项目描述, 功能/用途\n- [token-endpoint-migrated] completeness: 缺少 项目描述, 功能/用途\n- [global-overview] completeness: 缺少 范围/组件, 数据流/流程\n- [(global)-pitfalls] completeness: 缺少 修复方案\n- [popup-from-schtask-service-start] completeness: 缺少 项目描述, 功能/用途\n- [powershell-automatic-pid-variable-readonly] completeness: 缺少 症状/现象, 根因, 修复方案"
+  },
+  "2026-06-28/028-清理-daily-report-daily-report": {
+    "status": "completed",
+    "summary": "清理 daily_report/daily_report/ 陈旧嵌套包",
+    "created_at": "2026-06-28T04:30:48.366Z",
+    "updated_at": "2026-06-28T04:34:40.364Z",
+    "type": "chore",
+    "source": "cc",
+    "progress": "pitfalls 从 VALID_SEGMENTS 移除是设计选择，已合并到 _index。本任务不受影响。\n\n当前确认：\n- 顶层 daily_report/sections/ 已无 memory_health.py/task_creator.py/memory.py\n- daily_report/daily_report/ 嵌套包仍包含这三个已删除文件的旧版副本\n- grep 未在当前活跃代码中发现 `daily_report.daily_report` import\n- 清理时同步检查 pip install -e 注册情况"
+  },
+  "2026-06-28/029-记忆写入--5-条--5-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-06-28T15:43:48.485091",
+    "updated_at": "2026-06-28T13:18:24.472Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: e451f0ce-633f-4ab9-aada-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [session-knowledge/design] auto-write-with-task-audit -- 记忆提取改为自动写入，同时生成待办任务供人工回溯\n  [session-knowledge/design] difficulty-check-in-extraction -- 记忆提取增加 LLM 自动获取难度检查，过滤无决策价值的信息\n  [session-knowledge/sop] curate-staging-direct-write-flow -- curate_staging 中直接调用 store_mem/memory_update 并收集操作记录\n  [session-knowledge/sop] curate-staging-continue-syntax-fix -- 修复 curate_staging 中 continue 不在循环内的语法错误\n  [session-knowledge/design] dedup-merge-not-overwrite -- curate_staging 去重策略讨论：合并而非覆盖"
+  },
+  "2026-06-28/030-记忆写入--5-条--2-新增---3-更新": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (2 新增 + 3 更新)",
+    "created_at": "2026-06-28T20:11:47.154199",
+    "updated_at": "2026-06-30T15:11:20.815Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "全部审核完成"
+  },
+  "2026-06-28/031-记忆写入--3-条--3-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-06-28T22:22:54.823172",
+    "updated_at": "2026-06-29T15:35:51.418Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 4b436dd8-2b1f-4f74-8c8f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [ops-daemon/design] github-ci-json-none-error -- github_ci 检查返回 None 时 JSON 解析失败\n  [ops-daemon/sop] proxy-test-switch-backup-first -- 测试主 proxy 前必须先将流量切到备用\n  [model-proxy/design] attribution-injection-compatibility -- 归属注入时追加text block不破坏下游兼容性"
+  },
+  "2026-06-29/032-记忆写入--1-条--1-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-06-29T01:15:37.075933",
+    "updated_at": "2026-06-29T15:35:51.446Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 478e1f1d-f534-4f49-bda2-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [(global)/_index] api-expects-structured-slides -- Presenton /generate 接口期望结构化 slides 对象而非 raw markdown，Pydantic 校验会失败"
+  },
+  "2026-06-29/033-记忆写入--4-条--4-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-06-29T22:54:09.586630",
+    "updated_at": "2026-06-29T15:35:51.481Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ec370fe6-a048-4188-a4fb-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [memory-mcp/design] status-singleton-fix-26-garbled -- 日报记忆审核乱码：status-singleton-fix-26 描述含乱码（编码损坏）\n  [claudetalk/design] timeout-orphan-process -- claude.ts 超时 kill 逻辑可能产生孤儿进程\n  [claudetalk/design] feishu-remote-control-decoupling -- 讨论 claudetalk 挂掉时远程重启无法实现的问题，建议将重启指令与 claudetalk 进程解耦\n  [global/sop] cloudflared-tunnel-disconnect-keepalive -- 排查 cloudflared 隧道频繁断开时的 keepalive 配置"
+  },
+  "2026-07-01/001-feishu-bridge-远程命令回复": {
+    "status": "completed",
+    "summary": "feishu-bridge 远程命令回复",
+    "created_at": "2026-07-01T15:48:04.300Z",
+    "updated_at": "2026-07-01T15:48:07.582Z",
+    "type": "bug",
+    "source": "cc"
+  },
+  "2026-07-01/002-watch-exit-记录-claudetalk-crash-详情": {
+    "status": "completed",
+    "summary": "_watch_exit 记录 claudetalk crash 详情",
+    "created_at": "2026-07-01T15:48:04.311Z",
+    "updated_at": "2026-07-01T15:48:07.607Z",
+    "type": "task",
+    "source": "cc"
+  },
+  "2026-07-01/003-sdd-engine-替代旧-workflow-scripts-收尾": {
+    "status": "completed",
+    "summary": "sdd-engine 替代旧 workflow scripts 收尾",
+    "created_at": "2026-07-01T15:48:04.327Z",
+    "updated_at": "2026-07-01T15:48:07.625Z",
+    "type": "chore",
+    "source": "cc"
+  },
+  "2026-07-02/001-记忆写入--5-条--5-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-02T01:14:40.020803",
+    "updated_at": "2026-07-02T15:53:01.816Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ccbfd230-c77f-464e-bf46-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [(global)/_index] ? -- \n  [claudetalk/sop] bridge-remote-command-refactor -- feishu-bridge 远程控制链路替换为 tunnel_manager，解决手机端无回应问题\n  [ops-daemon/sop] dashboard-remote-stop-residual -- 关闭远程后 ops-dashboard 端口 8765 残留进程\n  [ops-daemon/sop] daemon-graceful-restart-ps1-error -- Daemon 优雅重启失败根因：Python 执行 .ps1 导致 SyntaxError\n  [memory-mcp/design] memory-store-no-description-arg -- memory_store() 不接受 description 参数，已移除该字段"
+  },
+  "2026-07-02/002-记忆写入--7-条--7-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 7 条 (7 新增)",
+    "created_at": "2026-07-02T07:33:48.841422",
+    "updated_at": "2026-07-02T15:53:01.823Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: effbc5c8-84e6-4d31-beed-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [ops-daemon/design] claudetalk-rapid-crash-exhausted-msg -- claudetalk频繁崩溃触发退避及通知消息\n  [memory-mcp/sop] git-diff-needs-head-commit -- git diff 优先扫描要求仓库有 HEAD 提交，无提交会回退到哈希比对导致全量扫描\n  [memory-mcp/sop] windows-paths-in-bash-hooks -- bash hook 中使用 Windows 硬编码路径需转换，否则可能报错\n  [memory-mcp/sop] python-hardcoded-version-candidates -- findPython() 中硬编码 Python 版本号路径易因版本升级失效\n  [memory-mcp/sop] bash-type-vs-cat -- bash 中使用 type 查看文件内容会出错，应使用 cat\n  [memory-mcp/design] multi-pass-scan-pipeline -- 扫描管线分三阶段：符号提取、边构建、影响分析\n  [memory-mcp/overview] project-overview -- memory-mcp功能概览"
+  },
+  "2026-07-02/003-记忆写入--2-条--2-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-02T13:14:16.242011",
+    "updated_at": "2026-07-02T15:53:01.829Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f3f58e09-d3b8-479b-879a-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [(global)/_index] sop-segment-focus-operational-guidance -- SOP段应记录具现实指导意义的操作方法论，不累积历史bug列表\n  [global/sop] jsonl-session-integrity-check -- 调研claude.exe JSONL session损坏根因，当前环境无损坏，上游共6个相关issue"
+  },
+  "2026-07-02/004-记忆写入--8-条--8-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 8 条 (8 新增)",
+    "created_at": "2026-07-02T19:23:27.083566",
+    "updated_at": "2026-07-02T15:53:01.833Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: d1637169-8eb3-45e0-94dc-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (8 条) ==\n  [memory-mcp/design] sop-segment-redefined -- SOP段从操作/陷阱重新定义为方法论\n  [memory-mcp/design] health-check-l1-segment-enhance -- L1审核增强段归属与陈旧引用检查\n  [memory-mcp/design] code-graph-on-demand-injection -- 代码图谱信息按需注入而非全量推送\n  [memory-mcp/design] code-graph-incremental-update -- 代码图谱通过 git push 增量更新而非全量扫描\n  [memory-mcp/sop] memory-code-of-conduct-in-claudemd -- 记忆体行为准则已写入项目 CLAUDE.md\n  [memory-mcp/design] preload-hook-deprecation -- 弃用code-graph preload hook，转向按需查询方案\n  [memory-mcp/pitfalls] memory-store-segment-enum -- memory_store segment 只接受固定枚举值，勿用 sop\n  [memory-mcp/pitfalls] memory-store-no-description-param -- memory_store 不接受 description 参数，误用会导致 TypeError"
+  },
+  "2026-07-02/005-记忆写入--3-条--3-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-02T23:23:13.565816",
+    "updated_at": "2026-07-02T15:53:01.838Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 9cb1cba0-2e8c-4240-8938-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [ops-daemon/design] daemon-restart-mutex-race -- daemon 重启时 Named Mutex 释放延迟导致新实例退出循环\n  [ops-daemon/design] proxy-restart-backup-switch -- 重启主 proxy 前必须先将 CC 切换到备份 proxy 4002\n  [claudetalk/design] claudetalk-channel-architecture -- ClaudeTalk 渠道架构说明"
+  },
+  "2026-07-02/006-将-feishu-bridge-合并入-claudetalk-单进程": {
+    "status": "in_progress",
+    "summary": "将 feishu-bridge 合并入 claudetalk 单进程",
+    "created_at": "2026-07-02T15:44:42.531Z",
+    "updated_at": "2026-07-02T15:44:45.514Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "已完成三组件功能分配分析，确认合并方案：删除 feishu-bridge.ts（897行）和 peer-message 文件协议；将 WSClient/事件分发/系统指令合并入 index.ts；保留 feishu-notify MCP 独立进程。收益：少 1 进程、0 轮询延迟、约 1000 行净减、审批/存档全部进程内"
+  },
+  "2026-07-03/2026-07-03/001memory-review-pending": {
+    "summary": "记忆体待处理 (待审核 0 条, 问题 236 条): (共236项)",
+    "type": "task",
+    "source": "ops-daemon",
+    "priority": "low",
+    "status": "completed",
+    "progress": "=== 质量检查 ===\n- [agent-core-reusable-patterns] completeness: 触发条件, 根因解释, 诊断思路\n- [agent-core] completeness: 触发条件, 根因解释, 诊断思路\n- [bash-hooks-design] completeness: 约束条件, 已知脆弱点\n- [hook-encoding-gbk-error] completeness: 触发条件, 诊断思路\n- [hook-security-and-audit-scripts] completeness: 触发条件, 根因解释\n- [bash-hooks-overview] completeness: 范围/组件, 数据流/流程\n- [protect-services-hook] completeness: 功能/用途\n- [blender-mcp-index] completeness: 项目描述, 功能/用途\n- [cad-pipeline-index] completeness: 项目描述, 功能/用途\n- [ocr-invert-preprocessing] completeness: 依赖方, 影响范围\n- [raw-photo-vlm-fragile] completeness: 项目描述, 功能/用途\n- [standardized-6step-pipeline] completeness: 影响范围\n- [claudetalk-index] completeness: 项目描述\n- [approval-card-handling] completeness: 影响范围\n- [archive-confirm-callback-card] completeness: 项目描述, 功能/用途\n- [auth-engine-integration] completeness: 根因解释\n- [auto-compact-context-config] completeness: 诊断思路\n- [background-task-framework] completeness: 触发条件, 根因解释, 诊断思路\n- [background-task-inmemory-model] completeness: 依赖方\n- [bot-session-vs-remote-commands] completeness: 接口",
+    "created_at": "2026-07-03",
+    "updated_at": "2026-07-05T23:00:00"
+  },
+  "2026-07-06/001-记忆写入--20-条--20-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 20 条 (20 新增)",
+    "created_at": "2026-07-06T16:24:11.820823",
+    "updated_at": "2026-07-06T11:52:48.061Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "第一批 20 条处理完毕：写入 7 条，跳过 12 条，更新 1 条。开始处理第二批"
+  },
+  "2026-07-06/002-记忆写入--10-条--10-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 10 条 (10 新增)",
+    "created_at": "2026-07-06T16:24:47.724122",
+    "updated_at": "2026-07-06T11:52:48.091Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ffdef7c1-2d9b-4cae-a59c-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (10 条) ==\n  [claudetalk/sop] feishu-approval-clickerid-must-be-open-id -- 飞书审批卡片回调必须使用用户 open_id 作为 clicker_id\n  [ops-daemon/design] mcp-notify-feishu-integration -- ops-daemon MCP 已集成飞书通知卡片工具\n  [memory-mcp/sop] memory-segment-misplacements-remaining -- 当前记忆库中仍有 3 条归类偏差需人工修正\n  [model-proxy/design] agent-model-sub-suffix -- Agent模型通过-sub后缀指定等级，proxy直接路由跳过分类器\n  [model-proxy/sop] sub-agent-complexity-routing -- Sub-agent复杂度路由策略：简单用flash，复杂用pro\n  [model-proxy/sop] hook-session-recall-import-error -- UserPromptSubmit hook因_storage模块导入失败报错\n  [model-proxy/sop] agent-tools-prompt-consistency -- Agent定义必须保持tools与prompt所需工具一致\n  [model-proxy/sop] agent-description-routing-keywords -- Agent description应包含路由触发关键词以确保自动匹配\n  [claudetalk/design] phone-task-card-sync-write-async-update -- 手机任务飞书卡片操作采用同步写本地+异步更新卡片以适配3s回调窗口\n  [claudetalk/design] approval-callback-dedup-mechanism -- approval-handler 使用 pendingApprovals 和 processedApprovals 防重复处理"
+  },
+  "2026-07-06/2026-07-06/001memory-review-pending": {
+    "summary": "记忆体待处理 (待审核 2 条, 问题 201 条): index-rebuild-full-scan-design, feishu-ws-split-decision(共203项)",
+    "type": "task",
+    "source": "ops-daemon",
+    "priority": "medium",
+    "status": "completed",
+    "progress": "完成处理：\n- 段归属修正：memory-mcp-design (sop→design), model-proxy-design (sop→design), tasks-design (sop→design), feishu-ws-split-decision (sop→design)\n- 补充 feishu-ws-split-decision 决策代价说明（待审核建议采纳）\n- index-rebuild-full-scan-design 待审核建议不予处理（规模未到需要量化拐点）\n- 清理 3 份重复 frontmatter\n- 重建 MEMORY.md 索引\n当前健康检查段归属 0 错误（5 条标记为启发式误判，实际正确）",
+    "created_at": "2026-07-06",
+    "updated_at": "2026-07-06T11:42:56.392Z"
+  },
+  "2026-07-06/2027-记忆写入--1-条--1-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-06T18:42:17.275860",
+    "updated_at": "2026-07-06T11:52:48.118Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "跳过：config 残留项（proxy_switch/repair），属于代码清理而非 LLM 决策记忆"
+  },
+  "2026-07-06/2028-记忆写入--8-条--8-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 8 条 (8 新增)",
+    "created_at": "2026-07-06T18:42:34.930178",
+    "updated_at": "2026-07-06T11:52:48.141Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 4b753c1a-39c5-4e61-ba21-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (8 条) ==\n  [claudetalk/sop] approval-callback-post-crash-reject -- 审批回调在进程重启后显示已拒绝的根因\n  [claudetalk/sop] feishu-bridge-approval-field-mismatch -- feishu-bridge 审批分支字段读取错误\n  [claudetalk/design] pending-approvals-persistence -- pendingApprovals 持久化设计决策\n  [ops-daemon/sop] feishu-bridge-status-check-systemd -- ops-daemon 检查 feishu-bridge 状态的方式\n  [memory-mcp/sop] memory-mcp-design -- 记录操作规范与陷阱，应从 design 迁至 sop\n  [model-proxy/design] model-proxy-design -- 记录设计决策，应从 sop 迁至 design\n  [tasks/design] tasks-design -- 记录设计决策，应从 sop 迁至 design\n  [ops-daemon/design] proxy-switch-repair-unused -- proxy_switch和repair配置已启用但代码未使用"
+  },
+  "2026-07-06/2029-记忆写入--2-条--2-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-06T19:35:01.346575",
+    "updated_at": "2026-07-06T11:52:48.165Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "写入 1 条 (claude-exit-143-diagnosis)，跳过 1 条 (feishu-notify-not-enabled 描述有误导性)"
+  }
+}
