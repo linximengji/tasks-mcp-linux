@@ -443,5 +443,15 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: fedf0e7c-0cd5-4a0d-a23e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [presenton/design] slow-image-pull-local-build -- 镜像拉取慢，改为本地构建Docker镜像\n  [presenton/design] single-user-auth-no-registration -- Presenton 认证为单用户模式，无开放注册\n  [presenton/sop] ui-not-matching-windows-version -- 界面与 Windows 版不符时，检查登录和配置\n  [presenton/sop] locale-warning-harmless -- setlocale: LC_ALL 警告可安全忽略\n  [claudetalk/sop] claude-exit-code-143-timeout -- claude 退出码 143 的原因排查"
+  },
+  "2026-07-06/2032-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-06T23:45:28.899197",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 902582a5-0e1c-4d1d-a7dc-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/deps] claude-subprocess-exit-codes -- 飞书桥接中 claude 子进程退出代码含义\n  [claudetalk/design] feishu-bridge-separation -- 飞书桥接功能分离设计原则\n  [claudetalk/sop] private-chat-debug-steps -- 排查飞书私聊不回复的步骤\n  [model-proxy/design] tag-model-attribution-injection -- @tag 模式指定模型后，回复末尾自动注入模型归属行的实现方式"
   }
 }
