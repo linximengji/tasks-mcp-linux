@@ -495,5 +495,25 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: fedf0e7c-0cd5-4a0d-a23e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [claudetalk/sop] stability-test-initial-result -- 首次稳定性测试结果：全部回复但一条失败，延迟统计\n  [model-proxy/design] remove-default-attribution -- 移除 proxy 在非 bypass 路径自动注入 [来自 @model: …] 的行为\n  [ops-dashboard/design] disk-usage-overall-percent -- Dashboard 磁盘使用率显示整体而非分区最大值"
+  },
+  "2026-07-07/004-记忆写入--7-条--7-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 7 条 (7 新增)",
+    "created_at": "2026-07-07T01:19:55.600753",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: d1c7de9c-4164-4267-80b1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [global/sop] use-python3-not-python -- Ubuntu下必须使用python3而非python命令\n  [ops-dashboard/design] disk-capacity-display-rule -- 仪表盘硬盘容量显示规范\n  [ops-dashboard/sop] service-status-misread-down -- 仪表盘服务状态误报宕机\n  [claudetalk/sop] avoid-kill-9-use-sigterm -- 避免使用 kill -9，改用 SIGTERM\n  [claudetalk/sop] multiple-claude-processes -- 注意多重 claude 进程残留\n  [model-proxy/design] unmodeled-routing-fallback -- 未指定model时proxy的路由决策链\n  [model-proxy/design] budget-aware-allocator-cache -- 预算感知路由的实时余额计算与60秒缓存"
+  },
+  "2026-07-07/005-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-07T01:19:56.475231",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: d1c7de9c-4164-4267-80b1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [ops-dashboard/sop] proxy-showdown-due-to-backup-port -- Dashboard proxy显示宕机但实际up原因\n  [ops-daemon/sop] restart-ops-daemon -- 重启ops-daemon的标准操作\n  [global/sop] use-python3-python-missing -- 环境中必须使用python3调用脚本\n  [model-proxy/design] no-model-specified-routing -- 不显式指定 model 时代理的回落路由链路\n  [model-proxy/design] token-plan-budget-aware-allocation -- Token Plan 感知实时剩余额度的动态模型分配策略\n  [model-proxy/design] l2-classifier-flash-model -- L2 分类器通过 flash 模型异步评估请求复杂度"
   }
 }
