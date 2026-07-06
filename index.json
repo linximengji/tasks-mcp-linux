@@ -515,5 +515,15 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: d1c7de9c-4164-4267-80b1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [ops-dashboard/sop] proxy-showdown-due-to-backup-port -- Dashboard proxy显示宕机但实际up原因\n  [ops-daemon/sop] restart-ops-daemon -- 重启ops-daemon的标准操作\n  [global/sop] use-python3-python-missing -- 环境中必须使用python3调用脚本\n  [model-proxy/design] no-model-specified-routing -- 不显式指定 model 时代理的回落路由链路\n  [model-proxy/design] token-plan-budget-aware-allocation -- Token Plan 感知实时剩余额度的动态模型分配策略\n  [model-proxy/design] l2-classifier-flash-model -- L2 分类器通过 flash 模型异步评估请求复杂度"
+  },
+  "2026-07-07/006-记忆写入--8-条--8-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 8 条 (8 新增)",
+    "created_at": "2026-07-07T01:42:08.025340",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: fedf0e7c-0cd5-4a0d-a23e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (8 条) ==\n  [claudetalk/sop] safekill-usage -- 使用 safekill 安全杀死进程或重启服务\n  [claudetalk/design] restart-watcher-mechanism -- claudetalk 的重启监视器通过标记文件触发\n  [global/sop] locale-warning-fix -- 消除 bash setlocale LC_ALL 警告\n  [claudetalk/sop] avoid-multiple-claude-resume -- 避免同时运行多个 claude --resume 进程\n  [global/sop] strace-ptrace-permission -- strace 需要调整 ptrace_scope 或 root 权限\n  [ops-dashboard/design] presenton-status-field -- Dashboard 如何获取 Presenton 服务状态\n  [ops-dashboard/design] dashboard-refresh-polling -- Dashboard 轮询机制使用 setTimeout 递归\n  [presenton/sop] start-production-service -- 启动 Presenton 生产服务的标准命令"
   }
 }
