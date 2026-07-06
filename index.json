@@ -433,5 +433,15 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 9c679e7b-31c1-44aa-b072-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [ops-daemon/design] feishu-notify-mcp-integration -- feishu-notify 通过 ops-daemon MCP 提供通知卡片工具\n  [global/sop] mcp-permissions-configure -- 如何配置内部 MCP 工具授权\n  [memory-mcp/sop] segment-misplacement-heuristic-fixes -- 当前仍有 5 条记忆段归属偏差需关注\n  [feishu-notify/sop] feishu-notify-fail -- feishu-notify MCP 总是失败，可能是SSE服务不可用\n  [global/sop] locale-zh-cn-warning -- bash 环境每次输出 setlocale 警告，但命令依旧执行\n  [global/sop] git-sync-remote-url-missing -- session结束时的git sync模块需要每个仓库配置远程URL\n  [ops-daemon/design] dual-version-repos-strategy -- 项目同时在 GitHub 上维护 Windows 与 Linux 仓库"
+  },
+  "2026-07-06/2031-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-06T22:27:15.236681",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: fedf0e7c-0cd5-4a0d-a23e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [presenton/design] slow-image-pull-local-build -- 镜像拉取慢，改为本地构建Docker镜像\n  [presenton/design] single-user-auth-no-registration -- Presenton 认证为单用户模式，无开放注册\n  [presenton/sop] ui-not-matching-windows-version -- 界面与 Windows 版不符时，检查登录和配置\n  [presenton/sop] locale-warning-harmless -- setlocale: LC_ALL 警告可安全忽略\n  [claudetalk/sop] claude-exit-code-143-timeout -- claude 退出码 143 的原因排查"
   }
 }
