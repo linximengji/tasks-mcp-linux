@@ -459,5 +459,41 @@
     "summary": "测试手机飞书消息处理",
     "created_at": "2026-07-06T16:17:59.187Z",
     "updated_at": "2026-07-06T16:17:59.187Z"
+  },
+  "2026-07-07/001-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-07T01:01:03.551099",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: df6a405d-aa56-459f-8c13-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [ops-dashboard/sop] presenton-status-missing-in-latest-json -- Presenton 状态缺失导致仪表盘显示错误\n  [(global)/_index] tag-regex-cjk-support -- @tag 正则已放宽前导条件支持 CJK 字符紧贴 @\n  [claudetalk/sop] feishu-ws-silence-reconnect -- 飞书 WebSocket 空闲时 SDK 不会自动重连，需实现静默检测并主动重启服务。\n  [claudetalk/sop] bridge-ack-tracking -- Bridge 与 ClaudeTalk 通过 ACK 端点确认 peer 消息处理状态，避免重复或泄漏。\n  [claudetalk/sop] lark-datacache-10s-expiry -- 飞书 SDK 内部 DataCache 10 秒过期，可能导致分片事件包无法合并。\n  [global/sop] locale-warning-zh-cn -- 代理环境缺少zh_CN.UTF-8 locale导致bash警告"
+  },
+  "2026-07-07/002-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-07T01:01:15.328496",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: df6a405d-aa56-459f-8c13-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [ops-dashboard/sop] dashboard-data-source-requirements -- dashboard 数据源 latest.json 缺失 presenton 键会导致前端显示错误\n  [ops-dashboard/sop] proxy-error-backup-down -- proxy 备份端口 down 会导致 dashboard 报 proxy 错误\n  [ops-dashboard/design] presenton-status-check-dual-path -- presenton 状态检查存在两条路径，可能导致不一致\n  [claudetalk/sop] ws-silence-watchdog-causes -- WS静默检测机制导致连接异常，仅回复第一条消息\n  [claudetalk/design] peer-msg-ack-mechanism -- peer消息ACK机制防止重复处理\n  [model-proxy/sop] choices-keyerror-on-model-response -- 部分模型响应缺失 choices 字段导致 KeyError"
+  },
+  "2026-07-06/017-Dashboard的显示还是不正常": {
+    "status": "completed",
+    "summary": "Dashboard的显示还是不正常，硬盘容量实际是多少显示多少，不要显示分区的100%。",
+    "created_at": "2026-07-06T17:03:37.836Z",
+    "updated_at": "2026-07-06T17:03:37.836Z"
+  },
+  "2026-07-07/003-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-07T01:05:04.791907",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: fedf0e7c-0cd5-4a0d-a23e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [claudetalk/sop] stability-test-initial-result -- 首次稳定性测试结果：全部回复但一条失败，延迟统计\n  [model-proxy/design] remove-default-attribution -- 移除 proxy 在非 bypass 路径自动注入 [来自 @model: …] 的行为\n  [ops-dashboard/design] disk-usage-overall-percent -- Dashboard 磁盘使用率显示整体而非分区最大值"
   }
 }
