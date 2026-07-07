@@ -349,10 +349,10 @@
     "status": "in_progress",
     "summary": "将 feishu-bridge 合并入 claudetalk 单进程",
     "created_at": "2026-07-02T15:44:42.531Z",
-    "updated_at": "2026-07-02T15:44:45.514Z",
+    "updated_at": "2026-07-07T04:39:43.639Z",
     "type": "feature",
     "source": "cc",
-    "progress": "已完成三组件功能分配分析，确认合并方案：删除 feishu-bridge.ts（897行）和 peer-message 文件协议；将 WSClient/事件分发/系统指令合并入 index.ts；保留 feishu-notify MCP 独立进程。收益：少 1 进程、0 轮询延迟、约 1000 行净减、审批/存档全部进程内"
+    "progress": "已完成合并代码实现和编译验证，待重启确认"
   },
   "2026-07-03/2026-07-03/001memory-review-pending": {
     "summary": "记忆体待处理 (待审核 0 条, 问题 236 条): (共236项)",
@@ -525,5 +525,101 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: fedf0e7c-0cd5-4a0d-a23e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (8 条) ==\n  [claudetalk/sop] safekill-usage -- 使用 safekill 安全杀死进程或重启服务\n  [claudetalk/design] restart-watcher-mechanism -- claudetalk 的重启监视器通过标记文件触发\n  [global/sop] locale-warning-fix -- 消除 bash setlocale LC_ALL 警告\n  [claudetalk/sop] avoid-multiple-claude-resume -- 避免同时运行多个 claude --resume 进程\n  [global/sop] strace-ptrace-permission -- strace 需要调整 ptrace_scope 或 root 权限\n  [ops-dashboard/design] presenton-status-field -- Dashboard 如何获取 Presenton 服务状态\n  [ops-dashboard/design] dashboard-refresh-polling -- Dashboard 轮询机制使用 setTimeout 递归\n  [presenton/sop] start-production-service -- 启动 Presenton 生产服务的标准命令"
+  },
+  "2026-07-06/030-sessionend-hook的-git": {
+    "status": "completed",
+    "summary": "sessionend hook的 git sync机制是不是直接改成24小时以上才执行?",
+    "created_at": "2026-07-06T18:30:44.458Z",
+    "updated_at": "2026-07-06T18:30:44.458Z"
+  },
+  "2026-07-07/007-记忆写入--9-条--9-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 9 条 (9 新增)",
+    "created_at": "2026-07-07T07:24:24.236273",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 42f6a3b8-9ff1-4c19-826e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (9 条) ==\n  [global/sop] token-plan-model-specific-rates -- Token Plan 各模型 credits 费率不同，不能取平均值\n  [global/sop] token-plan-portal-local-alignment -- 门户累计 credits 可能包含旧计划数据，计算费率需同期对齐\n  [claudetalk/sop] feishu-repeat-send-root-cause -- 飞书消息需发送两次才能处理的根因与临时排查路径\n  [claudetalk/design] git-sync-24h-throttle -- git_sync 添加24小时频率限制避免每次飞书消息都触发\n  [model-proxy/sop] token-manual-baseline-deduction -- 手动更新 token 计划剩余量后由系统扣除新用量而非重算\n  [ops-dashboard/overview] routing-policy-plan-duration-field -- dashboard 前端可读取 routing_policy.json 中的 plan_duration_days 字段\n  [claudetalk/design] message-queue-missing-busy-hint -- 消息串行处理时未通知用户排队等待\n  [claudetalk/design] approval-risk-overly-sensitive -- 审批风险评估过于敏感，影响体验\n  [claudetalk/design] feishu-receive-id-invalid -- 飞书消息发送时 receive_id 无效导致发送失败"
+  },
+  "2026-07-07/008-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-07T08:53:04.747105",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2eee2879-6bad-47cb-9e44-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [ops-daemon/design] restart-marker-external-supervisor -- feishu-bridge写入的.restart-* marker仅由外部supervisor消费，ops-daemon只负责清理\n  [ops-daemon/design] auto-repair-disabled -- claudetalk/feishu-bridge/mcp_server的自动修复功能被硬编码禁用\n  [ops-daemon/sop] health-check-process-name-vs-repair-port -- 健康检查依赖进程名，而修复使用时检查端口，存在潜在不一致"
+  },
+  "2026-07-07/009-记忆写入--1-条--1-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-07T12:53:50.722141",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2eee2879-6bad-47cb-9e44-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [model-proxy/sop] proxy-attribution-prefix-fix -- 修复@model显式指定时模型标签位置为回复开头，非显式不显示"
+  },
+  "2026-07-07/010-记忆写入--8-条--8-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 8 条 (8 新增)",
+    "created_at": "2026-07-07T14:22:27.678497",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: cdb71514-f2d6-4ff4-bca3-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (8 条) ==\n  [claudetalk/sop] feishu-dual-ws-conflict -- 合并 bridge 后仍运行独立 bridge 进程导致双 WS 连接\n  [claudetalk/sop] feishu-bridge-pid-restart-loop -- bridge PID 自检导致 systemd 循环重启\n  [claudetalk/sop] bridge-merge-cleanup-steps -- 合并 bridge 后需要清理的步骤\n  [claudetalk/sop] peer-message-backlog-delay -- 积压的 peer-message 导致消息延迟\n  [claudetalk/design] feishu-bridge-merge-into-claudetalk -- 将 feishu-bridge 合并进 claudetalk 的架构决策\n  [claudetalk/sop] feishu-bridge-duplicate-instance -- 启动飞书bridge时重复实例错误\n  [claudetalk/sop] peer-message-file-format -- 飞书peer-message文件结构与用途\n  [claudetalk/design] spawn-feishu-bridge-port-cleanup -- spawn_feishu_bridge的端口清理与重试逻辑"
+  },
+  "2026-07-07/011-记忆写入--13-条--13-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 13 条 (13 新增)",
+    "created_at": "2026-07-07T19:51:08.384658",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 87a77f2d-45e0-4f98-b4a5-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (13 条) ==\n  [claudetalk/sop] invalid-receive-id-notification -- 启动通知发送失败因receive_id写死为\"claude code\"\n  [claudetalk/sop] mobile-message-queue-blocking -- 手机消息无反馈因队列堆积且缺少去重\n  [model-proxy/sop] allocator-ratio-too-high -- L2 allocator 比例过激导致 Token Plan 大用量分配\n  [claudetalk/sop] locale-warning-bash-exec -- Bash 执行时频繁出现 locale 警告\n  [claudetalk/sop] cannot-kill-external-processes -- Claude Code 无法 kill 外部进程\n  [model-proxy/design] bypass-no-reason-logged -- bypass 路由不记录理由，影响统计\n  [feishu-bridge/sop] file-storage-paths -- 飞书接收文件存储路径\n  [feishu-bridge/sop] send-media -- 飞书 bridge 支持发送图片和文件\n  [model-proxy/design] image-ocr-first-routing -- 图片路由先 OCR 再判断是否使用 vision\n  [claudetalk/sop] feishu-no-processing-feedback -- 飞书消息到达但未发送“处理中...”提示的情况\n  [claudetalk/sop] mcp-image-edit-no-file-output -- MCP 工具 image_edit 不保存图片文件到磁盘\n  [global/sop] tmux-buffer-history-limit -- tmux 窗口 buffer 过小导致无法回溯历史消息的解决方案\n  [global/sop] safekill-powershell-linux-error -- safekill.sh 在 Linux 上因调用 powershell.exe 报错"
+  },
+  "2026-07-07/012-记忆写入--7-条--7-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 7 条 (7 新增)",
+    "created_at": "2026-07-07T20:44:38.188521",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 64fa9df6-ed15-46e7-81fc-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [ops-daemon/sop] linux-systemd-service-manager -- Linux 环境下所有常驻进程均由 systemd 管理，不再使用 ops-daemon 自启动脚本\n  [claudetalk/design] claudetalk-mcp-bridge-separation -- claudetalk-mcp 与 feishu-bridge 互相独立，分别承担 MCP 工具提供和飞书消息桥接\n  [claudetalk/sop] peer-message-hang-causes -- 当飞书消息无回复时排查 claudetalk peer-message 队列阻塞的常见原因\n  [claudetalk/sop] feishu-bridge-image-missing -- feishu-bridge 尚未支持发送图片消息，需实现上传和 image 消息构建\n  [ops-daemon/sop] daemon-legacy-cleanup -- Linux 环境已完成 daemon 自管理残留清理，不再有旧进程或定时检查\n  [claudetalk/sop] feishu-bridge-image-support -- 飞书bridge已增加图片发送功能，支持sendImage和uploadImage，已测试通过\n  [global/sop] segment-misalignment-detected -- 记忆段归属偏差待修正"
+  },
+  "2026-07-07/013-记忆写入--7-条--7-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 7 条 (7 新增)",
+    "created_at": "2026-07-07T21:43:41.656001",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 42660178-be0c-4f73-973b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [claudetalk/sop] feishu-bridge-stability-monitoring -- feishu-bridge 会意外退出，需 ops-daemon 监控并自动重启以保证消息不丢失\n  [claudetalk/sop] ws-loss-detector-tool -- ws-loss-detector 是检测飞书 WebSocket 消息丢失的测试工具，已修复 ES module 兼容性\n  [claudetalk/sop] feishu-message-loss-heartbeat-conflict -- 初步怀疑飞书心跳与消息合并存在冲突，但根因尚未确认，消息丢失可能与此相关\n  [model-proxy/sop] token-plan-renewal-reset-plan-start -- Token Plan 续费或加购后需要重置 plan_start_ts 和 credits_total\n  [model-proxy/sop] token-plan-display-issue-troubleshoot -- 排查 term 页面 token plan 剩余量显示不对的步骤\n  [model-proxy/design] get-real-credits-cache-and-manual-logic -- get_real_credits 的缓存与手动基线逻辑\n  [claudetalk/sop] claudetalk-process-check -- 检查 claudetalk 运行状态应看到的进程"
+  },
+  "2026-07-07/014-记忆写入--8-条--8-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 8 条 (8 新增)",
+    "created_at": "2026-07-07T22:19:31.393056",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ad8bc7b6-5888-45fe-8e5a-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (8 条) ==\n  [claudetalk/sop] feishu-bridge-unexpected-exit -- 排查飞书消息无回复时检查 feishu-bridge 进程是否异常退出\n  [claudetalk/sop] bridge-restart-message-replay -- bridge 重启后可能重播旧消息，导致去重逻辑异常或消息重复\n  [claudetalk/sop] ws-loss-detector-usage -- ws-loss-detector 工具用于监控飞书消息丢失\n  [claudetalk/sop] duplicate-command-single-response -- 连续发送相同命令可能只被处理一次\n  [ops-daemon/sop] feishu-bridge-monitoring-status -- ops-daemon 已监控 feishu-bridge 进程状态，但缺少主动告警\n  [claudetalk/sop] sigterm-crash-notification-false-positive -- SIGTERM 关闭时误发 crash 通知，需修复\n  [claudetalk/design] feishu-ws-module-intro -- 新建独立 WS 管理模块替代 feishu-bridge 的 WS 逻辑\n  [claudetalk/sop] peer-message-dedup-by-messageid -- Peer 消息处理增加 messageId 二次去重"
+  },
+  "2026-07-08/001-记忆写入--9-条--9-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 9 条 (9 新增)",
+    "created_at": "2026-07-08T01:42:14.358345",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ad8bc7b6-5888-45fe-8e5a-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (9 条) ==\n  [ops-daemon/sop] scheduler-silent-exception-swallow -- 调度任务异常静默吞噬，难以发现失败\n  [ops-daemon/sop] scheduler-persistence-callback-issue -- 从 tasks.json 加载的任务回调为空，必须手动注册\n  [ops-daemon/sop] scheduler-sync-callback-blocking -- 回调同步运行会阻塞整个调度循环\n  [ops-daemon/design] scheduler-pid-lock-prevent-multi-instance -- PID 锁确保只有一个调度守护进程运行\n  [claudetalk/sop] multi-instance-collision -- claudetalk 多实例导致飞书消息处理混乱\n  [claudetalk/sop] feishu-bridge-restart-storm -- feishu-bridge 频繁重启导致消息丢失/延迟\n  [claudetalk/design] streaming-60s-idle-timeout -- 流式对话超时导致用户体验卡顿\n  [claudetalk/sop] mcp-eaddrinuse-conflict -- MCP 服务器端口冲突导致 EADDRINUSE\n  [claudetalk/sop] stale-pid-file-rejection -- PID 文件残留导致 claudetalk 拒绝启动"
   }
 }
