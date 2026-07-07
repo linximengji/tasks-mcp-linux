@@ -621,5 +621,15 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: ad8bc7b6-5888-45fe-8e5a-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (9 条) ==\n  [ops-daemon/sop] scheduler-silent-exception-swallow -- 调度任务异常静默吞噬，难以发现失败\n  [ops-daemon/sop] scheduler-persistence-callback-issue -- 从 tasks.json 加载的任务回调为空，必须手动注册\n  [ops-daemon/sop] scheduler-sync-callback-blocking -- 回调同步运行会阻塞整个调度循环\n  [ops-daemon/design] scheduler-pid-lock-prevent-multi-instance -- PID 锁确保只有一个调度守护进程运行\n  [claudetalk/sop] multi-instance-collision -- claudetalk 多实例导致飞书消息处理混乱\n  [claudetalk/sop] feishu-bridge-restart-storm -- feishu-bridge 频繁重启导致消息丢失/延迟\n  [claudetalk/design] streaming-60s-idle-timeout -- 流式对话超时导致用户体验卡顿\n  [claudetalk/sop] mcp-eaddrinuse-conflict -- MCP 服务器端口冲突导致 EADDRINUSE\n  [claudetalk/sop] stale-pid-file-rejection -- PID 文件残留导致 claudetalk 拒绝启动"
+  },
+  "2026-07-08/002-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-08T03:09:51.087821",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ad8bc7b6-5888-45fe-8e5a-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [ops-daemon/sop] daily-report-skipped-check-after-hour -- 每日运行日报因 check_after_hour 配置导致在9点前被跳过，调度没有生成报告\n  [ops-daemon/sop] daily-report-missing-sentinel-jul5 -- 7月5日日报sentinel文件缺失，与当日daemon多次重启有关\n  [claudetalk/sop] feishu-bridge-message-forwarding-check -- 测试飞书消息通信时如何检查 bridge 是否正常接收及转发\n  [claudetalk/sop] claudetalk-frequent-sigterm-restart -- claudetalk 在 systemd 管理下频繁 SIGTERM 重启，可能与 WatchdogSec 配置有关\n  [claudetalk/sop] test-mobile-feishu-message-procedure -- 手机飞书消息测试的标准操作步骤与日志检查要点\n  [claudetalk/sop] stream-json-verbose-required -- 流式输出格式 stream-json 必须同时传递 --verbose 参数"
   }
 }
