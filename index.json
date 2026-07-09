@@ -641,5 +641,35 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: dd59f427-e1aa-48d5-8ca1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [claudetalk/design] help-text-compact-format -- 飞书帮助文本紧凑格式规范"
+  },
+  "2026-07-08/004-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-08T13:31:28.933291",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: dd59f427-e1aa-48d5-8ca1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [ops-daemon/sop] daemon-pid-lock-conflict -- 排查daemon频繁退出时，PID锁冲突是首要原因\n  [ops-daemon/deps] latest-json-consumers -- latest.json 的消费者列表及影响范围\n  [ops-daemon/design] service-health-aggregation -- daemon 应作为所有常驻服务的健康聚合平台\n  [ops-daemon/sop] snap-disk-full-cleanup -- 处理 snap 磁盘占用 100% 的 disk_critical 告警"
+  },
+  "2026-07-08/005-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-08T23:53:42.973068",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ffd1a325-4870-419f-a619-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [claudetalk/sop] sigterm-root-cause-tracing -- 飞书 Bot 频繁收到 SIGTERM，需要追踪触发源与父进程信息\n  [claudetalk/design] classifier-local-only -- 分类器切换为纯本地规则（A2），不再调用 LLM，避免超时\n  [model-proxy/sop] unicode-decode-request-body -- Proxy 收到非法 UTF-8 请求导致崩溃，需增加编码校验\n  [ops-daemon/design] orphan-service-no-port-unknown -- 无端口 orphan 服务保持 unknown，由专用检查负责状态\n  [global/sop] bash-locale-warning -- Locale 警告不影响功能，建议统一 LC_ALL=C"
+  },
+  "2026-07-09/001-记忆写入--1-条--1-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-09T03:02:23.620348",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ffd1a325-4870-419f-a619-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [global/sop] locale-zh-cn-warning -- bash命令中出现的 zh_CN.UTF-8 locale 警告不影响功能"
   }
 }
