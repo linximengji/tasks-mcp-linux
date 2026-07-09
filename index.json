@@ -671,5 +671,41 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: ffd1a325-4870-419f-a619-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [global/sop] locale-zh-cn-warning -- bash命令中出现的 zh_CN.UTF-8 locale 警告不影响功能"
+  },
+  "2026-07-09/002-记忆写入--2-条--2-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-09T11:25:15.236075",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ffd1a325-4870-419f-a619-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [langfuse/overview] self-hosted-resource-reqs -- 自托管 Langfuse 的硬件推荐\n  [ops-daemon/deps] semi-report-miniflux-dependency -- semi_report 对 Miniflux 的依赖关系"
+  },
+  "2026-07-09/007-broker-jaeger-git": {
+    "status": "completed",
+    "summary": "broker ，jaeger，git CI三层防护的当前状况以及它们能发挥的作用做一下整体评价",
+    "created_at": "2026-07-09T04:46:38.145Z",
+    "updated_at": "2026-07-09T04:46:38.145Z"
+  },
+  "2026-07-09/008-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-09T13:03:56.645508",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 35fe3cde-e9a4-44ee-8ced-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [model-proxy/design] api-three-layer-protection -- 说明API三层防护如何协同工作\n  [model-proxy/design] stuck-detection-repeated-tool -- stuck检测现在同时检测重复工具调用\n  [ops-daemon/overview] ops-daemon-architecture -- ops-daemon 整体组件与工作流概述\n  [ops-daemon/design] ops-daemon-checks-register -- 检查任务的注册与分类方式\n  [global/sop] locale-zh-cn-setlocale-warning -- 系统未安装 zh_CN.UTF-8 导致 bash 警告"
+  },
+  "2026-07-09/009-记忆写入--9-条--9-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 9 条 (9 新增)",
+    "created_at": "2026-07-09T14:17:27.114108",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2db82b38-600d-4982-87a2-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (9 条) ==\n  [model-proxy/design] stuck-detection-revised-logic -- stuck检测最终逻辑（双条件触发）及修正背景\n  [ops-daemon/design] uptime-kuma-not-needed -- 评估后决定不部署Uptime Kuma\n  [ops-daemon/design] ci-jaeger-broker-status -- Broker/Jaeger/Git CI三层防护现状与优先级\n  [ops-dashboard/design] term-linximengji-data-source-unknown -- term.linximengji.com 展示页数据来源未明确，需要梳理和可能的优化\n  [model-proxy/sop] duplicate-token-usage-jsonl -- 发现两个 token_usage.jsonl 文件，需合并与统一路径\n  [ops-dashboard/design] services-monitor-incomplete -- Dashboard Services 监控展示的服务不全，状态不准\n  [model-proxy/sop] proxy-token-stats-timeout-balance-none -- proxy 的 token 实时统计接口偶发超时或 balance 为 None\n  [model-proxy/sop] token-usage-jsonl-bom-parsing-failure -- token_usage.jsonl 中包含 BOM 导致 JSON 解析失败\n  [global/design] all-services-pact-jaeger-integration -- 所有常驻服务都要集成Pact和Jaeger"
   }
 }
