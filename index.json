@@ -346,13 +346,13 @@
     "progress": "会话: 9cb1cba0-2e8c-4240-8938-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [ops-daemon/design] daemon-restart-mutex-race -- daemon 重启时 Named Mutex 释放延迟导致新实例退出循环\n  [ops-daemon/design] proxy-restart-backup-switch -- 重启主 proxy 前必须先将 CC 切换到备份 proxy 4002\n  [claudetalk/design] claudetalk-channel-architecture -- ClaudeTalk 渠道架构说明"
   },
   "2026-07-02/006-将-feishu-bridge-合并入-claudetalk-单进程": {
-    "status": "in_progress",
+    "status": "completed",
     "summary": "将 feishu-bridge 合并入 claudetalk 单进程",
     "created_at": "2026-07-02T15:44:42.531Z",
-    "updated_at": "2026-07-07T04:39:43.639Z",
+    "updated_at": "2026-07-10T14:34:50.453Z",
     "type": "feature",
     "source": "cc",
-    "progress": "已完成合并代码实现和编译验证，待重启确认"
+    "progress": "已评估：不合并，维持 2 进程架构。收益不匹配风险。"
   },
   "2026-07-03/2026-07-03/001memory-review-pending": {
     "summary": "记忆体待处理 (待审核 0 条, 问题 236 条): (共236项)",
@@ -769,14 +769,14 @@
     "progress": "会话: 87fa839c-dff7-4d7b-8823-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [claudetalk/sop] service-not-enabled -- claudetalk 服务默认 disabled，需手动 enable 才能自启动\n  [claudetalk/sop] feishu-message-troubleshoot -- 飞书消息收不到的排查步骤\n  [claudetalk/sop] peer-message-dir-consistency -- bridge 写入消息的目录必须与 claudetalk 读取的目录一致\n  [model-proxy/design] token-balance-manual-baseline-persist -- 手动设置的 Token Plan 基线必须持久化，不被自动计算覆盖\n  [model-proxy/sop] allocator-overwrite-manual-baseline-bug -- L2 budget context 计算会意外覆盖手动基线导致结束时间反复变化\n  [model-proxy/design] token-stats-real-time-calculation -- token-stats 端点 balance 计算须基于 manual baseline + token_usage 扫描\n  [model-proxy/sop] token-usage-jsonl-migration -- token_usage.jsonl 迁移至 proxy 项目目录并更新所有消费者"
   },
   "2026-07-10/001-confirm-archive-bug": {
-    "status": "pending",
+    "status": "completed",
     "summary": "修复飞书卡片确认待办bug：confirm-archive 卡片点击后未正确处理",
     "created_at": "2026-07-10T07:00:00.000000",
-    "updated_at": null,
+    "updated_at": "2026-07-10T15:17:16.686Z",
     "type": "bug",
     "source": "cc",
     "priority": "high",
-    "progress": "审核发现：\n- confirm-archive 卡片在飞书点击确认后，feishu-bridge 写 __confirm_archive__ 到 peer-message\n- 但 claudetalk 侧 processPeerMessages 不处理此字符串，落入普通消息流变成无意义对话\n- 修复方案A：processPeerMessages 加匹配分支\n- 修复方案B：bridge 侧直接执行存档（需 access 到 archiveConversation）\n- 建议用方案A，改 index_feishu.ts processPeerMessages"
+    "progress": "已完成修复：processPeerMessages 新增 `__confirm_archive__` 匹配分支，调用 execConfirmArchive 执行存档。编译验证通过。飞书卡片确认按钮 → feishu-bridge 转发 peer message → 主进程直接存档，不再被当成普通消息发给 Claude。"
   },
   "2026-07-10/003-运行日报没收到呢": {
     "status": "completed",
@@ -793,5 +793,41 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: a57df28d-cd49-4569-b978-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/design] approval-restart-reinit-needed -- 审批请求进程重启后不会自动恢复，需要用户重新发起指令\n  [ops-daemon/sop] daily-report-claudetalk-false-alarm -- 日报显示 claudetalk stopped 是误报\n  [ops-daemon/sop] daily-report-runner-finally-fix -- 日报生成器缺少 finally 块导致 SyntaxError\n  [ops-daemon/sop] scheduler-add-task-persist-fix -- 调度器 add_task 增加持久化调用"
+  },
+  "2026-07-10/005-记忆写入--5-条--5-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-10T15:24:39.487666",
+    "updated_at": "2026-07-10T15:15:11.861Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: cc21258a-621e-44d2-9544-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [ops-daemon/sop] ruff-avoid-ambiguous-var-name -- ruff E741 规则禁止模糊变量名如 l\n  [daily-report/design] mcp-status-dependency -- 每日报告中 MCP 状态依赖于 claudetalk-mcp 服务\n  [ops-daemon/sop] multiple-claudetalk-dirs-status-error -- claudetalk 多目录可能导致 stopped 误报\n  [claudetalk/sop] stats-api-endpoint -- 获取模型代理统计信息的正确 API 端点\n  [claudetalk/sop] mixed-thinking-sanitize -- 混合思考/非思考历史时的消毒行为"
+  },
+  "2026-07-10/006-修-proxy-L1-very-long-改为检查全部历史-token-不只最后": {
+    "status": "completed",
+    "summary": "修 proxy：L1 very-long 改为检查全部历史 token，不只最后一条消息",
+    "created_at": "2026-07-10T08:04:48.675Z",
+    "updated_at": "2026-07-10T16:05:38.933Z",
+    "type": "bug",
+    "source": "claudetalk"
+  },
+  "2026-07-10/007-修-proxy-L2-路径-reason-需反映真实分配结果-complexit": {
+    "status": "completed",
+    "summary": "修 proxy：L2 路径 _reason 需反映真实分配结果（complexity:task_type→模型）",
+    "created_at": "2026-07-10T08:04:52.841Z",
+    "updated_at": "2026-07-10T15:09:47.481Z",
+    "type": "bug",
+    "source": "claudetalk"
+  },
+  "2026-07-10/008-记忆写入--2-条--2-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-10T22:50:18.079397",
+    "updated_at": "2026-07-10T15:17:44.973Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: cc21258a-621e-44d2-9544-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [claudetalk/design] l1-very-long-rule-should-use-pro -- L1 very-long 规则应路由到 pro 模型\n  [claudetalk/design] allocator-ratio-mismatch-statistics -- Allocator 分配比例与统计策略偏差"
   }
 }
