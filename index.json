@@ -829,5 +829,41 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: cc21258a-621e-44d2-9544-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [claudetalk/design] l1-very-long-rule-should-use-pro -- L1 very-long 规则应路由到 pro 模型\n  [claudetalk/design] allocator-ratio-mismatch-statistics -- Allocator 分配比例与统计策略偏差"
+  },
+  "2026-07-11/001-自驾旅行规划器-国内-API-调研结果归档": {
+    "status": "completed",
+    "summary": "自驾旅行规划器 — 国内 API 调研结果归档",
+    "created_at": "2026-07-11T09:36:00.829Z",
+    "updated_at": "2026-07-11T09:36:07.881Z",
+    "type": "research",
+    "source": "cc",
+    "progress": "报告已写入 2026-07-11/007-两个任务-一个是调查workflow/回复.md。腾讯驾车路线规划(1万次/日)+高德JS SDK POI+和风天气+携程CPS+百度geocoding。四个硬门槛：商用授权(~5万/年)、POI额度、充电桩深度数据、测绘合规(不存坐标序列)。"
+  },
+  "2026-07-11/002-自驾旅行规划器-零成本原型启动-国内": {
+    "status": "in_progress",
+    "summary": "自驾旅行规划器 — 零成本原型启动（国内）",
+    "created_at": "2026-07-11T09:36:00.837Z",
+    "updated_at": "2026-07-12T09:27:51.498Z",
+    "type": "task",
+    "source": "cc",
+    "progress": "【继承前次对话】需求：纯前端 Web 应用，离线优先，自驾游路线规划+行程管理+智能推荐。零成本方案：自建地图 + 开源 GIS 数据（OpenStreetMap/高德JS API 免费版），不依赖付费地图服务。"
+  },
+  "2026-07-11/003-自驾旅行规划器-测绘合规方案设计": {
+    "status": "in_progress",
+    "summary": "自驾旅行规划器 — 测绘合规方案设计",
+    "created_at": "2026-07-11T09:36:00.846Z",
+    "updated_at": "2026-07-12T09:27:51.511Z",
+    "type": "task",
+    "source": "cc",
+    "progress": "【继承前次对话】测绘法合规风险：自建POI数据库(≥50条)构成\"地图数据采集\"需测绘资质；高德等图商自有API合规(禁爬取坐标/路网)；建议策略：纯前端调用图商API + 本地仅存用户轨迹(非POI/路网)。"
+  },
+  "2026-07-11/004-自驾旅行规划器-商用授权与商业化预算评估": {
+    "status": "in_progress",
+    "summary": "自驾旅行规划器 — 商用授权与商业化预算评估",
+    "created_at": "2026-07-11T09:36:00.853Z",
+    "updated_at": "2026-07-12T09:27:51.519Z",
+    "type": "research",
+    "source": "cc",
+    "progress": "【继承前次对话】高德JS API免费版限制：日调用量10万次、年uv<10万、仅限Web/H5、禁爬虫、禁数据存储。商业授权需联系图商。预算未知，需调研。"
   }
 }
