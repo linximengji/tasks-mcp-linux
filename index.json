@@ -840,30 +840,71 @@
     "progress": "报告已写入 2026-07-11/007-两个任务-一个是调查workflow/回复.md。腾讯驾车路线规划(1万次/日)+高德JS SDK POI+和风天气+携程CPS+百度geocoding。四个硬门槛：商用授权(~5万/年)、POI额度、充电桩深度数据、测绘合规(不存坐标序列)。"
   },
   "2026-07-11/002-自驾旅行规划器-零成本原型启动-国内": {
-    "status": "in_progress",
+    "status": "completed",
     "summary": "自驾旅行规划器 — 零成本原型启动（国内）",
     "created_at": "2026-07-11T09:36:00.837Z",
-    "updated_at": "2026-07-12T09:27:51.498Z",
+    "updated_at": "2026-07-12T15:12:27.448Z",
     "type": "task",
     "source": "cc",
-    "progress": "【继承前次对话】需求：纯前端 Web 应用，离线优先，自驾游路线规划+行程管理+智能推荐。零成本方案：自建地图 + 开源 GIS 数据（OpenStreetMap/高德JS API 免费版），不依赖付费地图服务。"
+    "progress": "MCP server 已实现：3 个工具 (travel_resolve_location / travel_search_poi / travel_plan_route)，Stdio 模式接入，AMAP_API_KEY 已配置。下次新会话自动加载。"
   },
   "2026-07-11/003-自驾旅行规划器-测绘合规方案设计": {
-    "status": "in_progress",
+    "status": "completed",
     "summary": "自驾旅行规划器 — 测绘合规方案设计",
     "created_at": "2026-07-11T09:36:00.846Z",
-    "updated_at": "2026-07-12T09:27:51.511Z",
+    "updated_at": "2026-07-12T15:12:27.455Z",
     "type": "task",
     "source": "cc",
-    "progress": "【继承前次对话】测绘法合规风险：自建POI数据库(≥50条)构成\"地图数据采集\"需测绘资质；高德等图商自有API合规(禁爬取坐标/路网)；建议策略：纯前端调用图商API + 本地仅存用户轨迹(非POI/路网)。"
+    "progress": "方案已定：所有地图数据走高德 API，不本地存储 POI/路网。临时坐标仅用于路线计算，无本地数据库。"
   },
   "2026-07-11/004-自驾旅行规划器-商用授权与商业化预算评估": {
     "status": "in_progress",
     "summary": "自驾旅行规划器 — 商用授权与商业化预算评估",
     "created_at": "2026-07-11T09:36:00.853Z",
-    "updated_at": "2026-07-12T09:27:51.519Z",
+    "updated_at": "2026-07-12T10:44:25.535Z",
     "type": "research",
     "source": "cc",
-    "progress": "【继承前次对话】高德JS API免费版限制：日调用量10万次、年uv<10万、仅限Web/H5、禁爬虫、禁数据存储。商业授权需联系图商。预算未知，需调研。"
+    "progress": "高德个人开发者免费额度足够：地理编码/路线/POI 各 5000次/日。单人日均使用 <50次。零成本。"
+  },
+  "2026-07-13/001-设计-旅游行程实时位置追踪-替代方案对比与选型": {
+    "status": "in_progress",
+    "summary": "[设计] 旅游行程实时位置追踪——替代方案对比与选型",
+    "created_at": "2026-07-13T02:30:40.547Z",
+    "updated_at": "2026-07-13T02:30:56.232Z",
+    "type": "research",
+    "source": "cc",
+    "progress": "## 结论\n飞书 API/WebSocket **不支持实时共享位置**。共享位置是飞书客户端功能，不通过 Open API 暴露。location 消息只是静态快照。\n\n## 可选方案\n\n### 方案 A：手动发位置（零开发）\n用户在飞书聊天框点\"发送位置\"→ bridge 收到静态 location 消息 → 归一化为坐标 → claudetalk/Claude 用坐标查周边。\n- 优点：零开发，bridge 已支持 location 消息解析\n- 缺点：用户主动触发，不自动\n- 适合：当前阶段即可用\n\n### 方案 B：网页 GPS 上报（10 分钟原型）\nHTML 页面 `navigator.geolocation.watchPosition()` → 定时 POST 到 cloudflared 隧道 → feishu-bridge → peer-message → claudetalk → 写入 `.claudetalk/location.json`。\n- 优点：跨平台，开发量极小，可后台运行\n- 缺点：浏览器标签页不能关，需 cloudflared 隧道可达\n- 适合：临时出行时手动打开\n\n### 方案 C：飞书小程序\n小程序 `lark.startLocationUpdate()` 后台推送位置 → 小程序后端服务 → claudetalk。\n- 优点：最接近\"真实时\"，飞书原生体验\n- 缺点：需付费应用审核上架，开发周期长\n- 适合：产品化阶段\n\n### 方案 D：Android Tasker 脚本\nTasker 定时取 GPS → HTTP POST 到本地端点。\n- 优点：免费，后台保活好\n- 缺点：只限 Android，需用户自行配置\n- 适合：个人开发者自用\n\n## 建议分期\n\n| 阶段 | 方案 | 触发条件 |\n|------|------|---------|\n| 现在 | A 手动发位置 | trip agent 在行程中提示用户\"到新地点发个位置\" |\n| 短期 | B 网页 GPS | 主动推送到达提醒时，顺带问一句\"打开位置共享？\"发链接 |\n| 长期 | C 飞书小程序 | 业务量值得时再做 |\n\n## 待定设计决策\n- 位置状态文件格式：`{trip_id, lat, lng, speed, bearing, updated_at, source: manual|gps|miniapp}`\n- 更新频率：网页 GPS 15s，小程序 10s\n- 归档策略：行程结束后删除 location 状态文件"
+  },
+  "2026-07-13/002-申请飞猪-FlyAI-正式-API-Key": {
+    "status": "pending",
+    "summary": "申请飞猪 FlyAI 正式 API Key",
+    "created_at": "2026-07-13T06:33:04.445Z",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc"
+  },
+  "2026-07-13/003-研究艺龙开放平台-API-open-elong-com-接入酒店搜索比价": {
+    "status": "pending",
+    "summary": "研究艺龙开放平台 API（open.elong.com），接入酒店搜索比价",
+    "created_at": "2026-07-13T06:45:34.066Z",
+    "updated_at": null,
+    "type": "research",
+    "source": "cc"
+  },
+  "2026-07-13/004-研究途牛-MCP-开放平台-API-接入酒店搜索比价": {
+    "status": "pending",
+    "summary": "研究途牛 MCP 开放平台 API，接入酒店搜索比价",
+    "created_at": "2026-07-13T06:45:34.085Z",
+    "updated_at": null,
+    "type": "research",
+    "source": "cc"
+  },
+  "2026-07-13/005-修复-session-knowledge-py-424-SyntaxError-": {
+    "status": "pending",
+    "summary": "修复 session_knowledge.py:424 SyntaxError（中文引号导致的语法错误）",
+    "created_at": "2026-07-13T06:45:34.103Z",
+    "updated_at": null,
+    "type": "bug",
+    "source": "cc"
   }
 }
