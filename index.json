@@ -876,35 +876,68 @@
     "progress": "## 结论\n飞书 API/WebSocket **不支持实时共享位置**。共享位置是飞书客户端功能，不通过 Open API 暴露。location 消息只是静态快照。\n\n## 可选方案\n\n### 方案 A：手动发位置（零开发）\n用户在飞书聊天框点\"发送位置\"→ bridge 收到静态 location 消息 → 归一化为坐标 → claudetalk/Claude 用坐标查周边。\n- 优点：零开发，bridge 已支持 location 消息解析\n- 缺点：用户主动触发，不自动\n- 适合：当前阶段即可用\n\n### 方案 B：网页 GPS 上报（10 分钟原型）\nHTML 页面 `navigator.geolocation.watchPosition()` → 定时 POST 到 cloudflared 隧道 → feishu-bridge → peer-message → claudetalk → 写入 `.claudetalk/location.json`。\n- 优点：跨平台，开发量极小，可后台运行\n- 缺点：浏览器标签页不能关，需 cloudflared 隧道可达\n- 适合：临时出行时手动打开\n\n### 方案 C：飞书小程序\n小程序 `lark.startLocationUpdate()` 后台推送位置 → 小程序后端服务 → claudetalk。\n- 优点：最接近\"真实时\"，飞书原生体验\n- 缺点：需付费应用审核上架，开发周期长\n- 适合：产品化阶段\n\n### 方案 D：Android Tasker 脚本\nTasker 定时取 GPS → HTTP POST 到本地端点。\n- 优点：免费，后台保活好\n- 缺点：只限 Android，需用户自行配置\n- 适合：个人开发者自用\n\n## 建议分期\n\n| 阶段 | 方案 | 触发条件 |\n|------|------|---------|\n| 现在 | A 手动发位置 | trip agent 在行程中提示用户\"到新地点发个位置\" |\n| 短期 | B 网页 GPS | 主动推送到达提醒时，顺带问一句\"打开位置共享？\"发链接 |\n| 长期 | C 飞书小程序 | 业务量值得时再做 |\n\n## 待定设计决策\n- 位置状态文件格式：`{trip_id, lat, lng, speed, bearing, updated_at, source: manual|gps|miniapp}`\n- 更新频率：网页 GPS 15s，小程序 10s\n- 归档策略：行程结束后删除 location 状态文件"
   },
   "2026-07-13/002-申请飞猪-FlyAI-正式-API-Key": {
-    "status": "pending",
+    "status": "completed",
     "summary": "申请飞猪 FlyAI 正式 API Key",
     "created_at": "2026-07-13T06:33:04.445Z",
-    "updated_at": null,
+    "updated_at": "2026-07-14T12:50:40.532Z",
     "type": "task",
-    "source": "cc"
+    "source": "cc",
+    "progress": "飞猪 FlyAI 已接入 travel-mcp，当前使用 flyai CLI 体验模式（无需 Key）。\n\n正式 API Key 申请：\n1. 访问 https://flyai.open.fliggy.com/\n2. 点击「获取 API Key」→ 跳转控制台\n3. 用淘宝/支付宝账号登录（需实名认证）\n4. 在控制台获取 API Key\n\n当前状态：\n- flyai CLI 体验模式已能正常返回酒店搜索结果\n- 系统提示\"部分结果受限\"——正式 Key 解锁完整服务\n- 用户需要自行登录飞鱼官网完成实名认证和 Key 申领（需本人操作）\n\n建议：先维持体验模式，如实际使用中数据不全再申领 Key。"
   },
   "2026-07-13/003-研究艺龙开放平台-API-open-elong-com-接入酒店搜索比价": {
-    "status": "pending",
+    "status": "completed",
     "summary": "研究艺龙开放平台 API（open.elong.com），接入酒店搜索比价",
     "created_at": "2026-07-13T06:45:34.066Z",
-    "updated_at": null,
+    "updated_at": "2026-07-14T12:53:19.347Z",
     "type": "research",
-    "source": "cc"
+    "source": "cc",
+    "progress": "**结论：不适合个人开发者接入**\n\n1. 无自助注册入口，需商务对接 — 面向企业/旅游代理商\n2. 无免费试用/沙盒 — AppKey 通过商务洽谈获取\n3. 个人开发者无法满足入驻条件\n\n酒店比价目前已有飞猪 FlyAI（已开通正式 Key），不需要再接入艺龙。\n\n**评估**：放弃接入。70万家酒店覆盖的ROI不足以抵消商务对接的摩擦成本。"
   },
   "2026-07-13/004-研究途牛-MCP-开放平台-API-接入酒店搜索比价": {
-    "status": "pending",
+    "status": "completed",
     "summary": "研究途牛 MCP 开放平台 API，接入酒店搜索比价",
     "created_at": "2026-07-13T06:45:34.085Z",
-    "updated_at": null,
+    "updated_at": "2026-07-14T12:55:48.579Z",
     "type": "research",
-    "source": "cc"
+    "source": "cc",
+    "progress": "**结论：途牛 MCP 开放平台个人开发者可自助接入（与艺龙不同）**\n\n**两套体系**：\n1. 旧版供应商 API (open.tuniu.cn) — 需要企业资质 + 商务对接\n2. 新 MCP 开放平台 (openapi.tuniu.cn) — 2026/3上线，面向 AI 开发者，**支持自助注册获取 API Key**\n\n**关键信息**：\n- MCP 服务端点：`https://openapi.tuniu.cn/mcp/hotel` (酒店) / `flight` (机票) / `ticket` (门票) / `train` (火车票)\n- 认证方式：请求头 `apiKey: your_key` 或环境变量 `TUNIU_API_KEY`\n- 注册入口：`https://open.tuniu.com/mcp/apikeys` (需本人登录获取)\n- CLI 工具：`npm install -g tuniu-cli`\n- 已有 npm 包：`tuniu-cli`、`mcp-tuniu-travel` (PyPI)\n\n**建议**：\n- 途牛 MCP 作为酒店比价的第二个来源是完全可行的（个人开发者无需企业资质）\n- 与飞猪 FlyAI 互补：飞猪覆盖阿里系酒店资源，途牛覆盖自己的供应链\n- 需要用户本人去 https://open.tuniu.com/mcp/apikeys 注册获取 Key"
   },
   "2026-07-13/005-修复-session-knowledge-py-424-SyntaxError-": {
-    "status": "pending",
+    "status": "completed",
     "summary": "修复 session_knowledge.py:424 SyntaxError（中文引号导致的语法错误）",
     "created_at": "2026-07-13T06:45:34.103Z",
-    "updated_at": null,
+    "updated_at": "2026-07-14T12:45:44.342Z",
     "type": "bug",
     "source": "cc"
+  },
+  "2026-07-14/001-记忆写入--5-条--5-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-14T01:11:59.017050",
+    "updated_at": "2026-07-14T12:41:41.453Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 01652df2-6970-42c2-aa7d-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [model-proxy/design] l1-very-long-rule-removed -- 移除 L1 的 very-long 路由规则，统一由 L2 分类\n  [model-proxy/sop] l2-reason-format-requirement -- L2 路由分配后 _reason 必须反映真实结果\n  [user-profile/persona] persona -- 用户画像更新\n  [user-profile/persona] persona -- 用户画像更新\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-14/002-记忆写入--9-条--9-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 9 条 (9 新增)",
+    "created_at": "2026-07-14T18:17:10.821325",
+    "updated_at": "2026-07-14T12:41:41.473Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 01652df2-6970-42c2-aa7d-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (9 条) ==\n  [digital-twin/design] architecture-ts-python-bridge -- 数字分身采用 TS MCP server + Python child_process bridge 模式\n  [digital-twin/design] continuous-feeding-paths -- 数字分身三条语料摄入路径 L1 twin_feed / L2 /twin / L3 被动捕获\n  [digital-twin/sop] gap-detection-closed-loop -- 缺口检测闭环：refine 后或定时触发，LLM 生成 3 个问题推飞书卡片，用户 /twin 回复\n  [claudetalk/sop] twin-slash-command-routing -- feishu-bridge 识别 /twin 前缀并直接 ingest 到数字分身，不写 peer-message\n  [digital-twin/design] novelty-check-before-ingest -- 摄入前 LLM 判定内容新颖度 novel/redundant/duplicate，控制摄入强度\n  [user-profile/persona] persona -- 用户画像更新\n  [ops-daemon/sop] daily-report-hybrid-time-strategy -- 日报各数据源的时间窗口策略不同，以免混淆\n  [model-proxy/sop] proxy-stats-snapshot-restart-detection -- 代理统计数据收集时处理重启导致的计数器重置\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-14/003-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-14T20:41:23.813788",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 759e318d-bda2-4b96-9db8-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/sop] claudetalk-twin-command-conflict -- claudetalk 不应处理 /twin 命令以避免与 feishu-bridge 冲突\n  [digital-clone/design] twin-gap-detector-design -- 数字分身缺口检测设计——定期生成场景问题推送飞书\n  [claudetalk/design] twin-feed-from-cc-history -- 从 CC 历史提取 persona 观察并摄入数字分身\n  [global/persona] twin-public-deferred -- 对外对话功能延后至数字分身成熟之后\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
