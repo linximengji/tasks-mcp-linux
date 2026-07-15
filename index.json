@@ -858,10 +858,10 @@
     "progress": "方案已定：所有地图数据走高德 API，不本地存储 POI/路网。临时坐标仅用于路线计算，无本地数据库。"
   },
   "2026-07-11/004-自驾旅行规划器-商用授权与商业化预算评估": {
-    "status": "in_progress",
+    "status": "completed",
     "summary": "自驾旅行规划器 — 商用授权与商业化预算评估",
     "created_at": "2026-07-11T09:36:00.853Z",
-    "updated_at": "2026-07-12T10:44:25.535Z",
+    "updated_at": "2026-07-14T13:30:56.723Z",
     "type": "research",
     "source": "cc",
     "progress": "高德个人开发者免费额度足够：地理编码/路线/POI 各 5000次/日。单人日均使用 <50次。零成本。"
@@ -931,13 +931,72 @@
     "progress": "会话: 01652df2-6970-42c2-aa7d-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (9 条) ==\n  [digital-twin/design] architecture-ts-python-bridge -- 数字分身采用 TS MCP server + Python child_process bridge 模式\n  [digital-twin/design] continuous-feeding-paths -- 数字分身三条语料摄入路径 L1 twin_feed / L2 /twin / L3 被动捕获\n  [digital-twin/sop] gap-detection-closed-loop -- 缺口检测闭环：refine 后或定时触发，LLM 生成 3 个问题推飞书卡片，用户 /twin 回复\n  [claudetalk/sop] twin-slash-command-routing -- feishu-bridge 识别 /twin 前缀并直接 ingest 到数字分身，不写 peer-message\n  [digital-twin/design] novelty-check-before-ingest -- 摄入前 LLM 判定内容新颖度 novel/redundant/duplicate，控制摄入强度\n  [user-profile/persona] persona -- 用户画像更新\n  [ops-daemon/sop] daily-report-hybrid-time-strategy -- 日报各数据源的时间窗口策略不同，以免混淆\n  [model-proxy/sop] proxy-stats-snapshot-restart-detection -- 代理统计数据收集时处理重启导致的计数器重置\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-14/003-记忆写入--6-条--6-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 6 条 (6 新增)",
     "created_at": "2026-07-14T20:41:23.813788",
-    "updated_at": null,
+    "updated_at": "2026-07-14T13:29:11.870Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 759e318d-bda2-4b96-9db8-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/sop] claudetalk-twin-command-conflict -- claudetalk 不应处理 /twin 命令以避免与 feishu-bridge 冲突\n  [digital-clone/design] twin-gap-detector-design -- 数字分身缺口检测设计——定期生成场景问题推送飞书\n  [claudetalk/design] twin-feed-from-cc-history -- 从 CC 历史提取 persona 观察并摄入数字分身\n  [global/persona] twin-public-deferred -- 对外对话功能延后至数字分身成熟之后\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-15/001-记忆写入--13-条--13-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 13 条 (13 新增)",
+    "created_at": "2026-07-15T08:09:05.702406",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2e67ab61-5dc7-43d8-9db6-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (13 条) ==\n  [model-proxy/design] l1-very-long-threshold-change -- L1路由规则very-long阈值降低至8000且顺序调整，待决定是否移除并入L2\n  [model-proxy/sop] proxy-no-systemd-service -- proxy没有systemd服务，需手动管理进程\n  [model-proxy/sop] proxy-staging-port-test -- proxy变更必须先在4001端口测试再应用到4000\n  [claudetalk/deps] token-stats-linux-data-path -- Linux上token统计工具的数据文件路径\n  [user-profile/persona] persona -- 用户画像更新\n  [travel-mcp/design] restaurant-dual-source -- 餐厅搜索支持高德和百度两个数据源\n  [travel-mcp/design] route-dual-source-backup -- 自驾路线同时使用高德和百度双备份\n  [travel-mcp/sop] api-key-env-storage -- API Key 从项目目录迁移到 .env 环境变量存储\n  [travel-mcp/design] tuniu-hotel-integration -- 集成途牛 MCP 开放平台实现酒店比价\n  [travel-mcp/sop] flyai-api-key-saved -- 飞猪 FlyAI API Key 已配置并存储\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/design] memory-audit-no-task-creation -- 记忆审核结果未自动创建待办任务\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-15/2026-07-15/001memory-review-pending": {
+    "summary": "记忆体待处理 (待审核 0 条, 问题 17 条): (共17项)",
+    "type": "task",
+    "source": "ops-daemon",
+    "priority": "low",
+    "status": "pending",
+    "progress": "=== 质量检查 ===\n- [api-polling-message-reception] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [feishu-bridge-merge-decision] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [feishu-ws-split-decision] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [streaming-idle-timeout] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [memory-mcp-design] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [memory-mcp-design] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [model-proxy-design] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [pact-broker-contracts] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [pre-tool-guard] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [tasks-design] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [mcp-registration-mechanism] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [travel-mcp-design] segment_misplacement: 可能应归 sop（操作与陷阱）\n- [memory-mcp-design] stale_count: says '5段' but actual segment count is 6\n- [memory-mcp-design] stale_count: says '5 段' but actual segment count is 6\n- [memory-mcp-design] stale_count: says '5 段' but actual segment count is 6\n- [memory-mcp-design] stale_count: says '5 段' but actual segment count is 6\n- [memory-storage-core] stale_count: says '5 段' but actual segment count is 6",
+    "created_at": "2026-07-15"
+  },
+  "2026-07-15/2027-记忆写入--2-条--2-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-15T10:12:49.625223",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2e67ab61-5dc7-43d8-9db6-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [memory-mcp/design] l1-health-task-creation -- L1 检查始终创建待办任务，不依赖 LLM 可选开启状态\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-15/2028-记忆写入--2-条--2-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-15T13:42:10.488170",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2e67ab61-5dc7-43d8-9db6-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [ops-daemon/design] daily-report-twin-health-check -- 每日报告集成了数字分身健康检查\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-15/2029-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-15T15:50:11.070958",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 4e874ea4-63e8-4d6a-b205-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [claudetalk/sop] twin-gap-reply-disconnect -- 飞书桥接/twin命令处理未关联gap卡片回复，导致answered永远为false\n  [claudetalk/sop] gap-message-id-unused -- gap_detector存储的message_id从未用于回复关联或卡片更新\n  [claudetalk/sop] one-card-per-question-principle -- gap卡片设计遵循单一问题原则，需确保每个卡片仅推送一个维度问题\n  [user-profile/persona] persona -- 用户画像更新\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-15/2030-记忆写入--1-条--1-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-15T19:18:15.430321",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 4e874ea4-63e8-4d6a-b205-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
