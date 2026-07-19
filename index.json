@@ -1397,5 +1397,89 @@
     "updated_at": null,
     "type": "feature",
     "source": "cc"
+  },
+  "2026-07-18/023-记忆模型扩展-Phase-1-新增-entities-relations-表-D": {
+    "status": "completed",
+    "summary": "记忆模型扩展 Phase 1: 新增 entities/relations 表 DDL",
+    "created_at": "2026-07-18T15:02:14.679Z",
+    "updated_at": "2026-07-18T15:03:56.483Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "在 db.py 的 SCHEMA_SQL 中追加 entities 和 relations 表的 DDL，追加 _GRAPH_ALTERS 列表"
+  },
+  "2026-07-18/024-记忆模型扩展-Phase-1-ingestion-加实体提取": {
+    "status": "completed",
+    "summary": "记忆模型扩展 Phase 1: ingestion 加实体提取",
+    "created_at": "2026-07-18T15:02:20.844Z",
+    "updated_at": "2026-07-18T15:05:43.897Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "改 classify prompt 加实体提取指令，ingest_text 接住 entities 字段写入实体表和关系表"
+  },
+  "2026-07-18/025-记忆模型扩展-Phase-1-reasoning-加实体感知检索": {
+    "status": "completed",
+    "summary": "记忆模型扩展 Phase 1: reasoning 加实体感知检索",
+    "created_at": "2026-07-18T15:02:26.842Z",
+    "updated_at": "2026-07-18T15:06:23.952Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "改 _search_memories 加实体感知分支 (_entity_aware_search) 和 _entity_aware_search 函数"
+  },
+  "2026-07-18/026-记忆模型扩展-Phase-1-store-函数加-entity-refs-for": {
+    "status": "completed",
+    "summary": "记忆模型扩展 Phase 1: store 函数加 entity_refs/formed_at 参数",
+    "created_at": "2026-07-18T15:02:32.776Z",
+    "updated_at": "2026-07-18T15:04:50.187Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "store_event/store_belief/store_pattern 加 entity_refs/formed_at 参数"
+  },
+  "2026-07-18/027-记忆模型扩展-Phase-1-迁移脚本-新增-tools-server": {
+    "status": "completed",
+    "summary": "记忆模型扩展 Phase 1: 迁移脚本 + 新增 tools/server",
+    "created_at": "2026-07-18T15:02:39.296Z",
+    "updated_at": "2026-07-18T15:09:09.339Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "tools.py 加 entity/relation handler，server.ts 注册新工具，迁移脚本"
+  },
+  "2026-07-18/028-记忆模型扩展-Phase-2-元认知-置信度历史-检索缺口日志": {
+    "status": "in_progress",
+    "summary": "记忆模型扩展 Phase 2: 元认知+置信度历史+检索缺口日志",
+    "created_at": "2026-07-18T15:10:02.488Z",
+    "updated_at": "2026-07-18T15:10:10.173Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "db.py 追加 metacognition_log / strength_change_log / search_gap_log 三张表 DDL"
+  },
+  "2026-07-19/001-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-19T14:37:01.166561",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 7415c474-955c-42b5-96e5-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [user-profile/persona] persona -- 用户画像更新\n  [digital-clone/design] memory-fsrs-5-decay -- 为何用 FSRS-5 替代简单 exponential decay\n  [digital-clone/design] memory-sensitivity-privacy-levels -- 引入 sensitivity 字段实现隐私分级\n  [claudetalk/design] twin-bot-separate-deployment -- 为何分离 twin bot 为独立进程\n  [user-profile/persona] privacy-first-mindset -- 对隐私保护有极高要求，认为全量数字分身必须有严格边界\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-19/002-记忆写入--7-条--7-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 7 条 (7 新增)",
+    "created_at": "2026-07-19T17:29:09.066126",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6d99e059-d995-4cb3-b422-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [model-proxy/design] tp-pricing-recalibration -- 通过时间轴对齐重新校准 Token Plan 模型费率，提高 credit 计算精度\n  [model-proxy/design] full-token-vs-credit-calibration-failed -- 直接对比总 token 和总 credit 校准费率偏差巨大，被否决\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/sop] stream-result-event-bug-fix -- 修复旅游助理回复被截断的流式事件bug\n  [claudetalk/design] trip-agent-any-chat-id -- 旅游助理应支持任意群聊，不硬编码群聊ID\n  [claudetalk/design] trip-agent-direct-ws -- 旅游助理使用独立WebSocket连接，避免bridge转发\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-19/003-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-19T21:30:40.157037",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6d99e059-d995-4cb3-b422-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [travel-mcp/design] batch-crawl-travel-info -- 采用一次性爬取获取旅游目的地信息、文章推荐和攻略，事前规划使用\n  [travel-mcp/sop] travel-secretary-planning-workflow -- 旅游秘书的完整行程规划标准操作流程\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
