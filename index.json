@@ -1481,5 +1481,55 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 6d99e059-d995-4cb3-b422-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [travel-mcp/design] batch-crawl-travel-info -- 采用一次性爬取获取旅游目的地信息、文章推荐和攻略，事前规划使用\n  [travel-mcp/sop] travel-secretary-planning-workflow -- 旅游秘书的完整行程规划标准操作流程\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-20/001-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-20T01:27:21.485569",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6d99e059-d995-4cb3-b422-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/sop] profile-specific-help-texts -- 三个bot场景的快捷指令帮助文本已各自适配\n  [travel-mcp/design] scenic-guide-post-itinerary-placement -- 景点攻略功能定位为行程确认后的信息富化\n  [travel-mcp/sop] server-network-access-restrictions -- 服务器环境存在外网站点访问限制\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-20/002-记忆写入--2-条--2-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-20T08:15:21.713132",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: e27974de-d791-4c5e-92a2-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [claudetalk/design] twin-user-identity-registry -- 数字分身通过 users.json 注册表 + 环境变量注入 caller 上下文的方式区分用户级别\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-20/003-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-20T10:03:15.202827",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: da6971b6-3e0b-4670-8efe-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/sop] feishu-multi-app-openid-mismatch -- 飞书多应用下同一用户 openId 不同，需在 users.json 中注册多个\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/design] twin-user-mcp-permission-split -- Twin 模式下根据用户身份分离 MCP 读写权限\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-20/004-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-20T12:10:36.153877",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: da6971b6-3e0b-4670-8efe-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/design] twin-interaction-counting -- 数字分身通过 interactions.jsonl 统计独立用户\n  [claudetalk/design] multi-bot-data-separation -- 多 bot 独立存储交互数据，避免污染\n  [claudetalk/design] lightweight-conversation-logging -- 采用轻量交互日志代替全量聊天存储\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-20/005-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-20T16:44:02.899781",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: da6971b6-3e0b-4670-8efe-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [claudetalk/sop] restart-loop-storm -- /restart 命令可能导致服务重启循环风暴\n  [ops-daemon/design] twin-gap-push-receive-id -- 成长缺口推送接收者需使用 twin 专用飞书 ID\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
