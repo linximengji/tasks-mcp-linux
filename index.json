@@ -1072,26 +1072,26 @@
     "completed_at": "2026-07-18T02:15:18.927502+00:00"
   },
   "2026-07-16/007-Phase-3-twin-chat-假设推演-mode-simulate": {
-    "status": "pending",
+    "status": "completed",
     "summary": "Phase 3: twin_chat 假设推演 mode=simulate",
     "created_at": "2026-07-16T16:02:55.344Z",
-    "updated_at": null,
+    "updated_at": "2026-07-22T12:07:30.231Z",
     "type": "feature",
     "source": "cc"
   },
   "2026-07-16/008-Phase-3-twin-chat-对比推理-A-B-决策": {
-    "status": "pending",
+    "status": "completed",
     "summary": "Phase 3: twin_chat 对比推理 A/B 决策",
     "created_at": "2026-07-16T16:02:55.387Z",
-    "updated_at": null,
+    "updated_at": "2026-07-22T12:07:30.288Z",
     "type": "feature",
     "source": "cc"
   },
   "2026-07-16/009-Phase-3-twin-chat-知识边界标注": {
-    "status": "pending",
+    "status": "completed",
     "summary": "Phase 3: twin_chat 知识边界标注",
     "created_at": "2026-07-16T16:02:55.408Z",
-    "updated_at": null,
+    "updated_at": "2026-07-22T12:07:30.308Z",
     "type": "feature",
     "source": "cc"
   },
@@ -1238,20 +1238,20 @@
     "completed_at": "2026-07-18T09:05:17.233193+00:00"
   },
   "2026-07-18/005-记忆写入--2-条--2-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 2 条 (2 新增)",
     "created_at": "2026-07-18T15:11:03.524365",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.579Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: ff319a57-ce55-425c-865f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [ops-daemon/sop] trip-runner-feishu-receive-id -- trip_runner 通知接收方必须设为 trip Bot 的 open_id\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-18/006-记忆写入--4-条--4-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 4 条 (4 新增)",
     "created_at": "2026-07-18T17:02:21.966626",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.606Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
@@ -1302,36 +1302,36 @@
     "progress": "开始：编译、创建 service、启动"
   },
   "2026-07-18/012-飞书用户打招呼-twin已回复": {
-    "status": "pending",
+    "status": "completed",
     "summary": "飞书用户打招呼，twin已回复",
     "created_at": "2026-07-18T10:25:10.975Z",
-    "updated_at": null,
+    "updated_at": "2026-07-22T12:09:58.346Z",
     "type": "task",
     "source": "claudetalk"
   },
   "2026-07-18/013-Twin-bot-agents-mode-禁用-streaming-保-agen": {
-    "status": "pending",
+    "status": "completed",
     "summary": "Twin bot agents mode: 禁用 streaming 保 agents 模式正常",
     "created_at": "2026-07-18T10:35:11.380Z",
-    "updated_at": null,
+    "updated_at": "2026-07-22T12:12:07.496Z",
     "type": "bug",
     "source": "cc"
   },
   "2026-07-18/014-记忆写入--8-条--8-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 8 条 (8 新增)",
     "created_at": "2026-07-18T19:12:13.754010",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.617Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 7415c474-955c-42b5-96e5-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (8 条) ==\n  [ops-daemon/design] trip-bot-message-per-group -- Trip bot 消息发送到规划所在群，而非固定频道\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/design] digital-twin-split-pattern -- 数字分身分离的标准模式：独立profile+directWS\n  [claudetalk/design] twin-bot-sender-strategy -- twin bot 如何区分本人与外界：基于 sender.open_id\n  [claudetalk/design] bridge-twin-gap-dual-push -- gap 推送的双轨凭证切换方案\n  [claudetalk/design] rejected-simpler-twin-split -- 曾被否决的分离方案：全移到 twin bot 而主 bot 删 twin 逻辑\n  [user-profile/persona] demands-comprehensive-review -- 用户习惯在方案设计时要求考虑全生命周期与后期场景\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-18/015-记忆写入--6-条--6-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 6 条 (6 新增)",
     "created_at": "2026-07-18T21:20:52.594473",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.639Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
@@ -1383,20 +1383,22 @@
     "progress": "写 classify_sensitivity.py 脚本"
   },
   "2026-07-18/021-全量分类后-review-隐私等级": {
-    "status": "pending",
+    "status": "completed",
     "summary": "全量分类后 review 隐私等级",
     "created_at": "2026-07-18T14:31:02.879Z",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:54.301Z",
     "type": "task",
-    "source": "cc"
+    "source": "cc",
+    "progress": "Review 完成。三表共1755条：public 46.1% / internal 23.7% / private 30.2%。抽查3轮未见严重误标（敏感内容公开）。少量技术描述偏保守标了 private 但安全。整体质量合格。"
   },
   "2026-07-18/022-扩展记忆表范围讨论": {
-    "status": "pending",
+    "status": "completed",
     "summary": "扩展记忆表范围讨论",
     "created_at": "2026-07-18T14:31:07.318Z",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:54.321Z",
     "type": "feature",
-    "source": "cc"
+    "source": "cc",
+    "progress": "Phase 1 降权完成。改为聚焦方向：清理低价值对话快照（已降权761条）→ 后续 Phase 2 聚焦人格燃料 ingestion + Phase 3 验证效果"
   },
   "2026-07-18/023-记忆模型扩展-Phase-1-新增-entities-relations-表-D": {
     "status": "completed",
@@ -1444,99 +1446,99 @@
     "progress": "tools.py 加 entity/relation handler，server.ts 注册新工具，迁移脚本"
   },
   "2026-07-18/028-记忆模型扩展-Phase-2-元认知-置信度历史-检索缺口日志": {
-    "status": "in_progress",
+    "status": "completed",
     "summary": "记忆模型扩展 Phase 2: 元认知+置信度历史+检索缺口日志",
     "created_at": "2026-07-18T15:10:02.488Z",
-    "updated_at": "2026-07-18T15:10:10.173Z",
+    "updated_at": "2026-07-21T16:24:24.137Z",
     "type": "feature",
     "source": "cc",
     "progress": "db.py 追加 metacognition_log / strength_change_log / search_gap_log 三张表 DDL"
   },
   "2026-07-19/001-记忆写入--6-条--6-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 6 条 (6 新增)",
     "created_at": "2026-07-19T14:37:01.166561",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.649Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 7415c474-955c-42b5-96e5-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [user-profile/persona] persona -- 用户画像更新\n  [digital-clone/design] memory-fsrs-5-decay -- 为何用 FSRS-5 替代简单 exponential decay\n  [digital-clone/design] memory-sensitivity-privacy-levels -- 引入 sensitivity 字段实现隐私分级\n  [claudetalk/design] twin-bot-separate-deployment -- 为何分离 twin bot 为独立进程\n  [user-profile/persona] privacy-first-mindset -- 对隐私保护有极高要求，认为全量数字分身必须有严格边界\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-19/002-记忆写入--7-条--7-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 7 条 (7 新增)",
     "created_at": "2026-07-19T17:29:09.066126",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.668Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 6d99e059-d995-4cb3-b422-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [model-proxy/design] tp-pricing-recalibration -- 通过时间轴对齐重新校准 Token Plan 模型费率，提高 credit 计算精度\n  [model-proxy/design] full-token-vs-credit-calibration-failed -- 直接对比总 token 和总 credit 校准费率偏差巨大，被否决\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/sop] stream-result-event-bug-fix -- 修复旅游助理回复被截断的流式事件bug\n  [claudetalk/design] trip-agent-any-chat-id -- 旅游助理应支持任意群聊，不硬编码群聊ID\n  [claudetalk/design] trip-agent-direct-ws -- 旅游助理使用独立WebSocket连接，避免bridge转发\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-19/003-记忆写入--3-条--3-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 3 条 (3 新增)",
     "created_at": "2026-07-19T21:30:40.157037",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.677Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 6d99e059-d995-4cb3-b422-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [travel-mcp/design] batch-crawl-travel-info -- 采用一次性爬取获取旅游目的地信息、文章推荐和攻略，事前规划使用\n  [travel-mcp/sop] travel-secretary-planning-workflow -- 旅游秘书的完整行程规划标准操作流程\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-20/001-记忆写入--4-条--4-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 4 条 (4 新增)",
     "created_at": "2026-07-20T01:27:21.485569",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.697Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 6d99e059-d995-4cb3-b422-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/sop] profile-specific-help-texts -- 三个bot场景的快捷指令帮助文本已各自适配\n  [travel-mcp/design] scenic-guide-post-itinerary-placement -- 景点攻略功能定位为行程确认后的信息富化\n  [travel-mcp/sop] server-network-access-restrictions -- 服务器环境存在外网站点访问限制\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-20/002-记忆写入--2-条--2-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 2 条 (2 新增)",
     "created_at": "2026-07-20T08:15:21.713132",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.739Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: e27974de-d791-4c5e-92a2-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [claudetalk/design] twin-user-identity-registry -- 数字分身通过 users.json 注册表 + 环境变量注入 caller 上下文的方式区分用户级别\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-20/003-记忆写入--4-条--4-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 4 条 (4 新增)",
     "created_at": "2026-07-20T10:03:15.202827",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:29.751Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: da6971b6-3e0b-4670-8efe-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/sop] feishu-multi-app-openid-mismatch -- 飞书多应用下同一用户 openId 不同，需在 users.json 中注册多个\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/design] twin-user-mcp-permission-split -- Twin 模式下根据用户身份分离 MCP 读写权限\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-20/004-记忆写入--4-条--4-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 4 条 (4 新增)",
     "created_at": "2026-07-20T12:10:36.153877",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:37.119Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: da6971b6-3e0b-4670-8efe-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/design] twin-interaction-counting -- 数字分身通过 interactions.jsonl 统计独立用户\n  [claudetalk/design] multi-bot-data-separation -- 多 bot 独立存储交互数据，避免污染\n  [claudetalk/design] lightweight-conversation-logging -- 采用轻量交互日志代替全量聊天存储\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-20/005-记忆写入--3-条--3-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 3 条 (3 新增)",
     "created_at": "2026-07-20T16:44:02.899781",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:37.145Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: da6971b6-3e0b-4670-8efe-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [claudetalk/sop] restart-loop-storm -- /restart 命令可能导致服务重启循环风暴\n  [ops-daemon/design] twin-gap-push-receive-id -- 成长缺口推送接收者需使用 twin 专用飞书 ID\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-20/006-记忆写入--3-条--3-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 3 条 (3 新增)",
     "created_at": "2026-07-20T23:05:50.845231",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:37.161Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
@@ -1549,20 +1551,20 @@
     "updated_at": "2026-07-20T15:28:33.642Z"
   },
   "2026-07-21/001-记忆写入--2-条--2-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 2 条 (2 新增)",
     "created_at": "2026-07-21T01:12:13.046371",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:37.184Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 4465833c-5fb0-4272-9e2b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [(global)/_index] git-sync-slug-legacy-unmatched -- git_sync 状态文件含不再维护的 Windows slug，导致通知混乱\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-21/002-记忆写入--4-条--4-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 4 条 (4 新增)",
     "created_at": "2026-07-21T08:20:23.572751",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:47.125Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
@@ -1575,33 +1577,192 @@
     "updated_at": "2026-07-21T00:39:56.441Z"
   },
   "2026-07-21/004-记忆写入--3-条--3-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 3 条 (3 新增)",
     "created_at": "2026-07-21T10:13:03.463546",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:47.145Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: e9146184-9c76-4650-8d9e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [ops-daemon/design] twin-gap-push-subprocess -- twin_gap_push 通过子进程运行 gap_detector 以隔离飞书凭据\n  [global/sop] feishu-user-query-permission -- 飞书查询用户详情 API 需要 contact 权限，否则报 open_id cross app 错误\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-21/005-记忆写入--1-条--1-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 1 条 (1 新增)",
     "created_at": "2026-07-21T13:55:51.035711",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:47.170Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: bdfa76a0-8686-4f12-99c0-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [user-profile/persona] persona -- 用户画像更新"
   },
   "2026-07-21/006-记忆写入--10-条--10-新增": {
-    "status": "pending",
+    "status": "completed",
     "summary": "记忆写入: 10 条 (10 新增)",
     "created_at": "2026-07-21T15:52:25.568276",
-    "updated_at": null,
+    "updated_at": "2026-07-22T13:39:47.187Z",
     "type": "task",
     "source": "cc",
     "priority": "low",
     "progress": "会话: 8ae4177c-c7aa-4f49-a911-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (10 条) ==\n  [claudetalk/design] identity-union-id-design -- 用户身份系统采用union_id为全局标识的决策\n  [claudetalk/sop] twin-gap-reply-no-twin-prefix -- twin bot 中回复缺口卡片不再需要 /twin 前缀\n  [claudetalk/sop] gap-push-message-id-required -- gap 推送必须有非空 message_id 否则 suppress\n  [claudetalk/sop] feishu-openid-cross-app-error -- 飞书 open_id 不能跨应用混用，返回99992361\n  [claudetalk/sop] persona-segment-empty-and-misplacement -- 记忆系统 persona 段为空，存在段偏差\n  [claudetalk/design] restart-message-cache-strategy -- 重启期间消息可靠性方案决策：消息缓存+重放，而非回滚\n  [claudetalk/sop] gap-state-check-and-manual-push -- 手动检查 gap 推送失败并重试的方法\n  [claudetalk/sop] view-group-chat-records-for-twin-test -- 测试数字分身时查看群聊记录的快捷方法\n  [claudetalk/design] send-feishu-card-missing-error-log -- _send_feishu_card() 静默吞错，缺乏日志\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-21/007-记忆写入--15-条--15-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 15 条 (15 新增)",
+    "created_at": "2026-07-21T23:07:10.956968",
+    "updated_at": "2026-07-22T13:39:47.210Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 3680a3bb-7a6a-46e5-b37e-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (15 条) ==\n  [claudetalk/design] twin-feed-out-of-band -- 在 index.ts 中硬性插入 twin_feed 调用以确保可靠性\n  [ops-daemon/sop] twin-refine-cron-schedule -- 通过 ops-daemon 定时触发 twin_refine 画像更新\n  [digital-clone/design] persona-injection-four-layers -- 推理时注入四层记忆结构补充上下文\n  [digital-clone/design] skill-distillation-bucket-rules -- 按 BUCKET_RULES 将行为模式聚类生成蒸馏技能\n  [digital-clone/design] dimension-lifecycle-adversarial-check -- 抽象维度定期审查及衰退推送机制\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/design] compact-thresholds-400k-600k-800k -- 上下文压缩分级阈值调整\n  [claudetalk/design] twin-trip-no-async-compact -- twin/trip 缺失异步压缩\n  [claudetalk/design] identity-resolver-silent-failure -- twin 身份解析可能静默失败\n  [claudetalk/design] duplicate-session-keys-same-conversation -- 同一群聊可能产生多个 session 记录\n  [claudetalk/sop] directws-peer-message-polling-latency -- directWS 模式存在 2 秒轮询延迟\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/persona] user-privacy-lifecycle-traits -- 用户核心人格特征：隐私隔离、全生命周期设计\n  [claudetalk/design] memory-segment-count-update -- 更新 memory-mcp-design 记忆中的段数至 6\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-21/008-记忆写入--9-条--9-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 9 条 (9 新增)",
+    "created_at": "2026-07-21T23:19:20.208373",
+    "updated_at": "2026-07-22T13:39:47.233Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 8ae4177c-c7aa-4f49-a911-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (9 条) ==\n  [ops-daemon/design] twin-refine-scheduled-task -- ops-daemon 调度定期执行数字分身精炼任务\n  [claudetalk/design] twin-bot-resume-session -- twin bot 启动时通过 --resume 恢复特定会话以保持连续性\n  [user-profile/persona] cli-system-inspection-habit -- 排查系统问题时习惯使用命令行工具检查进程与文件状态\n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/design] three-boot-independent-bots -- 三个 claudetalk boot 对应三个独立飞书 bot，不是共用一个\n  [claudetalk/design] owner-maps-three-feishu-apps -- 主人身份关联三个飞书 bot 应用 ID\n  [claudetalk/design] mcp-service-not-bot -- claudetalk-mcp 服务是 MCP 工具服务，不是对话 bot\n  [user-profile/persona] calls-services-boot -- 用户习惯使用“boot”来称呼系统服务实例\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-22/001-记忆写入--5-条--5-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-22T00:06:11.075890",
+    "updated_at": "2026-07-22T13:39:36.995Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6a712425-d3a0-43ec-9b9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [claudetalk/sop] twin-help-remove-restart -- 数字分身帮助文本已移除无效 /restart 指令\n  [claudetalk/sop] trip-help-alignment -- 旅游助理帮助文本已与数字分身统一\n  [claudetalk/sop] help-text-unified-source -- 各 profile 的帮助文本统一使用 src/utils/help-text.ts 生成\n  [user-profile/persona] persona -- 用户画像更新\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-21/044-可以": {
+    "status": "completed",
+    "summary": "可以。",
+    "created_at": "2026-07-21T16:15:10.827Z",
+    "updated_at": "2026-07-21T16:15:10.827Z"
+  },
+  "2026-07-21/045-Phase-2-收尾-独立decay路径补log-strength-change": {
+    "status": "completed",
+    "summary": "Phase 2 收尾: 独立decay路径补log_strength_change",
+    "created_at": "2026-07-21T16:18:05.265Z",
+    "updated_at": "2026-07-21T16:19:12.877Z",
+    "type": "task",
+    "source": "cc",
+    "progress": ""
+  },
+  "2026-07-21/046-Phase-3-3-知识边界标注-pre-check": {
+    "status": "completed",
+    "summary": "Phase 3.3: 知识边界标注 pre-check",
+    "created_at": "2026-07-21T16:18:05.278Z",
+    "updated_at": "2026-07-21T16:19:58.650Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": ""
+  },
+  "2026-07-21/047-Phase-3-1-twin-chat-mode-simulate": {
+    "status": "completed",
+    "summary": "Phase 3.1: twin_chat mode=simulate",
+    "created_at": "2026-07-21T16:18:05.286Z",
+    "updated_at": "2026-07-21T16:20:38.045Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": ""
+  },
+  "2026-07-21/048-Phase-3-2-twin-chat-mode-compare-A-B决策": {
+    "status": "completed",
+    "summary": "Phase 3.2: twin_chat mode=compare A/B决策",
+    "created_at": "2026-07-21T16:18:05.294Z",
+    "updated_at": "2026-07-21T16:24:24.121Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": ""
+  },
+  "2026-07-21/049-Twin-bot-代码层调用-twin-chat-替代-Claude": {
+    "status": "completed",
+    "summary": "Twin bot 代码层调用 twin_chat 替代 Claude",
+    "created_at": "2026-07-21T16:43:00.856Z",
+    "updated_at": "2026-07-21T16:47:56.601Z",
+    "type": "feature",
+    "source": "cc",
+    "progress": "需要找到 claudetalk 中如何通过代码调用 MCP tool 的模式"
+  },
+  "2026-07-22/002-记忆写入--13-条--13-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 13 条 (13 新增)",
+    "created_at": "2026-07-22T01:11:35.684783",
+    "updated_at": "2026-07-22T13:39:37.016Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (13 条) ==\n  [claudetalk/design] twin-reply-only-ingestion -- 当前 twin profile 只记录 AI 回复，不记录用户提问\n  [claudetalk/design] peer-message-file-communication -- feishu-bridge 与主进程通过文件轮询通信\n  [claudetalk/design] optimal-ingestion-insertion-point -- 最佳摄入插入点确定为 twin 路径发送消息之后\n  [claudetalk/design] rejected-non-twin-ingestion -- 曾考虑在非 twin 路径添加摄入，因需额外身份解析而否决\n  [claudetalk/design] session-boundary-absence -- 会话生命周期缺乏明确的开始/结束标记\n  [claudetalk/design] twin-bot-direct-twin-chat-call -- twin bot 直接调用 twin_chat 的实现方式选择：直接 spawn Python 进程\n  [claudetalk/design] rejected-mcp-sdk-for-twin-chat -- 被否决的方案：引入 MCP SDK 客户端直接调用 twin_chat\n  [digital-clone/design] knowledge-boundary-precheck-l35 -- 知识边界标注实现：检索后预检、注入 L3.5 节\n  [digital-clone/design] twin-chat-simulate-compare-modes -- twin_chat 新增 simulate 和 compare 模式的设计\n  [user-profile/persona] prefers-simple-consistent-implementation -- 偏好与现有模式一致的简单实现方案，避免引入不必要的依赖\n  [claudetalk/sop] growth-gap-routes-to-main-bot -- 成长缺口消息仍发到主Bot而非数字分身\n  [ops-daemon/sop] ops-daemon-working-directory-mismatch -- ops-daemon 进程工作目录可能不正确\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-22/003-记忆写入--4-条--4-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-22T08:18:06.568323",
+    "updated_at": "2026-07-22T13:39:37.043Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/design] twin-interactions-logging -- 数字分身交互日志记录：JSONL 追加方式，按用户统计消息数\n  [claudetalk/design] twin-external-observations-logging -- 数字分身外部观察日志：记录群聊中非 owner 消息到 external-observations.jsonl\n  [claudetalk/design] twin-llm-call-via-proxy -- 数字分身 LLM 调用通过本地代理 localhost:4000，使用 deepseek-v4-flash 模型\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-22/004-记忆写入--5-条--5-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-22T09:42:52.442007",
+    "updated_at": "2026-07-22T13:39:37.065Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [claudetalk/design] twin-chat-calls-llm -- 数字分身推理引擎确实经过 LLM 调用\n  [claudetalk/sop] conversation-logging-not-yet-implemented -- 当前只记录交互计数，未保存对话内容\n  [ops-daemon/sop] daemon-single-instance-confirmed -- 通过进程检查确认 daemon 未双实例运行\n  [semi-report/sop] report-email-target -- 半导体日报发送至 linximengji@163.com\n  [user-profile/persona] prefers-evidence-over-guesswork -- 用户重视实际数据，反感基于猜测的结论"
+  },
+  "2026-07-22/005-记忆写入--1-条--1-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-22T13:14:33.643437",
+    "updated_at": "2026-07-22T13:39:37.080Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [(global)/_index] ? -- "
+  },
+  "2026-07-22/006-记忆写入--1-条--1-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-22T16:57:27.919303",
+    "updated_at": "2026-07-22T13:39:37.105Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [(global)/_index] ? -- "
+  },
+  "2026-07-22/007-记忆写入--4-条--4-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-22T20:09:40.163178",
+    "updated_at": "2026-07-22T13:40:07.879Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/design] hybrid-memory-search-with-tri-score -- 记忆混合搜索与 tri-score 排序机制\n  [claudetalk/design] knowledge-boundary-detection -- 推理前通过记忆覆盖分析自动标注知识边界\n  [claudetalk/design] style-instruction-from-language-fingerprint -- 从语言指纹自动推断回答风格指引\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-22/008-Phase-1-记忆质量评估与降噪-低价值对话快照降权": {
+    "status": "completed",
+    "summary": "Phase 1: 记忆质量评估与降噪 — 低价值对话快照降权",
+    "created_at": "2026-07-22T13:26:22.036Z",
+    "updated_at": "2026-07-22T13:40:07.900Z",
+    "type": "feature",
+    "source": "cc"
+  },
+  "2026-07-22/009-记忆写入--10-条--10-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 10 条 (10 新增)",
+    "created_at": "2026-07-22T21:48:42.684098",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2dc98f4c-dbc2-4298-bd1a-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (10 条) ==\n  [claudetalk/design] twin-reply-json-parse-fix -- 修复飞书收到原始 JSON 的问题\n  [digital-clone/design] reasoning-template-update-task -- 更新 twin_chat 以使用新的模板变量\n  [digital-clone/design] duplicate-build-style-instruction -- reasoning.py 中存在重复的函数定义\n  [digital-clone/sop] memory-search-hybrid-strategy -- 记忆搜索采用混合策略（向量+关键词+实体）\n  [claudetalk/design] feishu-message-packaging-issue -- 飞书消息包装问题导致不该回复的内容外泄\n  [claudetalk/sop] feishu-bridge-restart-no-op -- feishu-bridge 中 /restart 只识别不执行，造成重启风暴\n  [digital-clone/design] memory-relevance-reassessment-needed -- 记忆库与数字分身核心目标关联度低，需重新评价\n  [digital-clone/sop] memory-quality-clean-script -- clean_memory_quality.py 脚本用于记忆质量评估与降噪\n  [digital-clone/design] entity-memory-link-age-low-coverage -- 记忆-实体关联覆盖率仅4.8%，关系链提取需改进\n  [digital-clone/design] privacy-sensitivity-review-in-progress -- 隐私分级 review 进行中，全量记忆待重新标记"
   }
 }
