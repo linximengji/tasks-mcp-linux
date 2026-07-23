@@ -1764,5 +1764,65 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 2dc98f4c-dbc2-4298-bd1a-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (10 条) ==\n  [claudetalk/design] twin-reply-json-parse-fix -- 修复飞书收到原始 JSON 的问题\n  [digital-clone/design] reasoning-template-update-task -- 更新 twin_chat 以使用新的模板变量\n  [digital-clone/design] duplicate-build-style-instruction -- reasoning.py 中存在重复的函数定义\n  [digital-clone/sop] memory-search-hybrid-strategy -- 记忆搜索采用混合策略（向量+关键词+实体）\n  [claudetalk/design] feishu-message-packaging-issue -- 飞书消息包装问题导致不该回复的内容外泄\n  [claudetalk/sop] feishu-bridge-restart-no-op -- feishu-bridge 中 /restart 只识别不执行，造成重启风暴\n  [digital-clone/design] memory-relevance-reassessment-needed -- 记忆库与数字分身核心目标关联度低，需重新评价\n  [digital-clone/sop] memory-quality-clean-script -- clean_memory_quality.py 脚本用于记忆质量评估与降噪\n  [digital-clone/design] entity-memory-link-age-low-coverage -- 记忆-实体关联覆盖率仅4.8%，关系链提取需改进\n  [digital-clone/design] privacy-sensitivity-review-in-progress -- 隐私分级 review 进行中，全量记忆待重新标记"
+  },
+  "2026-07-23/001-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-23T00:34:27.083142",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [digital-clone/design] weighted-dim-scheduling -- gap检测器采用覆盖率驱动+保底配额的加权调度\n  [digital-clone/design] psychological-model-integration-plan -- 计划集成心理学人格模型丰富角色扫描\n  [digital-clone/design] deferred-depth-persona-layer-2 -- 第二层深度人格推理暂时搁置\n  [user-profile/persona] preference-for-mature-theoretical-frameworks -- 偏好引用成熟理论框架作为设计依据\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-23/002-记忆写入--1-条--1-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-23T08:19:34.868813",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [(global)/_index] ? -- "
+  },
+  "2026-07-23/003-记忆写入--1-条--1-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-23T10:56:03.980500",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [claudetalk/design] twin-reply-ingest-noise -- 分身回复自动摄入存在噪声风险，缺少质量过滤"
+  },
+  "2026-07-23/004-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-23T13:27:35.507649",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f86c7dc-aaa7-4f50-9bd1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [memory-mcp/design] remove-l1-segment-misplacement -- 取消L1关键词段落归属异常检查，因其价值太低\n  [memory-mcp/design] l3-only-email-audit-report -- 邮件中仅保留周五L3深度审核报告，L1不再发邮件\n  [memory-mcp/design] digital-twin-audit-reevaluate -- 数字分身记忆体的审核方案需要重新审视，已启动调研\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-23/005-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-23T18:12:06.587423",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [(global)/_index] ? -- \n  [user-profile/persona] persona -- 用户画像更新\n  [claudetalk/overview] proxy-model-distribution -- 当前代理路由模型调用分布：flash占72%，pro占25%\n  [claudetalk/design] route-classifier-memory-mismatch -- 路由分类器内存信息与持久化统计不一致，需关注\n  [claudetalk/sop] classifier-readtimeout-errors -- 路由分类器解析时出现 ReadTimeout 错误需告警"
+  },
+  "2026-07-23/006-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-23T20:26:22.480560",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/design] token-plan-allocator-ratio-surge-rule -- allocator ratio 最后 5 天有冲刺规则，至少 30%\n  [claudetalk/design] l2-classifier-route-and-allocator -- L2 分类器默认 moderate→pro, complex→max，然后 allocator 尝试重路由到 TP 模型\n  [claudetalk/design] mapping-excludes-general-task-type -- 映射表不包含 general 任务类型，防止 general 请求消耗 TP 额度\n  [claudetalk/design] tp-usage-limited-by-mapping-and-gate-even-during-s -- 冲刺期 TP 用量仍受映射表和 hash gate 限制"
   }
 }
