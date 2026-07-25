@@ -1824,5 +1824,35 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [claudetalk/design] token-plan-allocator-ratio-surge-rule -- allocator ratio 最后 5 天有冲刺规则，至少 30%\n  [claudetalk/design] l2-classifier-route-and-allocator -- L2 分类器默认 moderate→pro, complex→max，然后 allocator 尝试重路由到 TP 模型\n  [claudetalk/design] mapping-excludes-general-task-type -- 映射表不包含 general 任务类型，防止 general 请求消耗 TP 额度\n  [claudetalk/design] tp-usage-limited-by-mapping-and-gate-even-during-s -- 冲刺期 TP 用量仍受映射表和 hash gate 限制"
+  },
+  "2026-07-24/001-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-24T10:43:23.332925",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [model-proxy/design] glm52-mapping-gate-always-zero -- moderate:general 映射 glm-5.2 时 gate 始终为 0，未能分流\n  [model-proxy/design] base-model-affects-tp-ratio -- 降低 complex 任务的 base 模型会改变 TP 分配比例\n  [model-proxy/sop] historical-tp-ratio-extremely-low -- 实际生产 TP 调用比例极低，可能需要调整策略\n  [model-proxy/sop] simulate-routing-via-task-system -- 路由模拟测试可通过任务系统触发，输出多场景对比\n  [model-proxy/design] gate-increase-lifts-tp-for-moderate -- 提高 gate 比例可小幅提升 TP 分配，但 moderate:code 未增加"
+  },
+  "2026-07-24/002-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-24T14:39:57.221840",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [model-proxy/design] l1-trivial-false-positives -- L1 trivial 规则有两个误判案例\n  [model-proxy/design] agent-model-bypass-high -- agent-model bypass 占用大量请求，绕过了智能路由\n  [model-proxy/design] l1-trivial-ratio-58 -- L1:trivial 当前占比58%，可能影响成本\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-24/003-记忆写入--5-条--5-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-24T19:06:35.891809",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [claudetalk/sop] l1-trivial-misjudgment -- L1节流规则将bug report等含问题短语误判为问候/确认，导致不当使用flash模型\n  [model-proxy/sop] agent-model-bypass-proportion -- agent-model 绕过 L1/L2 占了大量请求，主要是子代理直接指定模型\n  [claudetalk/sop] twin-feed-ingestion-silent-fail -- twinFeed 用 stdio:'ignore' 导致 ingestion.py 错误被静默吞掉，gap 已标记但记忆未入库\n  [claudetalk/sop] verify-twin-feed-ingestion -- 验证 twin_feed 摄入是否成功需直接查询 ingestion_log 表\n  [claudetalk/design] gap-answer-dual-path -- gap 回答存在 directWS 和 feishu-bridge 两条处理路径，可能导致重复标记或遗漏"
   }
 }
