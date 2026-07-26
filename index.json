@@ -1854,5 +1854,166 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [claudetalk/sop] l1-trivial-misjudgment -- L1节流规则将bug report等含问题短语误判为问候/确认，导致不当使用flash模型\n  [model-proxy/sop] agent-model-bypass-proportion -- agent-model 绕过 L1/L2 占了大量请求，主要是子代理直接指定模型\n  [claudetalk/sop] twin-feed-ingestion-silent-fail -- twinFeed 用 stdio:'ignore' 导致 ingestion.py 错误被静默吞掉，gap 已标记但记忆未入库\n  [claudetalk/sop] verify-twin-feed-ingestion -- 验证 twin_feed 摄入是否成功需直接查询 ingestion_log 表\n  [claudetalk/design] gap-answer-dual-path -- gap 回答存在 directWS 和 feishu-bridge 两条处理路径，可能导致重复标记或遗漏"
+  },
+  "2026-07-25/001-记忆写入--2-条--2-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-25T10:33:52.603668",
+    "updated_at": "2026-07-25T15:06:30.950Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 50426a09-1dc7-4c28-ab9b-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [claudetalk/design] gap-reply-no-feedback -- 回复成长缺口后无确认反馈，仅关闭缺口\n  [global/_index] grep-tool-unavailable-use-bash -- Grep 工具不可用，搜索文件内容需用 bash grep"
+  },
+  "2026-07-25/002-memory-mcp-L3审核结果-review-report-json-自7月": {
+    "status": "completed",
+    "summary": "[memory-mcp] L3审核结果 review-report.json 自7月6日未更新",
+    "created_at": "2026-07-25T02:43:35.143Z",
+    "updated_at": "2026-07-25T02:49:32.550Z",
+    "type": "bug",
+    "source": "cc"
+  },
+  "2026-07-25/2026-07-25/001memory-review-pending": {
+    "summary": "记忆体待处理 (待审核 2 条, 问题 19 条): persona, claudetalk-index(共21项)",
+    "type": "task",
+    "source": "ops-daemon",
+    "priority": "medium",
+    "status": "pending",
+    "progress": "=== 待审核（需运行 memory_review confirm 确认）===\n- [persona] 包含飞书open_id明文，需脱敏处理\n- [claudetalk-index] 包含明文飞书 Bot App ID 和 chat_id，应脱敏或移除\n=== 质量检查 ===\n- [agent-core-reusable-patterns](sop) 触发条件, 根因解释, 诊断思路\n- [agent-core-reusable-patterns] completeness: 触发条件, 根因解释, 诊断思路\n- [agent-core](sop) 触发条件, 根因解释, 诊断思路\n- [agent-core] completeness: 触发条件, 根因解释, 诊断思路\n- [background-task-framework](sop) 触发条件, 根因解释, 诊断思路\n- [background-task-framework] completeness: 触发条件, 根因解释, 诊断思路\n- [conversation-classifier-rules](sop) 触发条件, 根因解释, 诊断思路\n- [conversation-classifier-rules] completeness: 触发条件, 根因解释, 诊断思路\n- [feishu-bridge-spawn-enoent](sop) 触发条件, 根因解释, 诊断思路\n- [feishu-bridge-spawn-enoent] completeness: 触发条件, 根因解释, 诊断思路\n- [paths-config](sop) 触发条件, 根因解释, 诊断思路\n- [paths-config] completeness: 触发条件, 根因解释, 诊断思路\n- [peer-message-mechanism](sop) 触发条件, 根因解释, 诊断思路\n- [peer-message-mechanism] completeness: 触发条件, 根因解释, 诊断思路\n- [phone-tasks-tests](sop) 触发条件, 根因解释, 诊断思路\n- [phone-tasks-tests] completeness: 触发条件, 根因解释, 诊断思路\n- [testing-pattern-duplication-real-fs](sop) 触发条件, 根因解释, 诊断思路\n- [testing-pattern-duplication-real-fs] completeness: 触发条件, 根因解释, 诊断思路\n- [timeout-orphan-process](sop) 触发条件, 根因解释, 诊断思路\n- [timeout-orphan-process] completeness: 触发条件, 根因解释, 诊断思路\n- [memory-review-timeout-investigation] multi_model_disagreement: \n- [persona] multi_model_disagreement: \n- [identity-system-design] multi_model_disagreement: \n- [quality-checkpoints] multi_model_disagreement: \n- [claudetalk-index] multi_model_disagreement: \n- [embedding-backfill-done] multi_model_disagreement: ",
+    "created_at": "2026-07-25"
+  },
+  "2026-07-25/2027-Fix-N-bugs-found-in-digital-clone-audit": {
+    "status": "completed",
+    "summary": "Fix N bugs found in digital-clone audit",
+    "created_at": "2026-07-25T04:12:15.646Z",
+    "updated_at": "2026-07-25T04:19:10.821Z",
+    "type": "bug",
+    "source": "cc",
+    "progress": "Completed full audit. Found 4 bugs (all fixed). Generated architecture diagram."
+  },
+  "2026-07-25/2028-记忆写入--11-条--11-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 11 条 (11 新增)",
+    "created_at": "2026-07-25T13:10:36.344719",
+    "updated_at": "2026-07-25T15:06:36.846Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 9d9d4b71-a1dd-4a41-9c34-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (11 条) ==\n  [memory-mcp/design] deep-audit-llm-timeout -- 记忆深度审核因串行调用 LLM 导致周五任务超时\n  [memory-mcp/design] config-second-model-import-error -- config 模块缺少 SECOND_MODEL 导致 health 脚本 ImportError\n  [memory-mcp/sop] review-report-accumulation-handling -- 审核报告追加模式及条目清理方式\n  [memory-mcp/design] deep-audit-prompt-six-dimensions -- 记忆质量审核使用六维评分提示词\n  [model-proxy/design] qwen-max-to-qwen38-preview-migration -- qwen3.7-max 系列模型替换为 qwen3.8-max-preview\n  [model-proxy/design] qwen-max-preview-rejected-model-name -- 曾尝试使用 qwen-max-preview 但模型不存在，正确名称为 qwen3.8-max-preview\n  [user-profile/persona] persona -- 用户画像更新\n  [digital-clone/design] merge-architecture-versions -- 三个架构图版本（v1/v2/v3）重复，已决定合并为一个完整版\n  [ops-dashboard/design] deduplicate-model-proxy-port -- Dashboard 服务列表去重，避免 proxy-4000 与 model-proxy 重复显示\n  [user-profile/persona] persona -- 用户画像更新\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-25/2029-记忆写入--5-条--5-新增": {
+    "status": "completed",
+    "summary": "记忆写入: 5 条 (5 新增)",
+    "created_at": "2026-07-25T20:14:46.983138",
+    "updated_at": "2026-07-25T15:06:42.581Z",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 34032e0a-3cb7-4d32-b7ad-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (5 条) ==\n  [digital-clone/design] full-architecture-diagram -- digital-clone 完整架构图覆盖接入层、Bridge、Python Twin 模块与 SQLite 持久层\n  [global/overview] core-projects-architecture-diagram-candidates -- 除 digital-clone 外，memory-mcp、ops-daemon、agent_core、claudetalk 也适合画架构图\n  [global/sop] memory-persona-segment-empty -- 记忆系统 persona 段为空，涉及个人特征时应优先补充\n  [memory-mcp/design] memory-mcp-design-segment-count-outdated -- memory-mcp-design 记忆中“5段”的表述已过时，实际为 6 段\n  [global/sop] deepseek-v4-pro-sub-unavailable -- 模型 deepseek-v4-pro-sub 不可用，需切换其他模型"
+  },
+  "2026-07-25/2030-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-25T21:54:53.256298",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 34032e0a-3cb7-4d32-b7ad-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [claudetalk/design] gap-push-stopped-ops-daemon-restart -- 成长缺口推送停止时重启 ops-daemon 通常能恢复\n  [claudetalk/design] gap-push-openid-misconfig -- open_id 配置错误曾导致 gap 推送完全失效\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-25/002-8月31号晚上-35个吃饭的包间-有推荐吗": {
+    "status": "completed",
+    "summary": "8月31号晚上 35个吃饭的包间，有推荐吗？",
+    "created_at": "2026-07-25T14:12:23.813Z",
+    "updated_at": "2026-07-25T14:12:23.813Z"
+  },
+  "2026-07-25/2031-memory-audit-全量记忆体-L3-深度审计-qwen3-8": {
+    "status": "completed",
+    "summary": "[memory audit] 全量记忆体 L3 深度审计 (@qwen3.8)",
+    "created_at": "2026-07-25T14:54:25.530Z",
+    "updated_at": "2026-07-25T15:27:54.012Z",
+    "type": "task",
+    "source": "cc"
+  },
+  "2026-07-25/2032-审核-memory-mcp-服务端核心-5段模型-存储-去重": {
+    "status": "completed",
+    "summary": "审核 memory-mcp 服务端核心（5段模型/存储/去重）",
+    "created_at": "2026-07-25T16:19:22.411Z",
+    "updated_at": "2026-07-25T16:24:01.397Z",
+    "type": "research",
+    "source": "cc",
+    "progress": "完成。12 项发现：2 critical（wiki-link 跨 ns 同名覆盖、memory_review TS/Py 协议不一致 apply 永失败），5 important（_generate_index_line NameError 死代码、cleanup 读 ns 键但写 namespace、\"(global)\" vs \"global\" 死逻辑、每次调用 spawn 新进程性能瓶颈、MemoryDeleteSchema 缺 namespace），5 minor。"
+  },
+  "2026-07-25/2033-审核-memory-mcp-扫描器与代码图谱-增量扫描-detectors": {
+    "status": "completed",
+    "summary": "审核 memory-mcp 扫描器与代码图谱（增量扫描/detectors）",
+    "created_at": "2026-07-25T16:19:23.376Z",
+    "updated_at": "2026-07-25T16:28:35.899Z",
+    "type": "research",
+    "source": "cc",
+    "progress": "完成。15 项发现：3 critical（minimize_frontmatter.py ImportError MEMORY_DIR 不存在、strip_confidence.py NameError MEMORY_ROOT 未导入、scan.py:435 dst_f in current[5:] 子串匹配导致 trace_impact 误报），6 important（WS_NAME_RE 通用目录名误报、TS import type/* as 漏报误报、PATH_ARG_RE 漏 python3、install-hooks.py 无条件覆盖已有 hook、db.py migrate_from_json 中途崩溃重复边、scan.py 已提交变更非文件级增量、路径分隔符不一致），6 minor。误删风险：install-hooks.py hook 覆盖、reinfer_segments.py 批量写盘。"
+  },
+  "2026-07-25/2034-审核-ops-daemon-主循环与-checks-只监视不维护原则": {
+    "status": "completed",
+    "summary": "审核 ops-daemon 主循环与 checks（只监视不维护原则）",
+    "created_at": "2026-07-25T16:19:24.405Z",
+    "updated_at": "2026-07-25T16:29:03.248Z",
+    "type": "research",
+    "source": "cc",
+    "progress": "完成。16 项发现：2 critical（trip_scanner 违反只监视不维护原则直接 systemctl start、main.py 服务停止告警去抖逻辑矛盾永远不触发），8 important（episodic 无限追加无去重、多处阻塞 I/O 卡事件循环、scheduler 在 lock 内执行 callback、日志轮转无效、fcntl.flock 遗留代码、cloudflared degraded_since 死代码、notify/llm 模块 import 时读 env 早于 .env 加载），6 minor。设计偏离：trip_scanner 进程管理、_proc.py kill 函数、MCP server 暴露写入工具。"
+  },
+  "2026-07-25/2035-审核-ops-daemon-trip子系统与状态机-file-lock-泄漏": {
+    "status": "completed",
+    "summary": "审核 ops-daemon trip子系统与状态机（file_lock/泄漏）",
+    "created_at": "2026-07-25T16:19:25.377Z",
+    "updated_at": "2026-07-25T16:27:15.569Z",
+    "type": "research",
+    "source": "cc",
+    "progress": "完成。12 项发现：2 critical（trip_scanner 激活失败状态不可恢复、pact_verify cfg 缺 min_interval 键 KeyError），5 important（trip_scanner 阻塞 I/O 无 executor、tunnel_manager pkill -f 无差别杀进程、file_lock 无 stale lock 清理、trip_runner 硬编码飞书 open_id、pending 列表与磁盘文件不同步），5 minor。设计符合性：trip 与监控主循环隔离基本干净；state_machine 是死代码；pacts_upload 无凭证泄漏。"
+  },
+  "2026-07-25/2036-修复-memory-mcp-存储-服务端-wiki-link覆盖-review协": {
+    "status": "completed",
+    "summary": "修复 memory-mcp 存储/服务端（wiki-link覆盖/review协议/global死逻辑）",
+    "created_at": "2026-07-25T16:32:33.042Z",
+    "updated_at": "2026-07-25T16:45:14.396Z",
+    "type": "task",
+    "source": "cc",
+    "progress": "完成。12 项修复：(1) wiki-link key 改 (namespace,name) 元组 + 裸名优先同 ns 匹配 (2) TS review schema 对齐 Python: list/confirm/dismiss/dismiss-all + file→name+namespace (3) 删除 _generate_index_line 死代码 (4) cleanup 读 namespace 键 (5) 4处 \"(global)\"→\"global\" (6) bridge.ts 长驻子进程 + _storage_bridge.py id 回显 (7) MemoryDeleteSchema 加 namespace (8) _parse_file 只读不写 (9) _update_index 删 ns 参数 (10) 移除 output_format 参数 (11) rerank 失败 stderr warning (12) SECOND_MODEL 从 env 读取。py_compile OK, tsc --noEmit OK, npm run build OK, test_storage.py 38 passed。"
+  },
+  "2026-07-25/2037-修复-memory-mcp-扫描器-detectors-scripts-子串匹配": {
+    "status": "completed",
+    "summary": "修复 memory-mcp 扫描器/detectors/scripts（子串匹配/正则/死脚本）",
+    "created_at": "2026-07-25T16:32:34.210Z",
+    "updated_at": "2026-07-25T17:03:09.014Z",
+    "type": "task",
+    "source": "cc",
+    "progress": "完成。16 项全部独立复核通过：(1)(2) 两个死脚本导入修复 (3) trace_impact 子串匹配改为规范化精确比较 (4) WS_NAME_RE 移除 (5) TS import type + * as (6) subprocess python3 (7) install-hooks 非破坏性 (8) migrate 去重 (9) 增量扫描 git diff <last_rev> + set/get_scan_state (10) 路径规范化入库 (11) http port \\d{2,5} (12) REL_PATH_RE 无 DOTALL (13) reinfer 死代码移除+dry-run (14) FILE_TIMEOUT 移除 (15) hash 仅 fallback (16) project_roots 去重。附加发现：db._execute 从不 commit，set_scan_state 显式 commit（潜在陷阱）。E2E + 脚本测试全绿。"
+  },
+  "2026-07-25/2038-修复-ops-daemon-主循环-checks-告警死代码-阻塞IO-日志轮转": {
+    "status": "pending",
+    "summary": "修复 ops-daemon 主循环/checks（告警死代码/阻塞IO/日志轮转）",
+    "created_at": "2026-07-25T16:32:35.429Z",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc"
+  },
+  "2026-07-25/2039-修复-ops-daemon-trip-tunnel-notify-agent-c": {
+    "status": "completed",
+    "summary": "修复 ops-daemon trip/tunnel/notify + agent-core（env时序/pkill/锁）",
+    "created_at": "2026-07-25T16:32:36.502Z",
+    "updated_at": "2026-07-25T16:45:26.172Z",
+    "type": "task",
+    "source": "cc",
+    "progress": "完成。14 项修复：(1) trip_scanner 先 start 再写 active，失败 revert pending (2) pact_verify min_interval 统一 cfg.get (3) trip_scanner 阻塞 I/O 改 run_in_executor (4) tunnel_manager 去掉 pkill -f，只通过 pid_file 精确 kill (5) file_lock 加 PID 文件 + stale lock 清理 + owner 校验 (6) trip_runner 去掉硬编码飞书 open_id fallback (7) trip_runner pending 列表每轮 reload 后重建 (8) notify.py/llm.py 改函数内延迟读 env (9) state_machine.py 删除（死代码）(10) tunnel_manager Popen fd close (11) tunnel_manager status() 顶层按子服务计算 (12) trip_runner _tz 改 zoneinfo 动态 (13) trip_scanner pending 激活时间只取 created_at/schedule[0]。scheduler.py callback 锁修复由主循环手动补（agent 路径 agent-core 不存在）。py_compile 全部通过，test_file_lock.py 通过。"
+  },
+  "2026-07-26/001-记忆写入--16-条--16-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 16 条 (16 新增)",
+    "created_at": "2026-07-26T01:19:22.701149",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 086a111c-a36f-4881-b9cf-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (16 条) ==\n  [model-proxy/design] token-plan-api-limitations -- 阿里云 BSSOpenAPI 不支持查询百炼 Token Plan 额度，DescribeResourceUsageTotal 仅限 RI/SCU 资源类型\n  [model-proxy/design] token-plan-routes-and-credit-calc -- Token Plan 路由列表及 telemetry.py 中 credit 计算逻辑：过滤 deepseek-/doubao- 前缀和 costUSD 记录\n  [model-proxy/sop] aliyun-console-automation-blockers -- 阿里云百炼控制台自动化查询的已知障碍：RAM 登录触发 MFA、iframe 嵌套复杂、需主账号登录态\n  [user-profile/persona] automation-over-manual-workaround -- 用户强烈偏好全自动化方案，明确拒绝 cookie 注入等半手动 workaround，会反复强调\n  [model-proxy/design] proxy-escalation-and-bypass-logic -- model_proxy.py 中 stuck 检测升级机制和 prompt-bypass 路由解析逻辑\n  [user-profile/persona] persona -- 用户画像更新\n  [model-proxy/design] qwen37max-alias-resolution -- qwen3.7-max 标签不再直接存在于 ROUTES，应别名解析到 qwen3.8-max-preview。\n  [model-proxy/sop] restart-avoid-kill-claude-cli -- 重启 proxy 时用精确 PID/端口匹配，避免 pkill -f 误杀 Claude CLI。\n  [user-profile/persona] proxy-change-caution -- 改代理/路由时偏好先测试验证，再切生产，对误杀进程敏感。\n  [model-proxy/sop] verify-model-tag-routing -- 验证 @model/@tag 路由时看 ROUTE/UPSTREAM 日志，而不是只看返回。\n  [proxy/design] token-plan-allocator-gate -- Token Plan 额度路由的唯一门控与映射策略\n  [proxy/design] rejected-general-tp-threshold -- 否决给 general 任务或单模型加二级门槛的方案\n  [ops-daemon/design] monitor-only-principle -- ops-daemon 只监视不维护，禁止 check 直接维护进程\n  [memory-mcp/design] code-graph-scan-invariants -- code-graph 扫描/追踪的增量与去重不变量\n  [user-profile/persona] audit-first-verify-stepwise -- 用户偏好先整体架构审核，再逐项修复测试\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
