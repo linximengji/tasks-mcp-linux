@@ -2055,5 +2055,55 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: fb8746dc-4cba-4215-a340-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (14 条) ==\n  [daily-report/design] proxy-port-field-in-live-checks -- 系统概览提取代理端口时使用 port 字段\n  [daily-report/design] proxy-models-dynamic-from-litellm -- 代理用量卡片应动态从 litellm 配置读取模型列表\n  [daily-report/design] twin-health-check-timeout-300 -- 数字分身健康检查子进程超时设为 300 秒\n  [daily-report/design] proxy-usage-filter-bypass-models -- 代理用量统计只展示实际配置模型，bypass 模型过滤\n  [user-profile/persona] persona -- 用户画像更新\n  [travel-mcp/design] trip-type-distinction -- 旅行助手区分出行类型（亲子/独自/情侣）但不建立用户画像\n  [travel-mcp/design] baidu-route-strategy-invalid -- 百度路线规划 API 不支持策略参数，策略映射为无效功能\n  [travel-mcp/design] multi-itinerary-support -- itinerary 存储升级为支持多行程，使用文件夹架构\n  [travel-mcp/design] compare-prices-tool -- 新增 travel_compare_prices 工具进行酒店与机票跨平台比价\n  [travel-mcp/deps] flyai-binary-hardcode -- FLYAI_BIN 路径硬编码问题未完全解决，依赖部署环境\n  [user-profile/persona] persona -- 用户画像更新\n  [global/deps] archify-clean-flow-requires-iterate -- 使用Archify时，clean-flow验证会拒绝线条穿过无关组件或标签重叠的图，需要反复调整组件坐标、连接路由(via)和标签位置。\n  [user-profile/persona] values-complete-architecture-diagrams -- 偏好架构图包含全部依赖关系、数据流、模块关系链，用于架构记忆和人工参考，不满足于简化展示。\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-27/001-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-27T13:24:50.031433",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [ops-daemon/design] daily-report-timeout-twin-health -- 日报超时通常因 twin health 检查挂死\n  [daily-report/design] mcp-unknown-status-standalone-no-port -- MCP 健康检查对 standalone 服务器若无端口映射则显示未知\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-27/002-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-07-27T14:46:13.755700",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [ops-daemon/sop] daily-report-timeout-root-cause -- 日报超时失败的根因排查方向\n  [daily-report/design] claudetalk-mcp-built-in-status -- 工具审核中 claudetalk-mcp 显示未知的原因及修复\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-27/003-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-27T16:11:24.975328",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [daily-report/design] two-audit-modes -- 工具审计分为简单模式（无 LLM）和完整模式（含 LLM）以适应不同场景\n  [daily-report/design] hardcoded-windows-paths -- 审计脚本中硬编码的 Windows 路径在非 Windows 环境下会失效\n  [daily-report/design] rejected-items-suppression -- 通过 REJECTED_PATH 文件记录已拒绝的推荐，防止 LLM 重复建议\n  [daily-report/design] mcp-health-port-map-limitation -- MCP 健康检查仅对 MCP_PORT_MAP 中列出的服务器进行端口探测\n  [daily-report/design] project-local-settings-scanning -- 从多个项目的 settings.local.json 中提取独立 MCP 服务器列表\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-27/004-记忆写入--4-条--4-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 4 条 (4 新增)",
+    "created_at": "2026-07-27T18:42:56.563110",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (4 条) ==\n  [digital-clone/design] gap-reply-llm-refine -- 成长缺口回复使用 LLM 精炼内容判断，替换原关键词匹配\n  [digital-clone/sop] refine-old-twin-reply-script -- 存在脚本用于重新精炼旧的 twin 回复数据\n  [user-profile/persona] prefer-llm-semantic-judge -- 在模糊匹配场景下优先选择 LLM 而非硬编码规则\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-28/001-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-28T11:42:44.602662",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [daily_report/design] runner-otel-init-hang -- 日报生成器首次运行因 OTel 初始化连接 4317 端口挂起\n  [claudetalk/design] streaming-parse-error-harmless -- claude CLI 流式模式下 stderr \"Could not parse message\" 无害，不需要 fallback\n  [ops-daemon/design] tokenplan-scrape-replaces-estimate -- 用 BrowserAct 抓取百炼控制台用量替代本地估算\n  [ops-daemon/design] daily-report-subprocess-timeout -- 日报中 twin 和 memory 健康检查子进程需要超时保护\n  [ops-daemon/sop] log-rotation-policy -- 日志保留策略：proxy log 只保留 31 天，旧数据可清理\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
