@@ -2105,5 +2105,35 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [daily_report/design] runner-otel-init-hang -- 日报生成器首次运行因 OTel 初始化连接 4317 端口挂起\n  [claudetalk/design] streaming-parse-error-harmless -- claude CLI 流式模式下 stderr \"Could not parse message\" 无害，不需要 fallback\n  [ops-daemon/design] tokenplan-scrape-replaces-estimate -- 用 BrowserAct 抓取百炼控制台用量替代本地估算\n  [ops-daemon/design] daily-report-subprocess-timeout -- 日报中 twin 和 memory 健康检查子进程需要超时保护\n  [ops-daemon/sop] log-rotation-policy -- 日志保留策略：proxy log 只保留 31 天，旧数据可清理\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-28/002-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-28T13:16:26.630369",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [claudetalk/design] stream-json-event-line-filter -- claude CLI stream-json 模式解析失败根因与修复\n  [ops-daemon/design] browser-act-tokenplan-fetch -- BrowserAct 替代 Playwright 抓取百炼 TokenPlan 用量\n  [daily_report/design] daily-report-timeout-twin-health -- 日报生成超时根因为 twin/memory 子进程卡死\n  [global/sop] disk-cleanup-script -- 磁盘空间清理方案：定期清理过期日志和缓存\n  [claudetalk/design] streaming-parse-error-no-early-kill -- 流式模式不应因 'Could not parse message' 提前 kill 子进程\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-28/003-记忆写入--1-条--1-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-28T21:18:13.162660",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-28/004-记忆写入--2-条--2-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 2 条 (2 新增)",
+    "created_at": "2026-07-28T23:00:13.909478",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f2ec05e3-6d02-4a5d-878f-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [memory-mcp/design] auto-freshness-on-query -- trace_impact 和 query 前自动检查并刷新代码图\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
