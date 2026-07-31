@@ -2187,5 +2187,35 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 93596c3c-7733-46f3-9899-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [claudetalk/design] image-processing-in-pollmessages -- 主bot轮询消息中image类型的处理策略"
+  },
+  "2026-07-30/005-记忆写入--1-条--1-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 1 条 (1 新增)",
+    "created_at": "2026-07-30T21:57:57.398877",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: aa20d4bc-4b72-48a3-a116-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (1 条) ==\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-07-30/006-记忆写入--7-条--7-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 7 条 (7 新增)",
+    "created_at": "2026-07-30T23:41:53.944021",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2b72d476-b8e8-41b4-bc8c-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (7 条) ==\n  [user-profile/persona] cautious-cleanup-approval -- 磁盘清理/删除操作前要求安全与依赖确认，不接受大范围一次性 rm/prune。\n  [presenton/overview] presenton-duplicate-images -- Presenton 磁盘优化点：存在 ghcr 与 NJU 镜像源的同 tag 重复镜像。\n  [global/sop] web-search-tool-unavailable -- 会话内 web search 工具可能无法实时联网，不能把其结果当真实搜索结果引用。\n  [global/sop] host-disk-pressure-cleanup-candidates -- 主机根分区接近满时，可优先检查 Docker/包管理缓存/日志/临时文件等可再生占用。\n  [user-profile/persona] persona -- 用户画像更新\n  [model-proxy/design] l2-classifier-local-fallback -- L2 分类器增加本地规则回退，当 flash 不可用时兜底\n  [model-proxy/sop] port-recycling-kill9-conflict -- 端口回收问题：kill -9 后立即重启可能导致端口仍被占用"
+  },
+  "2026-07-31/001-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-07-31T18:34:33.195876",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 93596c3c-7733-46f3-9899-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [model-proxy/deps] qwen37-deprecated -- QWEN3.7系列已停用，全面转向QWEN3.8\n  [claudetalk/design] stream-idle-timeout-extended -- 防止慢响应被 idle timeout 误杀，STREAM_IDLE_TIMEOUT_MS 从 60s 提高至 240s\n  [model-proxy/design] allocator-ratio-negative-clamp -- allocator.compute_ratio 需要对剩余点数负数钳制为 0\n  [model-proxy/design] deepseek-cache-tokens-mapping -- DeepSeek OpenAI 响应中的缓存 token 字段需映射到 Anthropic 格式\n  [claudetalk/_index] semi-report-occasional-failure -- 半导体产业情报日报偶尔运行失败，exit code=1\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
