@@ -2217,5 +2217,15 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 93596c3c-7733-46f3-9899-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [model-proxy/deps] qwen37-deprecated -- QWEN3.7系列已停用，全面转向QWEN3.8\n  [claudetalk/design] stream-idle-timeout-extended -- 防止慢响应被 idle timeout 误杀，STREAM_IDLE_TIMEOUT_MS 从 60s 提高至 240s\n  [model-proxy/design] allocator-ratio-negative-clamp -- allocator.compute_ratio 需要对剩余点数负数钳制为 0\n  [model-proxy/design] deepseek-cache-tokens-mapping -- DeepSeek OpenAI 响应中的缓存 token 字段需映射到 Anthropic 格式\n  [claudetalk/_index] semi-report-occasional-failure -- 半导体产业情报日报偶尔运行失败，exit code=1\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-01/001-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-08-01T15:48:17.065613",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: d870f17f-d9d8-401d-96e1-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [claudetalk/design] gap-detector -- 数字分身画像缺口检测与自然引导规则\n  [claudetalk/design] conflict-detection -- 数字分身信念矛盾检测与标记机制\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
