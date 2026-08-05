@@ -2297,5 +2297,45 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: eabde585-d985-4edc-9ce7-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (2 条) ==\n  [model-proxy/design] proxy-port-allocation-clarified -- 澄清模型代理端口分配：4000主服务，4002备用，4011废弃\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-03/006-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-08-03T23:54:47.758031",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 5edd82a7-ca45-4e24-aeec-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [claudetalk/persona] mesh-memory-architecture-expectation -- 用户重视数字分身的网状记忆结构，认为关联维度是关键\n  [claudetalk/design] memory-dimension-bottleneck -- 当前记忆瓶颈是关联维度不足，部分维度缺失严重\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-04/001-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-08-04T00:56:15.158087",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 5edd82a7-ca45-4e24-aeec-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [claudetalk/persona] complete-digital-twin-as-living-person -- 补全数字分身成为完整的活人是目标\n  [claudetalk/design] gap-detection-not-triggered-in-chat -- 间隙检测未在聊天中触发\n  [claudetalk/design] missing-detect-and-push-gaps-implementation -- detect_and_push_gaps 函数未定义\n  [claudetalk/design] insufficient-personal-value-dimensions -- 信念数据中个人价值观维度不足\n  [claudetalk/design] user-prefers-passive-gap-questions -- 用户偏好被动触发间隙提问\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-04/002-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-08-04T02:14:44.325433",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 5edd82a7-ca45-4e24-aeec-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [claudetalk/sop] gap-maybe-ask-none-fix -- 修复 maybe_ask_gap 频控状态读取空指针异常\n  [claudetalk/sop] curation-parse-llm-empty-fail -- 记忆提取中 parse_llm 返回空导致处理失败\n  [claudetalk/design] twin-memory-filling-3-steps -- 数字分身记忆补全分三步：补足维度、网络化、召回策略\n  [claudetalk/sop] dimension-coverage-false-gap -- 维度覆盖检测误报已填维度为缺口\n  [claudetalk/sop] ingestion-log-missing-source-ref -- ingestion_log 表缺少 source_ref 列导致写入错误\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-04/003-记忆写入--3-条--3-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 3 条 (3 新增)",
+    "created_at": "2026-08-04T12:15:42.130533",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 5edd82a7-ca45-4e24-aeec-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [model-proxy/design] l2-fallback-missing-intent-detection -- local_fallback_classify 缺 creative/code 意图检测导致 GLM/kimi 流量不足\n  [user-profile/persona] force-switch-debugging-preference -- 调试路由问题时习惯启用 force-switch 隔离模型影响\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
