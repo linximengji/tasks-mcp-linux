@@ -2337,5 +2337,25 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 5edd82a7-ca45-4e24-aeec-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (3 条) ==\n  [model-proxy/design] l2-fallback-missing-intent-detection -- local_fallback_classify 缺 creative/code 意图检测导致 GLM/kimi 流量不足\n  [user-profile/persona] force-switch-debugging-preference -- 调试路由问题时习惯启用 force-switch 隔离模型影响\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-05/001-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-08-05T22:06:49.264073",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 71b391c9-4084-4781-ac68-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [digital-twin/design] twin-feed-dual-ingestion -- 记忆摄入支持实时 MCP 调用和 sessionEnd 后处理两种路径\n  [claudetalk/design] identity-uid-migration -- 身份注册表主键从飞书 open_id 改为自增 uid\n  [digital-twin/design] twin-privacy-sensitivity-roles -- 数字分身对外服务按用户身份提供隐私分层，预留但未实现\n  [digital-twin/design] digital-twin-separate-project -- 数字分身与 memory-mcp 保持独立项目不合并\n  [digital-twin/design] twin-ingest-novelty-dedup -- 实时摄入用 LLM 检测内容新奇度以去重\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-06/001-记忆写入--6-条--6-新增": {
+    "status": "pending",
+    "summary": "记忆写入: 6 条 (6 新增)",
+    "created_at": "2026-08-06T08:19:47.690552",
+    "updated_at": null,
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 71b391c9-4084-4781-ac68-\n如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 新增 (6 条) ==\n  [digital-clone/design] entity-search-plural-type-fix -- 修复实体检索因复数表名导致的关联记忆丢失\n  [digital-clone/design] profile-summarize-mode -- 新增画像总结模式，让分身总结决策逻辑并推送主人核对\n  [digital-clone/design] no-graph-traversal-yet -- 记忆网状结构未实现，检索仍为线性排名的关键词混合\n  [digital-clone/design] missing-entity-entity-relations -- 知识图谱中实体间关系缺位，图拓扑断裂\n  [digital-clone/sop] fix-relation-types-script -- 统一 relations 表源/目标类型为单数的修复脚本\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
