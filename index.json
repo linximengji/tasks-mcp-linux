@@ -2382,5 +2382,25 @@
     "type": "task",
     "source": "cc",
     "progress": "已修正根因：待办来自 curation REJECT+CREATE_TASK 分支，是候选记忆待人工决策。用户选择逐条决策写/弃。开始逐条读取。"
+  },
+  "2026-08-08/003-记忆已写入--6-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 6 条",
+    "created_at": "2026-08-08T18:26:57.659753",
+    "updated_at": "2026-08-08T18:26:57.659761",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: f965d7ff-bb58-4211-918a-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (6 条) ==\n  [claudetalk/sop] trip-agent-restart-after-code-change -- trip agent 代码更新后需手动重启否则沿用旧代码\n  [claudetalk/design] stream-idle-timeout-mcp-false-positive -- 流式空闲超时仅看 stdout，MCP/长工具执行时易误杀\n  [claudetalk/sop] exit-code-143-sigterm-cause -- exit 143 = SIGTERM，由空闲超时或 drain 触发\n  [user-profile/persona] persona -- 用户画像更新\n  [session-knowledge/sop] curation-upsert-description-keyword -- 记忆提取调用 memory_upsert 时传多余参数导致写入失败\n  [user-profile/persona] persona -- 用户画像更新"
+  },
+  "2026-08-09/001-记忆已写入--4-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 4 条",
+    "created_at": "2026-08-09T12:54:27.715920",
+    "updated_at": "2026-08-09T12:54:27.715927",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 7dab14ea-18fb-469d-bcbf-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (4 条) ==\n  [user-profile/persona] persona -- 用户画像更新\n  [memory-mcp/sop] curate-parse-llm-empty-failure -- curate_staging 阶段 LLM 返回空结果导致记忆写入失败\n  [travel-mcp/design] amap-poi-search-broken -- 高德 POI 搜索在威海景点结果不准确且有 KeyError bug\n  [user-profile/persona] persona -- 用户画像更新"
   }
 }
