@@ -2412,5 +2412,25 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 841e7b66-d970-4f6a-aaea-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (4 条) ==\n  [digital-clone/design] user-profile-removed-after-twin-separation -- 数字分身独立后，原 user-profile 模块不再保留\n  [digital-clone/design] option-b-review-coverage-by-twin -- 选择方案B，相应审视任务由数字分身内部审视流程覆盖\n  [digital-clone/design] overhaul-ingestion-for-degradation -- 因退化严重，否决原方案，决定从识别摄入到管理整体修改\n  [digital-clone/deps] embedding-route-missing-issue -- 检查发现 embedding 路由丢失，原因待查"
+  },
+  "2026-08-11/001-记忆已写入--5-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 5 条",
+    "created_at": "2026-08-11T21:23:56.753098",
+    "updated_at": "2026-08-11T21:23:56.753108",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 841e7b66-d970-4f6a-aaea-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (5 条) ==\n  [claudetalk/design] identity-channel-binding -- 身份识别需按通道区分，不能全局统一映射\n  [claudetalk/design] agent-complete-entity -- 数字分身应为完整智能实体，非模式拼接\n  [claudetalk/design] default-channel-disabled -- 当前阶段关闭Default通道，仅保留twin通道\n  [claudetalk/design] manual-identity-layer -- 数字分身需身份认证层，支持手动定义对象身份\n  [user-profile/persona] design-integrity-sensitivity -- 用户坚持设计一致性，对助手随意改动设计敏感"
+  },
+  "2026-08-11/002-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-11T22:41:34.488369",
+    "updated_at": "2026-08-11T22:41:34.488377",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 3fb83297-6bdd-40df-afc3-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [digital-clone/design] twin-entity-identity-layer -- 数字分身实体重构，添加identity层解析channel/user_id"
   }
 }
