@@ -2432,5 +2432,25 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 3fb83297-6bdd-40df-afc3-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [digital-clone/design] twin-entity-identity-layer -- 数字分身实体重构，添加identity层解析channel/user_id"
+  },
+  "2026-08-12/001-记忆已写入--3-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 3 条",
+    "created_at": "2026-08-12T16:56:09.321172",
+    "updated_at": "2026-08-12T16:56:09.321180",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 391c8da6-1faf-498d-83d4-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [claudetalk/persona] user-non-engineer-interest-driven -- 用户自我定位为非软件工程师，利用大模型进行兴趣驱动的功能开发\n  [claudetalk/design] positive-filter-drift-prevention -- 防漂移采用正向筛选，只吸收符合人格特征的内容\n  [model-proxy/design] token-plan-routing-underutilized -- Token plan 预算感知路由在当前配置下触发频率过低"
+  },
+  "2026-08-12/002-记忆已写入--3-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 3 条",
+    "created_at": "2026-08-12T18:47:55.293257",
+    "updated_at": "2026-08-12T18:47:55.293263",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 08bb68d0-8a29-47c4-ba73-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [model-proxy/design] playwright-token-plan-crawler -- Playwright 网页抓取 Token Plan 余额方案，作为 API 不可用时的替代\n  [model-proxy/design] token-plan-current-period -- 当前 Token Plan 周期：开始 2026-07-26，有效期一个月\n  [digital-clone/design] memory-mcp-only-persona -- 当前 memory MCP 仅 persona 记忆在使用，其他记忆类型未通过 MCP 访问，混用严重，需分离"
   }
 }
