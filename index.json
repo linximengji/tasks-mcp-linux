@@ -2452,5 +2452,15 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 08bb68d0-8a29-47c4-ba73-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [model-proxy/design] playwright-token-plan-crawler -- Playwright 网页抓取 Token Plan 余额方案，作为 API 不可用时的替代\n  [model-proxy/design] token-plan-current-period -- 当前 Token Plan 周期：开始 2026-07-26，有效期一个月\n  [digital-clone/design] memory-mcp-only-persona -- 当前 memory MCP 仅 persona 记忆在使用，其他记忆类型未通过 MCP 访问，混用严重，需分离"
+  },
+  "2026-08-16/001-记忆已写入--4-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 4 条",
+    "created_at": "2026-08-16T18:43:01.185180",
+    "updated_at": "2026-08-16T18:43:01.185186",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 08bb68d0-8a29-47c4-ba73-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (4 条) ==\n  [claudetalk/design] dedup-embedding-llm-physical-delete -- 记忆语义去重采用 embedding 召回 + LLM 判定，物理删除并移除关联链条\n  [claudetalk/sop] scheduled-semantic-dedup -- 存量定期语义去重纳入自动日程\n  [claudetalk/design] scheduled-semantic-dedup -- beliefs 同义重复也需纳入去重检查\n  [claudetalk/design] digital-twin-thinking-display-degraded -- 数字分身私聊思考过程展示不完善，需排查"
   }
 }
