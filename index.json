@@ -2462,5 +2462,75 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 08bb68d0-8a29-47c4-ba73-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (4 条) ==\n  [claudetalk/design] dedup-embedding-llm-physical-delete -- 记忆语义去重采用 embedding 召回 + LLM 判定，物理删除并移除关联链条\n  [claudetalk/sop] scheduled-semantic-dedup -- 存量定期语义去重纳入自动日程\n  [claudetalk/design] scheduled-semantic-dedup -- beliefs 同义重复也需纳入去重检查\n  [claudetalk/design] digital-twin-thinking-display-degraded -- 数字分身私聊思考过程展示不完善，需排查"
+  },
+  "2026-08-19/001-记忆已写入--3-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 3 条",
+    "created_at": "2026-08-19T22:42:34.265917",
+    "updated_at": "2026-08-19T22:42:34.265923",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 9af6b11a-be92-4b1b-bef0-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [model-proxy/design] token-plan-manual-update-semantics -- Token Plan 手动更新为直接修正，自动计算为实时累加\n  [model-proxy/design] token-plan-parallel-flash-load-sharing -- 采用 A 方案让 token plan 增加模型与 flash 并行分担流量\n  [user-profile/persona] prefers-phased-plan-execution -- 习惯将任务拆成线1/线2并逐条推进"
+  },
+  "2026-08-20/001-记忆已写入--3-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 3 条",
+    "created_at": "2026-08-20T08:19:58.104888",
+    "updated_at": "2026-08-20T08:19:58.104897",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 063f1b8b-798c-44f6-97c9-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [claudetalk/persona] user-tasks-mcp-expectation -- 用户认为 tasks MCP 应管理待办任务\n  [claudetalk/sop] task-record-memory-gap -- 会话中任务记录遗忘问题\n  [memory-mcp/design] all-memory-via-memory-mcp -- 用户明确要求记忆统一走 memory MCP，不使用分离的项目记忆"
+  },
+  "2026-08-20/002-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-20T08:43:10.810740",
+    "updated_at": "2026-08-20T08:43:10.810751",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 59f788e7-bc2f-49cc-b4c3-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] rejected-four-docs-around-memory-mcp -- 被否决：在 memory MCP 外保留四个分离文档"
+  },
+  "2026-08-20/003-记忆已写入--4-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 4 条",
+    "created_at": "2026-08-20T10:28:02.824559",
+    "updated_at": "2026-08-20T10:28:02.824568",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ccd0ca69-9c6c-425f-aee0-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (4 条) ==\n  [claudetalk/design] feishu-mobile-duplicate-content-persists -- 飞书移动端重复内容问题未彻底消失，排查时参考\n  [user-profile/persona] impatient-with-quality-defects -- 用户对低质量输出和助手未察觉明显问题会表现出不耐烦\n  [user-profile/persona] content-quality-refers-to-feishu -- 用户说内容质量差、重复时通常指飞书手机端输出，不是记忆系统\n  [user-profile/persona] frustrated-with-stupid-amnesia -- 用户对答非所问、失忆会直接表达强烈不满，形容系统愚蠢"
+  },
+  "2026-08-20/004-记忆已写入--3-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 3 条",
+    "created_at": "2026-08-20T13:52:20.005485",
+    "updated_at": "2026-08-20T13:52:20.005492",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ca2bf7cc-7c78-48c3-82ee-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [claudetalk/design] feishu-mobile-cc-session-accumulation -- 手机飞书端 CC 答非所问/失忆根因是 session 累积\n  [claudetalk/design] extra-files-in-memory-dir -- 数字分身记忆目录存在额外文件，可能与当前主题异常和重复内容有关\n  [user-profile/persona] prefers-root-cause-investigation -- 用户要求直接调查故障根因，而非仅罗列现象或文件概要"
+  },
+  "2026-08-20/005-记忆已写入--2-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 2 条",
+    "created_at": "2026-08-20T18:07:14.765969",
+    "updated_at": "2026-08-20T18:07:14.765975",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ca2bf7cc-7c78-48c3-82ee-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (2 条) ==\n  [claudetalk/design] qwen36-flash-routing-suspect -- 模型退化疑与 qwen3.6 flash 路由变更有关，需对照测试隔离变量\n  [user-profile/persona] controlled-variable-isolation -- 排查故障时倾向设计对照实验隔离变量，而非直接归因"
+  },
+  "2026-08-20/006-记忆已写入--2-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 2 条",
+    "created_at": "2026-08-20T19:16:45.512837",
+    "updated_at": "2026-08-20T19:16:45.512843",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 8da06975-89aa-4a52-8d28-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (2 条) ==\n  [claudetalk/design] mainbot-model-degradation-scope -- 当前模型退化问题范围是claudetalk主bot，排查聚焦主bot路由链路\n  [claudetalk/design] intention-repeat-not-flash-route -- 主 bot 单字刷屏根因排除 flash 路由变更"
   }
 }
