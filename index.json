@@ -2532,5 +2532,119 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 8da06975-89aa-4a52-8d28-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (2 条) ==\n  [claudetalk/design] mainbot-model-degradation-scope -- 当前模型退化问题范围是claudetalk主bot，排查聚焦主bot路由链路\n  [claudetalk/design] intention-repeat-not-flash-route -- 主 bot 单字刷屏根因排除 flash 路由变更"
+  },
+  "2026-08-20/007-记忆已写入--3-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 3 条",
+    "created_at": "2026-08-20T20:13:51.260762",
+    "updated_at": "2026-08-20T20:13:51.260773",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 40ef0e7d-6a27-4655-b5ca-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [claudetalk/design] mainbot-full-cc-loading -- 主bot应加载完整CC，子bot按需加载\n  [claudetalk/design] three-channel-cc-loading-separation -- 三条通道分离，飞书主通道需具备完整 Claude CLI 能力\n  [user-profile/persona] clarify-before-unified-change -- 偏好先梳理清楚再统一更改，并优先修复主通道关键问题"
+  },
+  "2026-08-20/008-记忆已写入--2-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 2 条",
+    "created_at": "2026-08-20T21:46:30.108726",
+    "updated_at": "2026-08-20T21:46:30.108736",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 36675778-e4b2-4aa9-baac-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (2 条) ==\n  [claudetalk/design] three-bot-separate-cc-configs -- 三个 bot 需各自加载不同 CC 配置以匹配不同需求设定\n  [claudetalk/sop] context-interruption-routing-alert -- 排查飞书上下文中断问题的标准流程与根因假设"
+  },
+  "2026-08-20/009-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-20T23:03:55.196047",
+    "updated_at": "2026-08-20T23:03:55.196061",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 13cf1615-6e84-4673-81d6-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] context-interruption-mid-session -- 上下文中断发生在连续会话中段，排除了会话初始化问题"
+  },
+  "2026-08-21/001-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-21T08:10:10.633186",
+    "updated_at": "2026-08-21T08:10:10.633197",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 0ff00cfb-96fd-4c9a-bb19-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] bridge-session-key-drift-root-cause -- 飞书 bridge 上下文中断根因：同一群聊并存两个 session key"
+  },
+  "2026-08-21/002-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-21T10:03:08.241117",
+    "updated_at": "2026-08-21T10:03:08.241130",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 0ff00cfb-96fd-4c9a-bb19-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] bridge-repetition-persists-after-key-drift -- 修复 session key 漂移后仍出现大量重复输出"
+  },
+  "2026-08-21/003-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-21T16:34:31.345590",
+    "updated_at": "2026-08-21T16:34:31.345605",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: beff9fce-952b-4361-bcbe-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] degenerate-loop-output-placeholder-root-cause -- 飞书桥回复重复的直接根因：模型退化循环反复输出占位文本"
+  },
+  "2026-08-21/004-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-21T16:54:14.460653",
+    "updated_at": "2026-08-21T16:54:14.460666",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 0974a07f-2821-47b4-a160-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] feishu-peerprocessing-reentrancy-guard -- 飞书通道防止 processPeerMessages 并发启动 Claude 子进程的重入守卫"
+  },
+  "2026-08-21/005-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-21T18:27:26.055820",
+    "updated_at": "2026-08-21T18:27:26.055833",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 2d9dd4d5-6af4-4659-a525-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] feishu-peer-processing-lock -- Feishu 通道用 _peerProcessing 排他锁防止轮询重入并发启动多个 Claude 子进程"
+  },
+  "2026-08-23/001-修复A-claudetalk-流式回复复读兜底检测": {
+    "status": "completed",
+    "summary": "[修复A] claudetalk 流式回复复读兜底检测",
+    "created_at": "2026-08-23T16:52:23.300Z",
+    "updated_at": "2026-08-23T18:09:39.645Z",
+    "type": "bug",
+    "source": "cc",
+    "progress": "在实施：src/index.ts 加连续重复句子检测（src/index.ts:1142-1157 附近）"
+  },
+  "2026-08-23/002-修复B-session-key-归一化消除记忆分裂": {
+    "status": "completed",
+    "summary": "[修复B] session key 归一化消除记忆分裂",
+    "created_at": "2026-08-23T16:52:23.324Z",
+    "updated_at": "2026-08-23T18:09:39.693Z",
+    "type": "bug",
+    "source": "cc",
+    "progress": "根因确认：getSessionKey(src/core/claude.ts:115-128)用\\0分隔，profile可能带\\0 claude code尾巴导致key漂移。需加profile末尾\\0/空格归一化。"
+  },
+  "2026-08-23/003-修复A-会话会话key漂移检测机制": {
+    "status": "pending",
+    "summary": "[修复A] 会话会话key漂移检测机制",
+    "created_at": "2026-08-23T17:00:54.423Z",
+    "updated_at": null,
+    "type": "bug",
+    "source": "cc"
+  },
+  "2026-08-23/004-修复A-会话会话key漂移检测机制": {
+    "status": "pending",
+    "summary": "[修复A] 会话会话key漂移检测机制",
+    "created_at": "2026-08-23T17:01:19.935Z",
+    "updated_at": null,
+    "type": "bug",
+    "source": "cc"
   }
 }
