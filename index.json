@@ -2617,19 +2617,19 @@
     "status": "completed",
     "summary": "[修复A] claudetalk 流式回复复读兜底检测",
     "created_at": "2026-08-23T16:52:23.300Z",
-    "updated_at": "2026-08-23T18:09:39.645Z",
+    "updated_at": "2026-08-23T19:01:40.103Z",
     "type": "bug",
     "source": "cc",
-    "progress": "在实施：src/index.ts 加连续重复句子检测（src/index.ts:1142-1157 附近）"
+    "progress": "在实施中"
   },
   "2026-08-23/002-修复B-session-key-归一化消除记忆分裂": {
     "status": "completed",
     "summary": "[修复B] session key 归一化消除记忆分裂",
     "created_at": "2026-08-23T16:52:23.324Z",
-    "updated_at": "2026-08-23T18:09:39.693Z",
+    "updated_at": "2026-08-23T19:40:42.422Z",
     "type": "bug",
     "source": "cc",
-    "progress": "根因确认：getSessionKey(src/core/claude.ts:115-128)用\\0分隔，profile可能带\\0 claude code尾巴导致key漂移。需加profile末尾\\0/空格归一化。"
+    "progress": "qwen3.6分流已移除: _flash_tp_split函数+两处调用+allocator映射已删, 语法检查通过, 测试实例4001验证全过(13模型/路由正确). 待办: 重启model-proxy生产服务加载新代码(分类器暂时不可用,重试中). 注意: 重启会丢bypass内存态,需重设bypass→qwen3.8-max"
   },
   "2026-08-23/003-修复A-会话会话key漂移检测机制": {
     "status": "pending",
@@ -2646,5 +2646,35 @@
     "updated_at": null,
     "type": "bug",
     "source": "cc"
+  },
+  "2026-08-24/001-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-24T02:20:44.895258",
+    "updated_at": "2026-08-24T02:20:44.895277",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 6f894906-687e-4426-a043-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [user-profile/persona] user-communication-style -- 用户会先澄清问题范围，遇到中断会明显催促，重视历史日志和根因调查。"
+  },
+  "2026-08-24/002-记忆已写入--4-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 4 条",
+    "created_at": "2026-08-24T18:34:03.342359",
+    "updated_at": "2026-08-24T18:34:03.342371",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: ce7e3c22-bf12-4e50-abe1-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (4 条) ==\n  [claudetalk/sop] message-error-143-check-kill -- 处理消息出错143时优先排查进程被终止或超时\n  [model-proxy/sop] cross-client-same-fault-shared-proxy -- Claude CLI 和飞书 bot 同现相同异常时先查共享代理\n  [model-proxy/design] l2-simple-model-complex-trap -- L2简单模型不应承接复杂任务，否则退化或重复\n  [user-profile/persona] prefers-test-then-rollback -- 偏好先自动测试验证，再决定保留或回切"
+  },
+  "2026-08-24/003-记忆已写入--6-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 6 条",
+    "created_at": "2026-08-24T22:24:10.288990",
+    "updated_at": "2026-08-24T22:24:10.289005",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 060619ba-dc11-4b98-b998-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (6 条) ==\n  [claudetalk/design] twin-persona-direct-channel-only -- 数字分身人格摄入只走直接对话通道，避免记忆提取或审核机制污染人格。\n  [claudetalk/sop] memory-dedup-root-cause-cleanup -- 记忆或文档重复清理时，应优先审查记忆提取机制，再做归类、删除和整合。\n  [claudetalk/design] l2-allocator-token-plan-shared-quota -- L2 allocator 按需求类型分配 token plan 内模型，走共享额度。\n  [claudetalk/sop] l2-allocator-force-switch-expiry -- token plan 到期窗口可开启 force switch 作为模型分配切换措施。\n  [model-proxy/design] token-plan-expiry-manual-reset -- Token Plan 过期后的重置依赖手工设定，不自动重置或续期。\n  [claudetalk/design] token-usage-not-plan-start-source -- token_usage.jsonl 不能作为当前 Token Plan 起始时间推导依据"
   }
 }
