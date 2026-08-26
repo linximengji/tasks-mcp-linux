@@ -2676,5 +2676,35 @@
     "source": "cc",
     "priority": "low",
     "progress": "会话: 060619ba-dc11-4b98-b998-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (6 条) ==\n  [claudetalk/design] twin-persona-direct-channel-only -- 数字分身人格摄入只走直接对话通道，避免记忆提取或审核机制污染人格。\n  [claudetalk/sop] memory-dedup-root-cause-cleanup -- 记忆或文档重复清理时，应优先审查记忆提取机制，再做归类、删除和整合。\n  [claudetalk/design] l2-allocator-token-plan-shared-quota -- L2 allocator 按需求类型分配 token plan 内模型，走共享额度。\n  [claudetalk/sop] l2-allocator-force-switch-expiry -- token plan 到期窗口可开启 force switch 作为模型分配切换措施。\n  [model-proxy/design] token-plan-expiry-manual-reset -- Token Plan 过期后的重置依赖手工设定，不自动重置或续期。\n  [claudetalk/design] token-usage-not-plan-start-source -- token_usage.jsonl 不能作为当前 Token Plan 起始时间推导依据"
+  },
+  "2026-08-25/001-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-25T08:24:43.051192",
+    "updated_at": "2026-08-25T08:24:43.051209",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: b0d42376-638f-4929-ae9d-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [default-bot/sop] repeat-interrupt-proxy-triage -- default bot 出现重复文字/记忆中断时，排查应覆盖本地 proxy 代理国产模型链路，而非只看记忆逻辑。"
+  },
+  "2026-08-25/002-记忆已写入--4-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 4 条",
+    "created_at": "2026-08-25T13:47:19.637792",
+    "updated_at": "2026-08-25T13:47:19.637805",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 060619ba-dc11-4b98-b998-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (4 条) ==\n  [model-proxy/design] model-proxy-no-hardcode-default-route -- 模型路由不要写死，走默认路由\n  [model-proxy/design] model-proxy-routing-priority-order -- 路由匹配的优先级顺序\n  [model-proxy/design] tool-audit-port-4000-4002-standby-test -- audit 端口迁移到 4000，4002 备用/测试\n  [model-proxy/design] bypass-for-single-model-force-switch-off -- 调试单一模型用全局 bypass，关闭 force switch"
+  },
+  "2026-08-25/003-记忆已写入--1-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 1 条",
+    "created_at": "2026-08-25T22:54:39.696418",
+    "updated_at": "2026-08-25T22:54:39.696424",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 33880a79-44e0-47e3-b8ff-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (1 条) ==\n  [claudetalk/design] feishu-stream-end-signal -- 手机飞书流式输出需显式结束/中断信号"
   }
 }
