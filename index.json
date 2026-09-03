@@ -2725,5 +2725,15 @@
     "status": "pending",
     "progress": "=== 质量检查 ===\n- [dimension-coverage-false-gap](sop) 触发条件, 根因解释, 诊断思路\n- [dimension-coverage-false-gap] completeness: 触发条件, 根因解释, 诊断思路\n- [exit-code-143-sigterm-cause](sop) 触发条件, 根因解释, 诊断思路\n- [exit-code-143-sigterm-cause] completeness: 触发条件, 根因解释, 诊断思路\n- [pact-contract-dynamic-fields](sop) 触发条件, 根因解释, 诊断思路\n- [pact-contract-dynamic-fields] completeness: 触发条件, 根因解释, 诊断思路\n- [curation-parse-llm-empty-fail](sop) 触发条件, 诊断思路\n- [curation-parse-llm-empty-fail] completeness: 触发条件, 诊断思路\n- [gap-maybe-ask-none-fix](sop) 触发条件, 诊断思路\n- [gap-maybe-ask-none-fix] completeness: 触发条件, 诊断思路\n- [ingestion-log-missing-source-ref](sop) 触发条件, 诊断思路\n- [ingestion-log-missing-source-ref] completeness: 触发条件, 诊断思路\n- [message-error-143-check-kill](sop) 触发条件, 根因解释\n- [message-error-143-check-kill] completeness: 触发条件, 根因解释\n- [scheduled-semantic-dedup](sop) 触发条件, 根因解释\n- [scheduled-semantic-dedup] completeness: 触发条件, 根因解释\n- [task-record-memory-gap](sop) 触发条件, 诊断思路\n- [task-record-memory-gap] completeness: 触发条件, 诊断思路\n- [trip-agent-restart-after-code-change](sop) 触发条件, 诊断思路\n- [trip-agent-restart-after-code-change] completeness: 触发条件, 诊断思路\n- [memory-mcp-design] multi_model_disagreement: \n- [non-personal-tech-memories-removed] multi_model_disagreement: ",
     "created_at": "2026-08-31"
+  },
+  "2026-09-01/001-记忆已写入--3-条": {
+    "status": "completed",
+    "summary": "记忆已写入: 3 条",
+    "created_at": "2026-09-01T08:01:28.207215",
+    "updated_at": "2026-09-01T08:01:28.207222",
+    "type": "task",
+    "source": "cc",
+    "priority": "low",
+    "progress": "会话: 33880a79-44e0-47e3-b8ff-\n所有以下条目均已实际落盘（store_mem 成功）。如需回退: memory_delete <ns>/<name> 或 memory_update 修正\n\n== 已写入 (3 条) ==\n  [model-proxy/design] token-plan-expired-no-longer-considered -- Token Plan 已过期，后续路由与 403 排查不再依赖其余额\n  [claudetalk/design] daily-report-memory-health-check-timeout -- 日报记忆体健康检查超时，改为并行化执行\n  [claudetalk/sop] daily-report-memory-health-check-timeout -- 半导体日报仅工作日执行，周末不再运行"
   }
 }
